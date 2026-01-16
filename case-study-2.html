@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case Study: Adapting Desktop for Mobile - Redesigning search experience for mobile users">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+
+  <title>Adapting Desktop for Mobile - Alex Cooksey</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Alex<span>.</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="case-studies.html" class="nav-link active">Work</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="index.html#contact" class="btn btn-primary btn-sm nav-cta">Let's talk</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav-mobile">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="case-studies.html" class="nav-link active">Work</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+      <a href="index.html#contact" class="btn btn-primary w-full mt-4">Let's talk</a>
+    </div>
+  </nav>
+
+  <!-- Case Study Hero -->
+  <section class="case-study-hero">
+    <div class="container">
+      <div class="fade-in">
+        <div class="tags mb-6">
+          <span class="tag tag-primary">EdTech</span>
+          <span class="tag tag-secondary">Mobile</span>
+          <span class="tag tag-neutral">Responsive Design</span>
+        </div>
+
+        <h1 class="mb-6">Adapting a Desktop Design for Mobile</h1>
+
+        <p class="text-xl text-secondary" style="max-width: 700px;">
+          How I reimagined Top Hat's search experience for mobile users, balancing feature parity with touch-first interactions to improve mobile engagement by 60%.
+        </p>
+
+        <div class="case-study-meta">
+          <div class="case-study-meta-item">
+            <span class="case-study-meta-label">Role</span>
+            <span class="case-study-meta-value">Product Designer</span>
+          </div>
+          <div class="case-study-meta-item">
+            <span class="case-study-meta-label">Timeline</span>
+            <span class="case-study-meta-value">3 months</span>
+          </div>
+          <div class="case-study-meta-item">
+            <span class="case-study-meta-label">Team</span>
+            <span class="case-study-meta-value">1 PM, 2 Engineers, 1 Designer</span>
+          </div>
+          <div class="case-study-meta-item">
+            <span class="case-study-meta-label">Platform</span>
+            <span class="case-study-meta-value">iOS & Android</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Image -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-wide">
+        <div class="image-frame scale-in">
+          <div style="background: var(--gradient-hero); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
+            <p class="text-muted">Mobile app screens showing before and after</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section">
+        <div class="grid grid-3 gap-8 fade-in">
+          <div>
+            <h4 class="mb-3 text-primary">The challenge</h4>
+            <p>The desktop search experience didn't translate well to mobile, leading to poor engagement and frustrated users on smaller screens.</p>
+          </div>
+          <div>
+            <h4 class="mb-3 text-primary">The solution</h4>
+            <p>A mobile-first redesign with touch-optimized interactions, smart filters, and progressive search results.</p>
+          </div>
+          <div>
+            <h4 class="mb-3 text-primary">The impact</h4>
+            <p>60% increase in mobile search engagement, 35% reduction in search abandonment, improved app store ratings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><div class="divider"></div></div>
+
+  <!-- Context -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Context</span>
+        <h2 class="mb-6">The mobile gap</h2>
+
+        <p class="text-lg mb-6">
+          Top Hat's content library contains millions of questions and resources. While the desktop search worked well, mobile users struggled with the same interface squeezed onto smaller screens.
+        </p>
+
+        <p class="mb-8">
+          Analytics showed that 40% of our users accessed the platform via mobile devices, but mobile search usage was disproportionately low. Users would start a search on mobile, then abandon it to continue on desktop.
+        </p>
+
+        <div class="metric-callout mb-8">
+          <div class="metric-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+          </div>
+          <div class="metric-content">
+            <div class="metric-value">40%</div>
+            <div class="metric-label">of users access via mobile, but only 15% complete searches</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section class="section-sm" style="background: var(--color-bg-secondary);">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Research</span>
+        <h2 class="mb-6">Understanding mobile behavior</h2>
+
+        <p class="mb-8">
+          I conducted contextual inquiry sessions to understand how professors used their phones in real teaching scenarios. The insights were eye-opening.
+        </p>
+
+        <div class="card card-bordered p-6 mb-6">
+          <div class="process-step mb-6">
+            <div class="process-number">1</div>
+            <div class="process-content">
+              <h5 class="process-title">Different contexts, different needs</h5>
+              <p class="process-description">Mobile users were often in-the-moment: between classes, commuting, or quickly searching during lecture prep. They needed faster, simpler interactions.</p>
+            </div>
+          </div>
+
+          <div class="process-step mb-6">
+            <div class="process-number">2</div>
+            <div class="process-content">
+              <h5 class="process-title">Touch target problems</h5>
+              <p class="process-description">Filter checkboxes and small buttons were nearly impossible to tap accurately. Users often selected wrong options.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="process-number">3</div>
+            <div class="process-content">
+              <h5 class="process-title">Information overload</h5>
+              <p class="process-description">Search results showed too much information per item, requiring excessive scrolling to find relevant content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Solutions -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Design</span>
+        <h2 class="mb-6">Mobile-first solutions</h2>
+
+        <div class="card card-bordered p-6 mb-8">
+          <h5 class="mb-3">1. Touch-optimized filters</h5>
+          <p class="mb-4">Replaced small checkboxes with large, tappable chips. Filters are now accessible via a bottom sheet for thumb-friendly interaction.</p>
+          <div class="image-frame" style="background: var(--gradient-hero); padding: var(--space-8);">
+            <p class="text-muted text-center">Filter chips and bottom sheet design</p>
+          </div>
+        </div>
+
+        <div class="card card-bordered p-6 mb-8">
+          <h5 class="mb-3">2. Progressive disclosure</h5>
+          <p class="mb-4">Search results show condensed cards by default. Users can expand for details or swipe to quick-add content to their course.</p>
+          <div class="image-frame" style="background: var(--gradient-hero); padding: var(--space-8);">
+            <p class="text-muted text-center">Expandable search result cards</p>
+          </div>
+        </div>
+
+        <div class="card card-bordered p-6">
+          <h5 class="mb-3">3. Smart suggestions</h5>
+          <p class="mb-4">Added recent searches, trending content, and personalized suggestions to reduce typing on mobile keyboards.</p>
+          <div class="image-frame" style="background: var(--gradient-hero); padding: var(--space-8);">
+            <p class="text-muted text-center">Smart search suggestions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section class="section-sm" style="background: var(--gradient-dark);">
+    <div class="container">
+      <div class="case-study-section text-center fade-in">
+        <span class="section-label" style="color: var(--color-primary-light);">Results</span>
+        <h2 class="mb-8" style="color: var(--color-white);">Measurable impact</h2>
+
+        <div class="grid grid-3 gap-8">
+          <div class="stat">
+            <div class="stat-value" style="color: var(--color-accent-light);" data-count="60" data-suffix="%">0%</div>
+            <div class="stat-label" style="color: rgba(255,255,255,0.7);">Increase in mobile search use</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value" style="color: var(--color-accent-light);" data-count="35" data-suffix="%">0%</div>
+            <div class="stat-label" style="color: rgba(255,255,255,0.7);">Reduction in abandonment</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value" style="color: var(--color-accent-light);">4.6</div>
+            <div class="stat-label" style="color: rgba(255,255,255,0.7);">App store rating (up from 3.8)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reflection -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Reflection</span>
+        <h2 class="mb-6">Key learnings</h2>
+
+        <div class="two-col" style="gap: var(--space-12);">
+          <div>
+            <h4 class="mb-4">What worked</h4>
+            <ul class="timeline-achievements">
+              <li>Contextual inquiry revealed insights that analytics couldn't capture</li>
+              <li>Bottom sheets proved more intuitive than modal dialogs on mobile</li>
+              <li>Reducing information density improved comprehension and speed</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-4">Challenges overcome</h4>
+            <ul class="timeline-achievements">
+              <li>Balancing feature parity with mobile simplicity required tough prioritization</li>
+              <li>Coordinating with iOS and Android teams on platform-specific patterns</li>
+              <li>Ensuring accessibility across different device sizes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Navigation -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-nav">
+        <a href="case-study-1.html" class="case-study-nav-item prev">
+          <div class="case-study-nav-label">Previous project</div>
+          <div class="case-study-nav-title">Building a better question experience</div>
+        </a>
+        <a href="case-study-3.html" class="case-study-nav-item next">
+          <div class="case-study-nav-label">Next project</div>
+          <div class="case-study-nav-title">Launching an e-commerce platform</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">Alex<span>.</span></div>
+          <p class="footer-tagline">Senior Product Designer crafting meaningful digital experiences.</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <div class="footer-links-title">Navigation</div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="case-studies.html">Work</a></li>
+              <li><a href="resume.html">Resume</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-links-title">Connect</div>
+            <ul>
+              <li><a href="mailto:alex@alexhicks.design">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/alexandra-cooksey/" target="_blank">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/alexandra-cooksey/" target="_blank" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:alex@alexhicks.design" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Alex Cooksey. All rights reserved.</p>
+        <p>Designed with care in Canada</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
