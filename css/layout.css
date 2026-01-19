@@ -243,6 +243,11 @@
   margin-right: auto;
 }
 
+/* Remove bottom padding when section only contains case-study-wide (image) */
+.section-sm:has(> .container > .case-study-wide:only-child) {
+  padding-bottom: 0;
+}
+
 .case-study-full {
   max-width: none;
   margin-left: calc(-50vw + 50%);

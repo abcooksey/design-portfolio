@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initSmoothScroll();
   initScrollEffects();
+  initLightbox();
 });
 
 /* ===== Navigation ===== */
@@ -167,4 +168,65 @@ function isInViewport(element) {
     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
+}
+
+/* ===== Lightbox ===== */
+
+function initLightbox() {
+  // Create lightbox element if it doesn't exist
+  if (!document.querySelector('.lightbox')) {
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.innerHTML = `
+      <button class="lightbox-close" aria-label="Close lightbox">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="lightbox-content">
+        <img src="" alt="" class="lightbox-image">
+      </div>
+    `;
+    document.body.appendChild(lightbox);
+  }
+
+  const lightbox = document.querySelector('.lightbox');
+  const lightboxImage = lightbox.querySelector('.lightbox-image');
+  const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+  // Add click handlers to all case study images
+  const images = document.querySelectorAll('.case-study-section img, .case-study-wide img, .image-frame img');
+
+  images.forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Close lightbox on button click
+  lightboxClose.addEventListener('click', closeLightbox);
+
+  // Close lightbox on background click
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  // Close lightbox on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+      closeLightbox();
+    }
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
 }

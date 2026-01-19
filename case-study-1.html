@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Case Study: Building a better question experience - Redesigning the question creation flow at Top Hat">
+  <meta name="description" content="Case Study: Redesigning the Foundation of Questions - A multi-year project to rebuild Top Hat's question creation and rendering system">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages.css">
 
-  <title>Building a better question experience - Alex Cooksey</title>
+  <title>Redesigning the Foundation of Questions - Alex Cooksey</title>
 </head>
 <body>
   <!-- Navigation -->
@@ -60,21 +60,21 @@
         <h1 class="mb-6">Building a better question experience</h1>
 
         <p class="text-xl text-secondary" style="max-width: 700px;">
-          How I redesigned Top Hat's question creation flow to reduce cognitive load, decrease support tickets by 40%, and increase completion rates by 25%.
+          How I redesigned Top Hat's question creation flow to improve user experience and unlock new opportunities in STEM.
         </p>
 
         <div class="case-study-meta">
           <div class="case-study-meta-item">
             <span class="case-study-meta-label">Role</span>
-            <span class="case-study-meta-value">Senior Product Designer</span>
+            <span class="case-study-meta-value">Product Designer</span>
           </div>
           <div class="case-study-meta-item">
             <span class="case-study-meta-label">Timeline</span>
-            <span class="case-study-meta-value">4 months</span>
+            <span class="case-study-meta-value">2023-2024</span>
           </div>
           <div class="case-study-meta-item">
             <span class="case-study-meta-label">Team</span>
-            <span class="case-study-meta-value">1 PM, 3 Engineers, 1 Designer</span>
+            <span class="case-study-meta-value">1 PM, 8 Engineers, 2 Designers</span>
           </div>
           <div class="case-study-meta-item">
             <span class="case-study-meta-label">Platform</span>
@@ -89,331 +89,399 @@
   <section class="section-sm">
     <div class="container">
       <div class="case-study-wide">
-        <div class="image-frame scale-in">
-          <div style="background: var(--gradient-hero); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
-            <p class="text-muted">Hero image: Final design mockup</p>
-          </div>
+        <div class="scale-in">
+          <img src="assets/images/main-hero.png" alt="Question Builder interface showing the redesigned question creation experience" style="width: 100%; height: auto;">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Overview -->
-  <section class="section-sm">
-    <div class="container">
-      <div class="case-study-section">
-        <div class="grid grid-3 gap-8 fade-in">
-          <div>
-            <h4 class="mb-3 text-primary">The challenge</h4>
-            <p>Professors struggled to create questions efficiently, leading to frustration, incomplete assessments, and a high volume of support tickets.</p>
-          </div>
-          <div>
-            <h4 class="mb-3 text-primary">The solution</h4>
-            <p>A redesigned question builder with progressive disclosure, inline validation, contextual help, and a streamlined workflow.</p>
-          </div>
-          <div>
-            <h4 class="mb-3 text-primary">The impact</h4>
-            <p>40% reduction in support tickets, 25% increase in question completion rate, and significantly improved user satisfaction.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container">
-    <div class="divider"></div>
-  </div>
-
-  <!-- Context & Background -->
+  <!-- Introduction -->
   <section class="section-sm">
     <div class="container">
       <div class="case-study-section fade-in">
-        <span class="section-label">Context</span>
-        <h2 class="mb-6">Understanding the problem space</h2>
+        <p class="text-lg mb-6">
+          Top Hat is an EdTech company dedicated to empowering educators by facilitating engaging learning experiences. The app’s questions feature enables educators to connect with students, promote active learning, and rapidly adjust materials to meet student needs.
+        </p>
 
         <p class="text-lg mb-6">
-          Top Hat is an EdTech platform that helps professors engage students through interactive classroom experiences. One of its core features is the ability for educators to create various question types for lectures, assignments, and assessments.
+          New features and content types were essential for instructors who are actively looking to drive real and new education outcomes. However, the existing question infrastructure had accumulated significant technical debt, making it difficult to innovate and maintain consistency across the platform. <b>By the time I joined in September 2021 our team was facing three key issues...</b>
         </p>
+      </div>
+    </div>
+  </section>
 
-        <p class="mb-8">
-          When I joined the team, the question creation tool had grown organically over several years. While it offered powerful functionality, the interface had become cluttered and confusing. New users often abandoned the process, and even experienced professors reported frustration with complex question types.
-        </p>
+  <!-- Three Goals -->
+  <section class="section-sm" style="background: var(--color-bg-secondary);">
+    <div class="container">
+      <div class="case-study-section">
+        <div class="grid grid-3 gap-8 fade-in">
+          <div class="card card-bordered p-6">
+            <div class="mb-4">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+            </div>
+            <h4 class="mb-3 text-primary">Dev Velocity</h4>
+            <p><b>Lack of a flexible, scalable foundation</b> made repeat work the norm.</p>
 
-        <div class="metric-callout mb-8">
-          <div class="metric-icon">!</div>
-          <div class="metric-content">
-            <div class="metric-value">35%</div>
-            <div class="metric-label">of new professors abandoned question creation on their first attempt</div>
+            <p>New feature work required 6+ months of dev time, 9+ months to create new question types.</p>
+              
+            <p>Tech debt rendered QA process completely unsustainable.</p>
+          </div>
+          <div class="card card-bordered p-6">
+            <div class="mb-4">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </div>
+            <h4 class="mb-3 text-primary">User Experience</h4>
+            <p>The gradual degradation of questions led to a <b>poor quality, inconsistent user experience.</b></p>
+
+            <p>Question offering began to lag behind competitors without the capacity to catch up.</p>
+              
+            <p>The team was inundated with bugs, many could not be fixed.</p>
+          </div>
+          <div class="card card-bordered p-6">
+            <div class="mb-4">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
+            </div>
+            <h4 class="mb-3 text-primary">Opportunities</h4>
+            <p>Top Hat was <b>missing valuable opportunities in STEM.</b></p>
+
+            <p>The existing foundation could not support the flexible question constructions STEM disciplines required.</p>
+              
+            <p>This prevented transition of our national title offering to e-Texts.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Research & Discovery -->
+  <!-- Crafting the Plan -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Strategy</span>
+        <h2 class="mb-6">So we crafted a plan</h2>
+
+        <p class="text-lg mb-6">
+          I worked alongside Senior Design Manager Greg Rogers to lead the redesign. Our team hypothesized that by reworking the foundation of questions into a flexible, scalable system...
+        </p>
+
+        <div class="card card-bordered p-6 mb-8">
+          <h4 class="mb-4">We could:</h4>
+          <ul class="timeline-achievements">
+            <li>Improve the experience for users & developers</li>
+            <li>Unlock rapid development of new features</li>
+            <li>Empower educators to create better questions</li>
+          </ul>
+        </div>
+
+        <p class="text-lg mb-6">
+          Analyzing customer feedback and working closely with our internal Textbook Authoring team via biweekly brainstorming meetings allowed us to workshop initial design concepts and helped to inform the scope and design for our MVP.
+        </p>
+        <p class="text-lg mb-6">
+          Before diving into designs, I pulled together an in-depth audit of the existing questions framework. We found that existing question forms were inconsistent with no universal components causing questions to render differently across the app.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <img src="assets/images/old-ui.png" alt="Audit of the existing questions framework showing inconsistencies" style="width: 100%; height: auto;">
+      </div>
+    </div>
+  </section>
+
+  <!-- How can we ship this -->
+  <section class="section-sm" style="background: var(--color-bg-secondary);">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <h2 class="mb-6">"How can we simplify this?"</h2>
+
+        <p class="text-lg mb-6">
+          Through our investigation we determined that the lifecycle of a question in Top Hat could be distilled into two main sections: authoring & rendering.
+        </p>
+
+        <p class="text-lg mb-6">
+          We set out to create a single experience for each section, a universal Question Builder where educators could craft questions in a "what you see is what you get" style editor, and a Question Renderer consisting of reusable components to display questions consistently across the app.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <img src="assets/images/initial-design.png" alt="Initial design concepts for the Question Builder and Renderer" style="width: 100%; height: auto;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Flexible Question Builder -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Design</span>
+        <h2 class="mb-6">A flexible universal Question Builder</h2>
+
+        <p class="text-lg mb-6">
+          In order to support the kinds of expressive questions we needed, the Builder had to be flexible. Nothing like this existed in the market so we took inspiration from products like Notion and Confluence where a blank canvas, coupled with interchangeable blocks, allowed for endless customization.
+        </p>
+
+        <p class="text-lg mb-6">
+          This block-based editing system allowed us to leave behind the concept of distinct “question types” opting instead for response blocks that encapsulated functionality. Now, all questions could be created inside a single editor, simplifying the process to add new “question types”. We extended the block idea to features like images; allowing for placement anywhere within a question construction.
+        </p>
+
+        <div class="card card-bordered p-6 mb-8">
+          <p class="text-lg" style="font-style: italic;">
+            In the new foundation, <b>any feature added to the universal Question Builder would automatically be available for any question construction</b>, seamlessly integrated across the entire platform, ensuring consistency and scalability.
+          </p>
+        </div>
+      </div>
+
+      <div class="case-study-wide">
+        <div class="image-frame mb-8">
+          <img src="assets/images/question-builder.gif" alt="The flexible Question Builder interface in action" style="width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flexibility Balance -->
+  <section class="section-sm" style="background: var(--color-bg-secondary);">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Iteration</span>
+        <h2 class="mb-6">How much flexibility is too much?</h2>
+
+        <p class="text-lg mb-6">
+          While flexibility was ideal for STEM, what we quickly realized through user testing was that users were overwhelmed by a completely blank canvas.
+        </p>
+
+        <p class="text-lg mb-6">
+          To bridge the gap, we introduced fully editable “templates” which could be dropped onto the canvas to provide a guide while maintaining the Builder’s flexible nature.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <img src="assets/images/templates.png" alt="Question templates providing guided flexibility" style="width: 100%; height: auto;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Creating Consistency -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Systems</span>
+        <h2 class="mb-6">Creating consistency across the app</h2>
+
+        <p class="text-lg mb-6">
+          Once a question was authored, the job of our Question Renderer was to create a consistent question experience from this point on.
+        </p>
+
+        <p class="text-lg mb-6">
+          The Renderer was designed as a <b>single component comprised of multiple smaller systems</b> that work together to react to the question’s context and present the relevant information. This ensured questions looked great and worked smoothly anywhere in the app.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <img src="assets/images/question-renderer.png" alt="Question Renderer creating consistent experiences across the platform" style="width: 100%; height: auto;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Challenging Assumptions -->
   <section class="section-sm" style="background: var(--color-bg-secondary);">
     <div class="container">
       <div class="case-study-section fade-in">
         <span class="section-label">Research</span>
-        <h2 class="mb-6">Discovering user pain points</h2>
+        <h2 class="mb-6">Challenging our assumptions</h2>
 
-        <p class="mb-8">
-          I began by conducting extensive research to understand where users were struggling and why. This involved analyzing support tickets, reviewing session recordings, and conducting interviews with professors.
+        <p class="text-lg mb-6">
+          Our team knew the Question Builder was a novel concept. We were taking a risk in our assumption that the Builder would meet the needs of users creating both complex and simple question constructions.
         </p>
 
-        <h4 class="mb-4">Research methods</h4>
-        <div class="grid grid-2 gap-6 mb-8">
-          <div class="skill-item">
-            <div class="skill-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <p class="text-lg mb-6">
+          To de-risk our assumptions we decided to conduct a usability study. Through this research we hoped to:
+        </p>
+
+        <div class="card card-bordered p-6 mb-8">
+          <ul class="timeline-achievements">
+            <li>Measure the learning curve to adapt our Question Builder</li>
+            <li>Determine whether that curve was reasonable</li>
+            <li>Find opportunities to improve the experience and optimize onboarding</li>
+          </ul>
+        </div>
+        <p class="text-lg mb-6">
+          Check out the full <a href="https://docs.google.com/presentation/d/16g2RdUquoQTmz3XGMEcvS-JAMaocXssl/edit?usp=sharing&ouid=112864930874897867373&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" style="font-weight: 600; text-decoration: underline; color: var(--color-primary);">Question Builder UXR Summary</a>.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <img src="assets/images/user-testing.png" alt="User testing sessions for the Question Builder" style="width: 100%; height: auto;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Pinpointing Improvements -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Insights</span>
+        <h2 class="mb-6">Pinpointing areas for improvement</h2>
+
+        <p class="text-lg mb-6">
+          The data told us that once users got it, <b>they got it</b>. Question creation speed and success increased drastically across the board on the second attempt.
+        </p>
+
+        <p class="text-lg mb-6">
+          Unfortunately, the learning curve was too steep and would likely prevent a users from returning outside of a structured study. We needed to find away to help users learn the builder more quickly.
+        </p>
+
+        <p class="text-lg mb-6">
+          By analyzing the data we honed in on three strong signals telling us what tripped participants up during the initial experience.
+        </p>
+
+        <div class="grid grid-3 gap-6 mb-8">
+          <div class="card card-bordered p-6">
+            <div class="mb-4">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <polyline points="7 12 10 15 17 8"></polyline>
+              </svg>
+            </div>
+            <h4 style="margin-bottom: 8px;">Setting consistency</h4>
+            <p class="text-sm">
+              <b>83% of users</b> could not find or understand the correctness toggle
+            </p>
+
+            <p class="text-sm">
+              <b>67% of users</b> wanted us to bring back the old correctness checkbox
+            </p>
+
+            <p class="text-sm">
+              <b>50% of users</b> wanted us to “just show” the correctness toggle
+            </p>
+          </div>
+          <div class="card card-bordered p-6">
+            <div class="mb-4">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
               </svg>
             </div>
-            <span class="skill-name">12 User Interviews</span>
+            <h4 style="margin-bottom: 8px;">Looking for feedback</h4>
+            <p class="text-sm">
+              <b>83% of users</b> were looking for more feedback and guidance to learn how to use the builder
+            </p>
           </div>
-          <div class="skill-item">
-            <div class="skill-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
-              </svg>
-            </div>
-            <span class="skill-name">50+ Session Recordings</span>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <div class="card card-bordered p-6">
+            <div class="mb-4">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
               </svg>
             </div>
-            <span class="skill-name">200 Support Ticket Analysis</span>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="18" y1="20" x2="18" y2="10"></line>
-                <line x1="12" y1="20" x2="12" y2="4"></line>
-                <line x1="6" y1="20" x2="6" y2="14"></line>
-              </svg>
-            </div>
-            <span class="skill-name">Analytics Deep Dive</span>
+            <h4 style="margin-bottom: 8px;">Numeric input clarity</h4>
+            <p class="text-sm">
+              <b>67% of users</b> were confused by the lack of a label on the numeric input
+            </p>
+
+            <p class="text-sm">
+              <b>67% of users</b> were unclear what would be in the numeric advanced menu (cog icon)
+            </p>
           </div>
         </div>
 
-        <h4 class="mb-4">Key findings</h4>
+        <p class="text-lg mb-6">
+          We immediately began ideating and iterating on these key areas. We prioritized updates to the correctness toggle and added a new onboarding experience to help first-time users understand how to use the feature.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <img src="assets/images/onboarding.png" alt="New onboarding experience for the Question Builder" style="width: 100%; height: auto;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Maintaining Quality -->
+  <section class="section-sm" style="background: var(--color-bg-secondary);">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Process</span>
+        <h2 class="mb-6">Maintaining quality and consistency through a multi-year project</h2>
+
+        <p class="text-lg mb-6">
+          Few things are worse than giant, bloated design files. Greg and I were adamant from the start that, regardless of the projects length and complexity, drowning in dense documentation and clunky files would not be our fate.
+        </p>
+
+        <p class="text-lg mb-6">
+          Together, we crafted and implemented three strategies that were instrumental in maintaining quality and communication throughout the project.
+        </p>
+
         <div class="card card-bordered p-6 mb-6">
           <div class="process-step mb-6">
             <div class="process-number">1</div>
             <div class="process-content">
-              <h5 class="process-title">Overwhelming initial interface</h5>
-              <p class="process-description">Users were presented with all options at once, regardless of the question type they were creating. This created decision paralysis.</p>
+              <h5 class="process-title">Archiving completed work</h5>
+              <p class="process-description">Messy design explorations stayed in their own individual files. Once we agreed on a design decision we added it to our main file via a new branch and archived the exploration file.</p>
+              <p class="process-description">We maintained one main spec file using pages to separate each new feature. We wrote specs as needed and deleted them using branches once completed.</p>
             </div>
           </div>
 
           <div class="process-step mb-6">
             <div class="process-number">2</div>
             <div class="process-content">
-              <h5 class="process-title">Unclear error states</h5>
-              <p class="process-description">When something went wrong, users received vague error messages that didn't explain what to fix or how.</p>
+              <h5 class="process-title">Writing our own JIRA tickets</h5>
+              <p class="process-description">This kept most written documentation out of our spec files and avoided duplicate work for PMs who would normally translate specs into tickets. It also gave us control over visual requirements and expectations.</p>
             </div>
           </div>
 
           <div class="process-step">
             <div class="process-number">3</div>
             <div class="process-content">
-              <h5 class="process-title">Missing contextual guidance</h5>
-              <p class="process-description">Advanced features lacked explanation, leaving users unsure when or why to use them.</p>
+              <h5 class="process-title">Design finalization column in JIRA</h5>
+              <p class="process-description">If a ticket contained any visual or UX changes it had to go into Design Review before moving to done. This improved quality, reduced time running team QA, and allowed design to provide timely feedback to devs.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- User Quotes -->
-  <section class="section-sm">
-    <div class="container">
-      <div class="case-study-wide">
-        <div class="grid grid-2 gap-6 fade-in">
-          <div class="testimonial">
-            <p class="testimonial-quote">
-              "I just want to create a simple multiple choice question. Why do I need to see all these advanced settings?"
-            </p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar"></div>
-              <div class="testimonial-info">
-                <span class="testimonial-name">Biology Professor</span>
-                <span class="testimonial-role">First-year user</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <p class="testimonial-quote">
-              "I spent 20 minutes trying to figure out why my question wouldn't save. The error message just said 'invalid input.'"
-            </p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar"></div>
-              <div class="testimonial-info">
-                <span class="testimonial-name">Chemistry Professor</span>
-                <span class="testimonial-role">3-year user</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="case-study-wide" style="margin-top: var(--space-8); background: #000; border-radius: var(--radius-xl); padding: var(--space-4);">
+        <img src="assets/images/design-process.png" alt="Design process and documentation workflow" style="width: 100%; height: auto;">
       </div>
     </div>
   </section>
 
-  <!-- Design Process -->
-  <section class="section-sm">
+  <!-- Outcomes -->
+  <section class="section-sm" style="background: var(--gradient-dark);">
     <div class="container">
       <div class="case-study-section fade-in">
-        <span class="section-label">Design</span>
-        <h2 class="mb-6">Crafting the solution</h2>
+        <span class="section-label" style="color: var(--color-primary-light);">Results</span>
+        <h2 class="mb-6" style="color: var(--color-white);">So, what was the outcome?</h2>
 
-        <p class="text-lg mb-8">
-          Armed with research insights, I developed a design strategy centered on three principles: progressive disclosure, clear feedback, and contextual guidance.
-        </p>
-
-        <h4 class="mb-4">Design principles</h4>
-
-        <div class="card card-bordered p-6 mb-8">
-          <h5 class="mb-3">1. Progressive disclosure</h5>
-          <p class="mb-4">Show only what's needed at each step. Advanced options are available but hidden until relevant.</p>
-
-          <div class="before-after">
-            <div class="before-after-item before">
-              <span class="before-after-label">Before</span>
-              <div class="image-frame-bordered" style="background: var(--color-bg-secondary); padding: var(--space-6); border-radius: var(--radius-lg);">
-                <p class="text-sm text-muted text-center">All 15+ options visible at once</p>
-              </div>
-            </div>
-            <div class="before-after-item after">
-              <span class="before-after-label">After</span>
-              <div class="image-frame-bordered" style="background: var(--color-bg-secondary); padding: var(--space-6); border-radius: var(--radius-lg);">
-                <p class="text-sm text-muted text-center">3 core options, expandable sections for advanced</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card card-bordered p-6 mb-8">
-          <h5 class="mb-3">2. Inline validation & clear feedback</h5>
-          <p class="mb-4">Validate inputs as users type. Provide specific, actionable error messages.</p>
-
-          <div class="image-frame" style="background: var(--gradient-hero); padding: var(--space-8);">
-            <p class="text-muted text-center">Inline validation example showing real-time feedback</p>
-          </div>
-        </div>
-
-        <div class="card card-bordered p-6">
-          <h5 class="mb-3">3. Contextual help & guidance</h5>
-          <p class="mb-4">Tooltips and inline help explain features in context, reducing the need for documentation.</p>
-
-          <div class="image-frame" style="background: var(--gradient-hero); padding: var(--space-8);">
-            <p class="text-muted text-center">Contextual tooltip showing feature explanation</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Iteration -->
-  <section class="section-sm" style="background: var(--color-bg-secondary);">
-    <div class="container">
-      <div class="case-study-section fade-in">
-        <span class="section-label">Iteration</span>
-        <h2 class="mb-6">Testing & refining</h2>
-
-        <p class="mb-8">
-          I conducted three rounds of usability testing with professors of varying experience levels. Each round informed improvements before development began.
+        <p class="text-lg mb-8" style="color: rgba(255,255,255,0.8);">
+          While the project is still ongoing we’ve already had some major wins, both internally and externally.
         </p>
 
         <div class="grid grid-3 gap-6 mb-8">
-          <div class="card card-bordered p-6 text-center">
-            <div class="stat-value">Round 1</div>
-            <div class="stat-label">Concept Validation</div>
-            <p class="text-sm mt-4">Tested core navigation and progressive disclosure concept</p>
+          <div class="card p-6" style="background: rgba(255,255,255,0.1);">
+            <p style="color: var(--color-white);">As of March 2024, <b>70-90+% of all multiple choice and numeric questions are created with the new builder</b></p>
           </div>
-          <div class="card card-bordered p-6 text-center">
-            <div class="stat-value">Round 2</div>
-            <div class="stat-label">Interaction Testing</div>
-            <p class="text-sm mt-4">Refined error states and validation timing</p>
+          <div class="card p-6" style="background: rgba(255,255,255,0.1);">
+            <p style="color: var(--color-white);">The new Question Foundation has <b>reduced dev time to create new question types by 67%,</b> requiring only 2 months to add the numeric question type</p>
           </div>
-          <div class="card card-bordered p-6 text-center">
-            <div class="stat-value">Round 3</div>
-            <div class="stat-label">Final Validation</div>
-            <p class="text-sm mt-4">Confirmed improvements with high-fidelity prototype</p>
+          <div class="card p-6" style="background: rgba(255,255,255,0.1);">
+            <p style="color: var(--color-white);">Our team was able to use the Question Renderer as a foundation to <b>run rapid experiments with AI generated questions</b></p>
           </div>
         </div>
 
-        <h4 class="mb-4">Key iteration: Error message placement</h4>
-        <p class="mb-6">
-          Initial testing revealed that error messages at the top of the form went unnoticed. I moved them inline with the problematic field, which increased error resolution rate from 60% to 95%.
+        <p class="mb-6" style="color: rgba(255,255,255,0.8);">
+          <i>Note: as of March 2024, multiple choice and numeric questions are available with additional question types to come.</i>
         </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Final Design -->
-  <section class="section-sm">
-    <div class="container">
-      <div class="case-study-section fade-in">
-        <span class="section-label">Final Design</span>
-        <h2 class="mb-6">The redesigned experience</h2>
-
-        <p class="text-lg mb-8">
-          The final design transformed a cluttered, confusing interface into a streamlined, guided experience that adapts to user needs.
-        </p>
-      </div>
-
-      <div class="case-study-wide">
-        <div class="image-frame mb-8">
-          <div style="background: var(--gradient-hero); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
-            <p class="text-muted">Final design: Question creation interface</p>
-          </div>
-        </div>
-
-        <div class="grid grid-2 gap-6">
-          <div class="image-frame">
-            <div style="background: var(--gradient-hero); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center;">
-              <p class="text-muted">Empty state with guidance</p>
-            </div>
-          </div>
-          <div class="image-frame">
-            <div style="background: var(--gradient-hero); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center;">
-              <p class="text-muted">Advanced options expanded</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Results -->
-  <section class="section-sm" style="background: var(--gradient-dark);">
-    <div class="container">
-      <div class="case-study-section text-center fade-in">
-        <span class="section-label" style="color: var(--color-primary-light);">Results</span>
-        <h2 class="mb-8" style="color: var(--color-white);">Measurable impact</h2>
-
-        <div class="grid grid-3 gap-8">
-          <div class="stat">
-            <div class="stat-value" style="color: var(--color-accent-light);" data-count="40" data-suffix="%">0%</div>
-            <div class="stat-label" style="color: rgba(255,255,255,0.7);">Reduction in Support Tickets</div>
-          </div>
-          <div class="stat">
-            <div class="stat-value" style="color: var(--color-accent-light);" data-count="25" data-suffix="%">0%</div>
-            <div class="stat-label" style="color: rgba(255,255,255,0.7);">Increase in Completion Rate</div>
-          </div>
-          <div class="stat">
-            <div class="stat-value" style="color: var(--color-accent-light);" data-count="4.2" data-suffix="/5">0/5</div>
-            <div class="stat-label" style="color: rgba(255,255,255,0.7);">User Satisfaction Score</div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -423,36 +491,44 @@
     <div class="container">
       <div class="case-study-section fade-in">
         <span class="section-label">Reflection</span>
-        <h2 class="mb-6">What I learned</h2>
+        <h2 class="mb-6">Key learnings</h2>
 
-        <div class="two-col" style="gap: var(--space-12);">
+        <div class="two-col" style="gap: var(--space-12); margin-bottom: var(--space-8); align-items: start;">
           <div>
-            <h4 class="mb-4">Key takeaways</h4>
+            <h4 class="mb-4">What worked well</h4>
             <ul class="timeline-achievements">
-              <li>Progressive disclosure is powerful, but requires careful testing to get right</li>
-              <li>Error messages are a critical part of the user experience, not an afterthought</li>
-              <li>Contextual help reduces cognitive load more effectively than documentation</li>
-              <li>Involving users throughout the process catches issues early</li>
+              <li>Close collaboration with engineering from day one</li>
+              <li>Iterative testing helped us catch issues early</li>
+              <li>Block-based approach provided the flexibility we needed</li>
+              <li>Strong design system maintained consistency throughout</li>
             </ul>
           </div>
 
           <div>
-            <h4 class="mb-4">What I'd do differently</h4>
+            <h4 class="mb-4">What I learned</h4>
             <ul class="timeline-achievements">
-              <li>Conduct more interviews with new users specifically</li>
-              <li>Create a more robust component library earlier in the process</li>
-              <li>Set up analytics tracking before launch to capture baseline metrics</li>
+              <li>Multi-year projects require clear documentation</li>
+              <li>User research should be continuous, not just at the start</li>
+              <li>Flexibility should be balanced with guided experiences</li>
             </ul>
           </div>
+
         </div>
+        <p>
+          <i>This project was made possible by all of the incredibly talented members, both past and present, of the Questions & Gradebook team.</i>
+        </p>
+
+        <p>
+         <i>Huge thank you to Greg Rogers for being a fantastic mentor and challenging me to think outside the box, to Product Managers Elia, Ana, and Adrian for fearlessly guiding our team, and to Rahul, Sean and all of the talented devs who always advocated for quality and accessibility. I could not have asked for better partners.</i>
+        </p>
       </div>
     </div>
   </section>
 
   <!-- Case Study Navigation -->
-  <section class="section-sm">
+  <section class="section-sm" style="padding: 0;">
     <div class="container">
-      <div class="case-study-nav">
+      <div class="case-study-nav" style="margin-top: 0;">
         <a href="case-study-3.html" class="case-study-nav-item prev">
           <div class="case-study-nav-label">Previous project</div>
           <div class="case-study-nav-title">Launching an E-Commerce Platform</div>
@@ -488,30 +564,23 @@
           <div>
             <div class="footer-links-title">Connect</div>
             <ul>
-              <li><a href="mailto:alex@alexhicks.design">Email</a></li>
-              <li><a href="https://www.linkedin.com/in/alexandra-cooksey/" target="_blank">LinkedIn</a></li>
+              <li><a href="https://www.linkedin.com/in/alexandra-cooksey/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </ul>
           </div>
         </div>
 
         <div class="footer-social">
-          <a href="https://www.linkedin.com/in/alexandra-cooksey/" target="_blank" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/alexandra-cooksey/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-            </svg>
-          </a>
-          <a href="mailto:alex@alexhicks.design" aria-label="Email">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
           </a>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 Alex Cooksey. All rights reserved.</p>
-        <p>Designed with care in Canada</p>
+        <p>&copy; 2026 Alex Cooksey. All rights reserved.</p>
+        <p>Designed with Claude Code</p>
       </div>
     </div>
   </footer>
