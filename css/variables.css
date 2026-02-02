@@ -15,12 +15,12 @@
   /* Secondary - Coral Pink */
   --color-secondary: #F472B6;
   --color-secondary-light: #F9A8D4;
-  --color-secondary-dark: #DB2777;
+  --color-secondary-dark: #BE185D;  /* Darkened from #DB2777 for WCAG AA (5.24:1 on subtle bg) */
 
   /* Accent - Teal */
   --color-accent: #14B8A6;
   --color-accent-light: #5EEAD4;
-  --color-accent-dark: #0D9488;
+  --color-accent-dark: #047857;  /* Darkened from #0D9488 for WCAG AA (5.56:1) */
 
   /* Success - Mint */
   --color-success: #34D399;
@@ -33,7 +33,7 @@
   /* Text */
   --color-text-primary: #334155;
   --color-text-secondary: #64748B;
-  --color-text-muted: #94A3B8;
+  --color-text-muted: #5C6B7D;  /* Darkened from #94A3B8 for WCAG AA (5.38:1) */
   --color-text-inverse: #FFFFFF;
 
   /* Backgrounds */

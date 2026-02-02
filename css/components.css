@@ -461,7 +461,6 @@
 .image-frame {
   border-radius: var(--radius-xl);
   overflow: hidden;
-  box-shadow: var(--shadow-lg);
 }
 
 .image-frame img {
@@ -590,4 +589,18 @@
   transform: scale(1.02);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
   border-radius: var(--radius-xl);
+}
+
+.image-frame {
+  transition: box-shadow 0.2s ease;
+}
+
+.image-frame:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.no-img-hover img:hover {
+  transform: none;
+  box-shadow: none;
+  border-radius: 0;
 }

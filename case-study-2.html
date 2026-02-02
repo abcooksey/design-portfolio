@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Case Study: Adapting Desktop for Mobile - Redesigning search experience for mobile users">
+  <meta name="description" content="Case Study: Adapting a Desktop Search Feature for Mobile - How I adapted Top Hat's search feature for the mobile app">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages.css">
 
-  <title>Adapting Desktop for Mobile - Alex Cooksey</title>
+  <title>Adapting a Desktop Search Feature for Mobile - Alex Cooksey</title>
 </head>
 <body>
   <!-- Navigation -->
@@ -49,15 +49,15 @@
     <div class="container">
       <div class="fade-in">
         <div class="tags mb-6">
-          <span class="tag tag-primary">EdTech</span>
-          <span class="tag tag-secondary">Mobile</span>
+          <span class="tag tag-primary">Top Hat</span>
+          <span class="tag tag-accent">EdTech</span>
           <span class="tag tag-neutral">Responsive Design</span>
         </div>
 
-        <h1 class="mb-6">Adapting a Desktop Design for Mobile</h1>
+        <h1 class="mb-6">Adapting a Desktop Search Feature for Mobile</h1>
 
         <p class="text-xl text-secondary" style="max-width: 700px;">
-          How I reimagined Top Hat's search experience for mobile users, balancing feature parity with touch-first interactions to improve mobile engagement by 60%.
+          Reimagining Top Hat's search experience for mobile users, achieving feature parity with responsive designs and smooth mobile interactions.
         </p>
 
         <div class="case-study-meta">
@@ -67,15 +67,15 @@
           </div>
           <div class="case-study-meta-item">
             <span class="case-study-meta-label">Timeline</span>
-            <span class="case-study-meta-value">3 months</span>
+            <span class="case-study-meta-value">2023</span>
           </div>
           <div class="case-study-meta-item">
             <span class="case-study-meta-label">Team</span>
-            <span class="case-study-meta-value">1 PM, 2 Engineers, 1 Designer</span>
+            <span class="case-study-meta-value">1 PM, 5 Engineers, 1 Designers</span>
           </div>
           <div class="case-study-meta-item">
             <span class="case-study-meta-label">Platform</span>
-            <span class="case-study-meta-value">iOS & Android</span>
+            <span class="case-study-meta-value">Web Application</span>
           </div>
         </div>
       </div>
@@ -87,201 +87,258 @@
     <div class="container">
       <div class="case-study-wide">
         <div class="image-frame scale-in">
-          <div style="background: var(--gradient-hero); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
-            <p class="text-muted">Mobile app screens showing before and after</p>
-          </div>
+          <img src="assets/images/main-hero-search.png" alt="Mobile search feature screens showing the adapted design" style="width: 100%; display: block;">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Overview -->
-  <section class="section-sm">
-    <div class="container">
-      <div class="case-study-section">
-        <div class="grid grid-3 gap-8 fade-in">
-          <div>
-            <h4 class="mb-3 text-primary">The challenge</h4>
-            <p>The desktop search experience didn't translate well to mobile, leading to poor engagement and frustrated users on smaller screens.</p>
-          </div>
-          <div>
-            <h4 class="mb-3 text-primary">The solution</h4>
-            <p>A mobile-first redesign with touch-optimized interactions, smart filters, and progressive search results.</p>
-          </div>
-          <div>
-            <h4 class="mb-3 text-primary">The impact</h4>
-            <p>60% increase in mobile search engagement, 35% reduction in search abandonment, improved app store ratings.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container"><div class="divider"></div></div>
-
-  <!-- Context -->
+  <!-- Introduction -->
   <section class="section-sm">
     <div class="container">
       <div class="case-study-section fade-in">
-        <span class="section-label">Context</span>
-        <h2 class="mb-6">The mobile gap</h2>
+        <p class="text-lg mb-6">
+          In 2023, Top Hat sought to improve its textbook reading experience by introducing a search tool allowing users to navigate their content using key terms and phrases. This feature was highly requested by students for both desktop and mobile devices, but was initially designed and developed for desktop.
+        </p>
 
         <p class="text-lg mb-6">
-          Top Hat's content library contains millions of questions and resources. While the desktop search worked well, mobile users struggled with the same interface squeezed onto smaller screens.
+          During my time on Top Hat's mobile team I led the design to adapt this new search feature for the mobile app.
         </p>
-
-        <p class="mb-8">
-          Analytics showed that 40% of our users accessed the platform via mobile devices, but mobile search usage was disproportionately low. Users would start a search on mobile, then abandon it to continue on desktop.
-        </p>
-
-        <div class="metric-callout mb-8">
-          <div class="metric-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-              <line x1="12" y1="18" x2="12.01" y2="18"></line>
-            </svg>
-          </div>
-          <div class="metric-content">
-            <div class="metric-value">40%</div>
-            <div class="metric-label">of users access via mobile, but only 15% complete searches</div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- Research -->
+  <!-- Responsive Design -->
   <section class="section-sm" style="background: var(--color-bg-secondary);">
     <div class="container">
       <div class="case-study-section fade-in">
-        <span class="section-label">Research</span>
-        <h2 class="mb-6">Understanding mobile behavior</h2>
+        <h2 class="mb-6">Responsive design isn't enough for a great mobile experience</h2>
 
-        <p class="mb-8">
-          I conducted contextual inquiry sessions to understand how professors used their phones in real teaching scenarios. The insights were eye-opening.
+        <p class="text-lg mb-6">
+          Prior to the launch of this feature, mobile users had no way to find specific information in their textbook. While desktop users could leverage “Ctrl + F” or “CMD + F” as a workaround, mobile users, who have no equivalent, were left to scroll endlessly through pages of content to find what they needed.
         </p>
 
-        <div class="card card-bordered p-6 mb-6">
+        <p class="text-lg mb-6">
+          In addition to this, many of the design choices made for desktop did not translate to the app. The reduced screen size and vastly different standard interactions and patterns on mobile devices meant the solution had to be redesigned for iOS and Android users.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <img src="assets/images/responsive-design.png" alt="Comparison showing desktop design choices that don't translate to mobile" style="width: 100%; height: auto;">
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Point of Entry -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <h2 class="mb-6">To start, we needed a point of entry</h2>
+
+        <p class="text-lg mb-6">
+          Before diving into specifics, we needed to determine where users would access the feature from. Our entry point needed to achieve two goals:
+        </p>
+
+        <div class="card card-bordered p-6 mb-8">
           <div class="process-step mb-6">
             <div class="process-number">1</div>
             <div class="process-content">
-              <h5 class="process-title">Different contexts, different needs</h5>
-              <p class="process-description">Mobile users were often in-the-moment: between classes, commuting, or quickly searching during lecture prep. They needed faster, simpler interactions.</p>
-            </div>
-          </div>
-
-          <div class="process-step mb-6">
-            <div class="process-number">2</div>
-            <div class="process-content">
-              <h5 class="process-title">Touch target problems</h5>
-              <p class="process-description">Filter checkboxes and small buttons were nearly impossible to tap accurately. Users often selected wrong options.</p>
+              <h5 class="process-title">It had to be easily discoverable</h5>
+              <p class="process-description">This was a rare new feature and search was not part of our user's current workflow. We needed to place the entry point somewhere so prominent no users would miss it.</p>
             </div>
           </div>
 
           <div class="process-step">
-            <div class="process-number">3</div>
+            <div class="process-number">2</div>
             <div class="process-content">
-              <h5 class="process-title">Information overload</h5>
-              <p class="process-description">Search results showed too much information per item, requiring excessive scrolling to find relevant content.</p>
+              <h5 class="process-title">It should be indicative of the search area</h5>
+              <p class="process-description">The feature could search all content in the user's active course, but it could not search within the bounds of an individual piece of content, nor could it search other courses a user was enrolled in. The entry point needed to reflect the search area it covered.</p>
             </div>
           </div>
         </div>
+
+        <p class="text-lg mb-6">
+          I experimented with a few options, gathering feedback from developers and through critique sessions with the larger design team.
+        </p>
+      </div>
+
+      <!-- Exploration options grid -->
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+          <div>
+            <h5 class="mb-4">Option 1: Explored locations for a simple search button</h5>
+            <div class="image-frame" style="background: #101319; padding: 16px;">
+              <img src="assets/images/entry-location-1.png" alt="Entry point exploration - simple search button placement" style="width: 100%; height: auto;">
+            </div>
+          </div>
+          <div>
+            <h5 class="mb-4">Option 2: Tested a pull-down interaction similar to gmail</h5>
+            <div class="image-frame no-img-hover" style="aspect-ratio: 766 / 667; display: flex; align-items: center; justify-content: center; padding: 16px; background: #101319;">
+              <img src="assets/images/entry-location-2.gif" alt="Entry point exploration - expanded table of contents" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;">
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study-section fade-in" style="margin-top: var(--space-10); margin-bottom: var(--space-10);">
+          <h3 class="mb-4">We found balance between discoverability and relative proximity</h3>
+          <p class="text-lg mb-6">
+            Placing the search button beside the content filter tags kept the entry point in close proximity to its search area as well as other related actions for sorting content. The location was also similar to what was implemented on desktop, creating a consistent experience.
+          </p>
+          <p class="text-lg mb-6">
+            The other options we explored didn't give us the discoverability we were looking for and felt too universal, as if the user could search the entire app.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 2fr 3fr; gap: var(--space-6);">
+          <div class="image-frame no-img-hover" style="position: relative; background: #101319;">
+            <img src="assets/images/entry-location-3.gif" alt="Entry point exploration - pull-down drawer" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-height: calc(100% - 32px); max-width: calc(100% - 16px); width: auto;">
+          </div>
+          <div class="image-frame" style="background: #101319; padding: 16px; display: flex; align-items: center; justify-content: center;">
+            <img src="assets/images/entry-location-4.png" alt="Entry point exploration - alternative placement" style="max-width: 100%; height: 100%; width: auto;">
+          </div>
+        </div>
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
       </div>
     </div>
   </section>
 
-  <!-- Design Solutions -->
+  <!-- Cohesion Across Screens -->
+  <section class="section-sm" style="background: var(--color-bg-secondary);">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <h2 class="mb-6">Our next challenge: create cohesion across screens</h2>
+
+        <p class="text-lg mb-6">
+          One of the biggest hurdles we faced adapting the search feature for mobile was the inability to show users the results list and related content at the same time. We needed to come up with a different way to draw a relationship between the two screens.
+        </p>
+
+        <p class="text-lg mb-6">
+          Initially, I experimented with a pop-up window that could be opened with a press and hold interaction. This pattern is similar to what Instagram, Pinterest, and many online shopping sites use to display a preview of content before making a selection.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+          <div class="image-frame no-img-hover" style="aspect-ratio: 766 / 667; display: flex; align-items: center; justify-content: center; padding: var(--space-3); background: #101319;">
+            <img src="assets/images/results-1.gif" alt="Press and hold interaction showing search results list" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;">
+          </div>
+          <div class="image-frame no-img-hover" style="padding: var(--space-3); background: #101319;">
+            <img src="assets/images/results-2.png" alt="Press and hold interaction showing content preview" style="width: 100%; height: auto;">
+          </div>
+        </div>
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simpler Choice -->
   <section class="section-sm">
     <div class="container">
       <div class="case-study-section fade-in">
-        <span class="section-label">Design</span>
-        <h2 class="mb-6">Mobile-first solutions</h2>
+        <h2 class="mb-6">Sometimes, the simpler choice is the right one</h2>
 
-        <div class="card card-bordered p-6 mb-8">
-          <h5 class="mb-3">1. Touch-optimized filters</h5>
-          <p class="mb-4">Replaced small checkboxes with large, tappable chips. Filters are now accessible via a bottom sheet for thumb-friendly interaction.</p>
-          <div class="image-frame" style="background: var(--gradient-hero); padding: var(--space-8);">
-            <p class="text-muted text-center">Filter chips and bottom sheet design</p>
+        <p class="text-lg mb-6">
+          While it felt sleek and certainly did the job, the clear downside to the press and hold interaction was discoverability. We were concerned that users who aren't familiar with this pattern wouldn't discover it on the page, thus defeating its purpose.
+        </p>
+
+        <p class="text-lg mb-6">
+          Instead we leveraged a commonly understood mobile pattern and converted the search experience to use a full-height bottom sheet. This method allowed us to draw clearer boundaries around the search experience and include a permanent back button making it easy to move quickly between the results list and content.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+          <div class="image-frame" style="aspect-ratio: 766 / 666; display: flex; align-items: center; justify-content: center; background: #101319; padding: 16px;">
+            <img src="assets/images/final-design-1.gif" alt="Bottom sheet search experience showing results list" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;">
+          </div>
+          <div class="image-frame" style="background: #101319; padding: 16px;">
+            <img src="assets/images/final-design-2.png" alt="Bottom sheet search experience showing content view with back button" style="width: 100%; height: auto;">
           </div>
         </div>
-
-        <div class="card card-bordered p-6 mb-8">
-          <h5 class="mb-3">2. Progressive disclosure</h5>
-          <p class="mb-4">Search results show condensed cards by default. Users can expand for details or swipe to quick-add content to their course.</p>
-          <div class="image-frame" style="background: var(--gradient-hero); padding: var(--space-8);">
-            <p class="text-muted text-center">Expandable search result cards</p>
-          </div>
-        </div>
-
-        <div class="card card-bordered p-6">
-          <h5 class="mb-3">3. Smart suggestions</h5>
-          <p class="mb-4">Added recent searches, trending content, and personalized suggestions to reduce typing on mobile keyboards.</p>
-          <div class="image-frame" style="background: var(--gradient-hero); padding: var(--space-8);">
-            <p class="text-muted text-center">Smart search suggestions</p>
-          </div>
-        </div>
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
       </div>
     </div>
   </section>
 
-  <!-- Results -->
-  <section class="section-sm" style="background: var(--gradient-dark);">
-    <div class="container">
-      <div class="case-study-section text-center fade-in">
-        <span class="section-label" style="color: var(--color-primary-light);">Results</span>
-        <h2 class="mb-8" style="color: var(--color-white);">Measurable impact</h2>
-
-        <div class="grid grid-3 gap-8">
-          <div class="stat">
-            <div class="stat-value" style="color: var(--color-accent-light);" data-count="60" data-suffix="%">0%</div>
-            <div class="stat-label" style="color: rgba(255,255,255,0.7);">Increase in mobile search use</div>
-          </div>
-          <div class="stat">
-            <div class="stat-value" style="color: var(--color-accent-light);" data-count="35" data-suffix="%">0%</div>
-            <div class="stat-label" style="color: rgba(255,255,255,0.7);">Reduction in abandonment</div>
-          </div>
-          <div class="stat">
-            <div class="stat-value" style="color: var(--color-accent-light);">4.6</div>
-            <div class="stat-label" style="color: rgba(255,255,255,0.7);">App store rating (up from 3.8)</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Reflection -->
-  <section class="section-sm">
+  <!-- Communication -->
+  <section class="section-sm" style="background: var(--color-bg-secondary);">
     <div class="container">
       <div class="case-study-section fade-in">
-        <span class="section-label">Reflection</span>
-        <h2 class="mb-6">Key learnings</h2>
+        <h2 class="mb-6">Complexity necessitates clear, consistent communication</h2>
 
-        <div class="two-col" style="gap: var(--space-12);">
-          <div>
-            <h4 class="mb-4">What worked</h4>
-            <ul class="timeline-achievements">
-              <li>Contextual inquiry revealed insights that analytics couldn't capture</li>
-              <li>Bottom sheets proved more intuitive than modal dialogs on mobile</li>
-              <li>Reducing information density improved comprehension and speed</li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="mb-4">Challenges overcome</h4>
-            <ul class="timeline-achievements">
-              <li>Balancing feature parity with mobile simplicity required tough prioritization</li>
-              <li>Coordinating with iOS and Android teams on platform-specific patterns</li>
-              <li>Ensuring accessibility across different device sizes</li>
-            </ul>
-          </div>
-        </div>
+        <p class="text-lg mb-6">
+          This project contained a significant amount of interaction design and detail, which meant good communication with developers and high quality specs were vital.
+        </p>
+
+        <p class="text-lg mb-6">
+          To keep us all on the same page, I crafted an in-depth spec document for us all to refer to. This document included:
+        </p>
+
+        <ul class="timeline-achievements mb-8">
+          <li>Separate specs for iOS and Android</li>
+          <li>Interactive prototypes to describe interactions</li>
+          <li>A complete overview of the flow</li>
+          <li>Leading tokens</li>
+          <li>Instructions to access image files</li>
+          <li>Light and dark mode considerations</li>
+        </ul>
+
+        <p class="text-lg mb-6">
+          I worked closely with the developers for both iOS and Android to collaboratively navigate challenges that arose throughout the implementation process. We used Slack huddles to quickly get on issues and brainstorm solutions synchronously.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <img src="assets/images/file-organization.png" alt="Spec documentation for iOS and Android development" style="width: 100%; height: auto;">
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Outcome -->
+  <section class="section-sm" style="padding-bottom: 0;">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <h2 class="mb-6">The outcome: consistency across all devices</h2>
+
+        <p class="text-lg mb-6">
+          In the end, Top Hat's mobile app often struggled to keep up with the desktop version, leaving mobile users with an inferior experience.
+        </p>
+
+        <p class="text-lg mb-6">
+          Prioritizing the use of native iOS and Android components and opting for common mobile patterns allowed the team to move fast. As a result we were able to ship our final solution alongside the desktop version to provide users with a consistent experience across all devices.
+        </p>
+
+        <p class="text-lg mb-8">
+          At the end of the project, we delivered a highly requested feature to our users, improved the student experience, and significantly reduced support tickets.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acknowledgment -->
+  <section class="section-sm" style="padding-top: 0;">
+    <div class="container">
+      <div class="divider" style="margin: var(--space-8) auto; max-width: 200px;"></div>
+      <div class="case-study-section fade-in">
+        <p class="mb-6">
+          <i>Thank you to the mobile Product Manager Erina and to my fellow Designer Ilene for being such incredible partners throughout this project. Your feedback and support brought the final product to the next level.</i>
+        </p>
+        <p>
+          <i>Thank you as well to the amazing developers who worked on this project: Simon, Brian, and Blair your candid feedback, dedication to quality, and readiness to jump on a huddle to talk me through technical constraints was deeply appreciated.</i>
+        </p>
+        <p>
+          <i>The success of this project is due to the incredible level of expertise and dedication upheld by every member of the Top Hat Mobile Team.</i>
+        </p>
       </div>
     </div>
   </section>
 
   <!-- Case Study Navigation -->
-  <section class="section-sm">
+  <section class="section-sm" style="padding: 0;">
     <div class="container">
-      <div class="case-study-nav">
+      <div class="case-study-nav" style="margin-top: 0;">
         <a href="case-study-1.html" class="case-study-nav-item prev">
           <div class="case-study-nav-label">Previous project</div>
           <div class="case-study-nav-title">Redesigning the Foundation of Questions</div>

@@ -208,6 +208,23 @@ function initLightbox() {
     });
   });
 
+  // Make entire image-frame containers clickable for lightbox
+  const imageFrames = document.querySelectorAll('.image-frame');
+  imageFrames.forEach(frame => {
+    const img = frame.querySelector('img');
+    if (img) {
+      frame.style.cursor = 'pointer';
+      frame.addEventListener('click', (e) => {
+        if (e.target === frame || !e.target.closest('img')) {
+          lightboxImage.src = img.src;
+          lightboxImage.alt = img.alt;
+          lightbox.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    }
+  });
+
   // Close lightbox on button click
   lightboxClose.addEventListener('click', closeLightbox);
 
