@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Case Study: Redesigning the Foundation of Questions - A multi-year project to rebuild Top Hat's question creation and rendering system">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>A</text></svg>">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +31,6 @@
       <div class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="case-studies.html" class="nav-link active">Work</a>
-        <a href="resume.html" class="nav-link">Resume</a>
         <a href="index.html#contact" class="btn btn-primary btn-sm nav-cta">Let's talk</a>
       </div>
 
@@ -42,7 +44,6 @@
     <div class="nav-mobile">
       <a href="index.html" class="nav-link">Home</a>
       <a href="case-studies.html" class="nav-link active">Work</a>
-      <a href="resume.html" class="nav-link">Resume</a>
       <a href="index.html#contact" class="btn btn-primary w-full mt-4">Let's talk</a>
     </div>
   </nav>
@@ -90,10 +91,11 @@
   <!-- Hero Image -->
   <section class="section-sm">
     <div class="container">
-      <div class="case-study-wide">
-        <div class="scale-in">
+      <div class="case-study-wide scale-in">
+        <div class="image-frame">
           <img src="assets/images/main-hero.png" alt="Question Builder interface showing the redesigned question creation experience" style="width: 100%; height: auto;">
         </div>
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
       </div>
     </div>
   </section>
@@ -194,7 +196,10 @@
       </div>
 
       <div class="case-study-wide" style="margin-top: var(--space-8);">
-        <img src="assets/images/old-ui.png" alt="Audit of the existing questions framework showing inconsistencies" style="width: 100%; height: auto;">
+        <div class="image-frame">
+          <img src="assets/images/old-ui.png" alt="Audit of the existing questions framework showing inconsistencies" style="width: 100%; height: auto;">
+        </div>
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
       </div>
     </div>
   </section>
@@ -215,7 +220,10 @@
       </div>
 
       <div class="case-study-wide" style="margin-top: var(--space-8);">
-        <img src="assets/images/initial-design.png" alt="Initial design concepts for the Question Builder and Renderer" style="width: 100%; height: auto;">
+        <div class="image-frame">
+          <img src="assets/images/initial-design.png" alt="Initial design concepts for the Question Builder and Renderer" style="width: 100%; height: auto;">
+        </div>
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
       </div>
     </div>
   </section>
@@ -246,6 +254,7 @@
         <div class="image-frame mb-8">
           <img src="assets/images/question-builder.gif" alt="The flexible Question Builder interface in action" style="width: 100%; height: auto;">
         </div>
+        <p class="text-sm text-muted" style="text-align: center;">Click to expand</p>
       </div>
     </div>
   </section>
@@ -267,7 +276,10 @@
       </div>
 
       <div class="case-study-wide" style="margin-top: var(--space-8);">
-        <img src="assets/images/templates.png" alt="Question templates providing guided flexibility" style="width: 100%; height: auto;">
+        <div class="image-frame">
+          <img src="assets/images/templates.png" alt="Question templates providing guided flexibility" style="width: 100%; height: auto;">
+        </div>
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
       </div>
     </div>
   </section>
@@ -289,7 +301,10 @@
       </div>
 
       <div class="case-study-wide" style="margin-top: var(--space-8);">
-        <img src="assets/images/question-renderer.png" alt="Question Renderer creating consistent experiences across the platform" style="width: 100%; height: auto;">
+        <div class="image-frame">
+          <img src="assets/images/question-renderer.png" alt="Question Renderer creating consistent experiences across the platform" style="width: 100%; height: auto;">
+        </div>
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
       </div>
     </div>
   </section>
@@ -322,7 +337,10 @@
       </div>
 
       <div class="case-study-wide" style="margin-top: var(--space-8);">
-        <img src="assets/images/user-testing.png" alt="User testing sessions for the Question Builder" style="width: 100%; height: auto;">
+        <div class="image-frame">
+          <img src="assets/images/user-testing.png" alt="User testing sessions for the Question Builder" style="width: 100%; height: auto;">
+        </div>
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
       </div>
     </div>
   </section>
@@ -404,7 +422,10 @@
       </div>
 
       <div class="case-study-wide" style="margin-top: var(--space-8);">
-        <img src="assets/images/onboarding.png" alt="New onboarding experience for the Question Builder" style="width: 100%; height: auto;">
+        <div class="image-frame">
+          <img src="assets/images/onboarding.png" alt="New onboarding experience for the Question Builder" style="width: 100%; height: auto;">
+        </div>
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
       </div>
     </div>
   </section>
@@ -452,8 +473,11 @@
         </div>
       </div>
 
-      <div class="case-study-wide" style="margin-top: var(--space-8); background: #000; border-radius: var(--radius-xl); padding: var(--space-4);">
-        <img src="assets/images/design-process.png" alt="Design process and documentation workflow" style="width: 100%; height: auto;">
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <div class="image-frame" style="background: #000; padding: var(--space-4);">
+          <img src="assets/images/design-process.png" alt="Design process and documentation workflow" style="width: 100%; height: auto;">
+        </div>
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
       </div>
     </div>
   </section>
@@ -560,7 +584,7 @@
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="case-studies.html">Work</a></li>
-              <li><a href="resume.html">Resume</a></li>
+
             </ul>
           </div>
           <div>

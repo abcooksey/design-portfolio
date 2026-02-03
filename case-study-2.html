@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Case Study: Adapting a Desktop Search Feature for Mobile - How I adapted Top Hat's search feature for the mobile app">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>A</text></svg>">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +30,6 @@
       <div class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="case-studies.html" class="nav-link active">Work</a>
-        <a href="resume.html" class="nav-link">Resume</a>
         <a href="index.html#contact" class="btn btn-primary btn-sm nav-cta">Let's talk</a>
       </div>
       <button class="nav-toggle" aria-label="Toggle navigation">
@@ -39,7 +41,6 @@
     <div class="nav-mobile">
       <a href="index.html" class="nav-link">Home</a>
       <a href="case-studies.html" class="nav-link active">Work</a>
-      <a href="resume.html" class="nav-link">Resume</a>
       <a href="index.html#contact" class="btn btn-primary w-full mt-4">Let's talk</a>
     </div>
   </nav>
@@ -86,10 +87,11 @@
   <!-- Hero Image -->
   <section class="section-sm">
     <div class="container">
-      <div class="case-study-wide">
-        <div class="image-frame scale-in">
+      <div class="case-study-wide scale-in">
+        <div class="image-frame">
           <img src="assets/images/main-hero-search.png" alt="Mobile search feature screens showing the adapted design" style="width: 100%; display: block;">
         </div>
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
       </div>
     </div>
   </section>
@@ -125,7 +127,9 @@
       </div>
 
       <div class="case-study-wide" style="margin-top: var(--space-8);">
-        <img src="assets/images/responsive-design.png" alt="Comparison showing desktop design choices that don't translate to mobile" style="width: 100%; height: auto;">
+        <div class="image-frame">
+          <img src="assets/images/responsive-design.png" alt="Comparison showing desktop design choices that don't translate to mobile" style="width: 100%; height: auto;">
+        </div>
         <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
       </div>
     </div>
@@ -175,11 +179,12 @@
           </div>
           <div>
             <h5 class="mb-4">Option 2: Tested a pull-down interaction similar to gmail</h5>
-            <div class="image-frame no-img-hover" style="aspect-ratio: 766 / 667; display: flex; align-items: center; justify-content: center; padding: 16px; background: #101319;">
+            <div class="image-frame" style="aspect-ratio: 766 / 667; display: flex; align-items: center; justify-content: center; padding: 16px; background: #101319;">
               <img src="assets/images/entry-location-2.gif" alt="Entry point exploration - expanded table of contents" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;">
             </div>
           </div>
         </div>
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
 
         <div class="case-study-section fade-in" style="margin-top: var(--space-10); margin-bottom: var(--space-10);">
           <h3 class="mb-4">We found balance between discoverability and relative proximity</h3>
@@ -192,7 +197,7 @@
         </div>
 
         <div class="cs-image-grid-weighted">
-          <div class="image-frame no-img-hover cs-absolute-img-container" style="background: #101319;">
+          <div class="image-frame cs-absolute-img-container" style="background: #101319;">
             <img src="assets/images/entry-location-3.gif" alt="Entry point exploration - pull-down drawer" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-height: calc(100% - 32px); max-width: calc(100% - 16px); width: auto;">
           </div>
           <div class="image-frame" style="background: #101319; padding: 16px; display: flex; align-items: center; justify-content: center;">
@@ -221,10 +226,10 @@
 
       <div class="case-study-wide" style="margin-top: var(--space-8);">
         <div class="cs-image-grid">
-          <div class="image-frame no-img-hover" style="aspect-ratio: 766 / 667; display: flex; align-items: center; justify-content: center; padding: var(--space-3); background: #101319;">
+          <div class="image-frame" style="aspect-ratio: 766 / 667; display: flex; align-items: center; justify-content: center; padding: var(--space-3); background: #101319;">
             <img src="assets/images/results-1.gif" alt="Press and hold interaction showing search results list" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;">
           </div>
-          <div class="image-frame no-img-hover" style="padding: var(--space-3); background: #101319;">
+          <div class="image-frame" style="padding: var(--space-3); background: #101319;">
             <img src="assets/images/results-2.png" alt="Press and hold interaction showing content preview" style="width: 100%; height: auto;">
           </div>
         </div>
@@ -291,7 +296,9 @@
       </div>
 
       <div class="case-study-wide" style="margin-top: var(--space-8);">
-        <img src="assets/images/file-organization.png" alt="Spec documentation for iOS and Android development" style="width: 100%; height: auto;">
+        <div class="image-frame">
+          <img src="assets/images/file-organization.png" alt="Spec documentation for iOS and Android development" style="width: 100%; height: auto;">
+        </div>
         <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
       </div>
     </div>
@@ -366,7 +373,7 @@
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="case-studies.html">Work</a></li>
-              <li><a href="resume.html">Resume</a></li>
+
             </ul>
           </div>
           <div>

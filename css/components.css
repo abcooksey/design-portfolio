@@ -577,30 +577,12 @@
 }
 
 /* Clickable image indicator */
-.case-study-section img,
-.case-study-wide img,
-.image-frame img {
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-radius 0.2s ease;
-}
-
-.case-study-section img:hover,
-.case-study-wide img:hover,
-.image-frame img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-  border-radius: var(--radius-xl);
-}
-
 .image-frame {
-  transition: box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
 .image-frame:hover {
+  transform: scale(1.02);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-}
-
-.no-img-hover img:hover {
-  transform: none;
-  box-shadow: none;
-  border-radius: 0;
 }
