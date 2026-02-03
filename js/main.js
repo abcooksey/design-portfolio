@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initScrollEffects();
   initLightbox();
+  initProjectFilters();
 });
 
 /* ===== Navigation ===== */
@@ -246,4 +247,34 @@ function initLightbox() {
     lightbox.classList.remove('active');
     document.body.style.overflow = '';
   }
+}
+
+/* ===== Project Filters ===== */
+
+function initProjectFilters() {
+  const filterButtons = document.querySelectorAll('.filter-tag');
+  const projects = document.querySelectorAll('.projects-grid > *');
+
+  if (!filterButtons.length || !projects.length) return;
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Update active button
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const filter = button.textContent.trim().toLowerCase();
+
+      projects.forEach(project => {
+        const tagElements = project.querySelectorAll('.tag');
+        const tags = Array.from(tagElements).map(tag => tag.textContent.trim().toLowerCase());
+
+        if (filter === 'all' || tags.includes(filter)) {
+          project.classList.remove('filter-hidden');
+        } else {
+          project.classList.add('filter-hidden');
+        }
+      });
+    });
+  });
 }

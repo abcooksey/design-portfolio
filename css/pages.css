@@ -214,6 +214,11 @@
   margin-bottom: var(--space-8);
 }
 
+.hero-subtitle a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
 .hero-cta {
   display: flex;
   flex-wrap: wrap;
@@ -700,9 +705,65 @@
   gap: var(--space-8);
 }
 
+.projects-grid > * {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.projects-grid > .filter-hidden {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Case Study Image Grids ===== */
+
+.cs-image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+.cs-image-grid-weighted {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: var(--space-6);
+}
+
+.cs-absolute-img-container {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .cs-image-grid,
+  .cs-image-grid-weighted {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-absolute-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    aspect-ratio: 1 / 1.5;
+  }
+
+  .cs-absolute-img-container img {
+    position: static;
+    transform: none;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .cs-image-grid .image-frame[style*="aspect-ratio"],
+  .cs-image-grid-weighted .image-frame[style*="aspect-ratio"] {
+    aspect-ratio: auto !important;
   }
 }
 
