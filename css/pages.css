@@ -678,6 +678,69 @@
   }
 }
 
+/* ===== About Page ===== */
+
+.about-hero {
+  padding: var(--space-32) 0 var(--space-16);
+}
+
+.about-headshot {
+  display: flex;
+  justify-content: center;
+}
+
+.about-headshot img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: var(--radius-2xl);
+  object-fit: cover;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.value-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+}
+
+.value-icon {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-3);
+}
+
+.value-title {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-3);
+}
+
+.value-description {
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+@media (max-width: 992px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero .two-col {
+    text-align: center;
+  }
+}
+
 /* ===== Animations ===== */
 
 /* Fade in on scroll */

@@ -76,6 +76,7 @@ function initNavigation() {
     const href = link.getAttribute('href');
     if (href === currentPath ||
         (currentPath.includes('case-study') && href === 'case-studies.html') ||
+        (currentPath.includes('about') && href === 'about.html') ||
         (currentPath === '/' && href === 'index.html')) {
       link.classList.add('active');
     }
