@@ -178,73 +178,17 @@
         </p>
 
         <p class="text-lg mb-6">
-          This audit revealed the full scope of inconsistency — duplicate components with different behaviors, color tokens that didn't match across platforms, and spacing values that varied between design and code. It gave us a clear picture of where the gaps were and helped prioritize what to tackle first.
+          This audit revealed the full scope of inconsistency. Duplicate components with different behaviors, color tokens that didn't match across platforms, inaccessible components, and variations in application of shadows, typography, and spacing values. It gave us a clear picture of where the gaps were and helped prioritize what to tackle first.
+        </p>
+
+        <p class="text-lg mb-6">
+          I used the audit to create a work list of everything that needed to be addressed. This allowed the design team to track the status of the project, priority of work, and identify what could be picked up next.
         </p>
       </div>
 
       <div class="case-study-wide" style="margin-top: var(--space-8);">
         <div class="image-frame">
-          <div style="background: var(--gradient-hero); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
-            <p class="text-muted">Design system audit findings</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Foundations -->
-  <section class="section-sm" style="background: var(--color-bg-secondary);">
-    <div class="container">
-      <div class="case-study-section fade-in">
-        <span class="section-label">Foundations</span>
-        <h2 class="mb-6">Rebuilding from the ground up</h2>
-
-        <p class="text-lg mb-6">
-          With audit findings in hand, I focused on establishing strong foundations before tackling individual components. This meant reworking the core design tokens — color, typography, spacing, and elevation — to create a consistent visual language that worked across web and mobile.
-        </p>
-
-        <p class="text-lg mb-6">
-          I worked closely with engineering to ensure tokens were structured in a way that mapped cleanly to code variables, reducing the translation gap between design files and implementation.
-        </p>
-
-        <div class="card card-bordered p-6 mb-8">
-          <p class="text-lg" style="font-style: italic;">
-            By establishing a <b>shared token architecture between design and code</b>, we eliminated ambiguity and ensured that what designers built in Figma matched what engineers shipped in production.
-          </p>
-        </div>
-      </div>
-
-      <div class="case-study-wide" style="margin-top: var(--space-8);">
-        <div class="image-frame">
-          <div style="background: var(--gradient-hero); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
-            <p class="text-muted">Design token architecture and color system</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Component Architecture -->
-  <section class="section-sm">
-    <div class="container">
-      <div class="case-study-section fade-in">
-        <span class="section-label">Design</span>
-        <h2 class="mb-6">Designing a scalable component architecture</h2>
-
-        <p class="text-lg mb-6">
-          With the foundations in place, I moved on to redesigning the component library. Each component was evaluated against real product use cases to ensure it met the needs of the teams building features day to day.
-        </p>
-
-        <p class="text-lg mb-6">
-          I introduced a tiered component structure — primitives, composites, and patterns — that gave teams building blocks at different levels of abstraction. Primitives like buttons and inputs could be composed into more complex components like form groups, which in turn formed recognizable patterns like search bars and data tables.
-        </p>
-      </div>
-
-      <div class="case-study-wide" style="margin-top: var(--space-8);">
-        <div class="image-frame">
-          <div style="background: var(--gradient-hero); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
-            <p class="text-muted">Component architecture — primitives, composites, and patterns</p>
-          </div>
+          <img src="assets/images/work-list.png" alt="Design system audit findings" style="width: 100%; display: block;">
         </div>
       </div>
     </div>
@@ -255,40 +199,100 @@
     <div class="container">
       <div class="case-study-section fade-in">
         <span class="section-label">Process</span>
-        <h2 class="mb-6">Building with — not for — the team</h2>
+        <h2 class="mb-6">Scrappy approach to design system evolution</h2>
 
         <p class="text-lg mb-6">
-          A design system only works if people actually use it. From the start, I embedded collaboration into the process. I ran regular design critiques where product designers could pressure-test new components against their feature work, and held pairing sessions with engineers to validate that components were practical to implement.
+          Instead of competing for roadmap space, I embedded design system progress directly into existing feature work. I partnered closely with a developer to identify moments where feature needs overlapped with gaps or areas for improvement in our design system. I then used those moments to create or refresh components and push them to Backpack as part of the feature work.
         </p>
 
         <p class="text-lg mb-6">
-          I also established a contribution model so the system wasn't bottlenecked by a single team. Clear guidelines for proposing new components, requesting changes, and documenting decisions meant Backpack could evolve with the product rather than falling behind it.
+          The three key parts of this process that helped keep momentum high and avoid process overhead were:
         </p>
 
         <div class="card card-bordered p-6 mb-6">
           <div class="process-step mb-6">
             <div class="process-number">1</div>
             <div class="process-content">
-              <h5 class="process-title">Component review sessions</h5>
-              <p class="process-description">Weekly sessions where designers and engineers reviewed proposed components against real feature requirements, catching gaps early.</p>
+              <h5 class="process-title">Feature-driven system evolution</h5>
+              <p class="process-description">Design system updates were embedded directly into feature work, avoiding roadmap competition and accelerating adoption.</p>
             </div>
           </div>
 
           <div class="process-step mb-6">
             <div class="process-number">2</div>
             <div class="process-content">
-              <h5 class="process-title">Design-engineering pairing</h5>
-              <p class="process-description">Regular pairing sessions to align on implementation details, prop structures, and accessibility requirements before build.</p>
+              <h5 class="process-title">Design-developer pairing</h5>
+              <p class="process-description"> I collaborated closely with the developer to ensure components were practical to build, accessible by default, and scalable for both teams.</p>
             </div>
           </div>
 
           <div class="process-step">
             <div class="process-number">3</div>
             <div class="process-content">
-              <h5 class="process-title">Contribution guidelines</h5>
-              <p class="process-description">A documented process for anyone on the team to propose additions or changes to Backpack, keeping the system alive and evolving.</p>
+              <h5 class="process-title">Continuous alignment & enablement</h5>
+              <p class="process-description">I implemented regular design system syncs to keep designers aligned, surface issues early, and ensure we were ready to ship updates when opportunities arose.</p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Foundations -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Foundations</span>
+        <h2 class="mb-6">Rebuilding from the ground up</h2>
+
+        <p class="text-lg mb-6">
+          As the individual component work was ongoing, I focused on establishing a stronger foundation to support the new components. This meant reworking the core design tokens including colour, typography, spacing, and shadows to create a consistent visual language that worked across our products.
+        </p>
+
+        <p class="text-lg mb-6">
+          I worked closely with engineering to ensure tokens were structured in a way that mapped cleanly to code variables, reducing the translation gap between design files and implementation.
+        </p>
+
+        <div class="card card-bordered p-6 mb-8">
+          <p class="text-lg">
+            By establishing a <b>shared token architecture between design and developers</b>, we eliminated ambiguity and ensured that what designers built in Figma matched what engineers shipped in production.
+          </p>
+        </div>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <div class="image-frame">
+          <img src="assets/images/colour-system.png" alt="Design token architecture and color system" style="width: 100%; display: block;">
+        </div>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <div class="image-frame">
+          <img src="assets/images/shadow-implementation.png" alt="Shadow implementation" style="width: 100%; display: block;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Component Architecture -->
+  <section class="section-sm" style="background: var(--color-bg-secondary);">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Design</span>
+        <h2 class="mb-6">Designing a scalable component architecture</h2>
+
+        <p class="text-lg mb-6">
+          With the foundations in place, I moved on to redesigning the component library. Each component was evaluated against real product use cases to ensure it met the needs of the teams building features day to day.
+        </p>
+
+        <p class="text-lg mb-6">
+          Creating simple to maintain components that were flexible and easy for component consumers to use was the key goal of the library redesign. I created a two tier system comprised of cogs like buttons and icons that could be fitted together to create a second tier of more complex components like menus and main navigation bars that would be used repeatedly in the product. Keeping the components as clean as possible and avoiding over-engineering the library keeps the system maintainable and easy to build with.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <div class="image-frame">
+          <img src="assets/images/validated-input.png" alt="Component architecture — primitives, composites, and patterns" style="width: 100%; display: block;">
         </div>
       </div>
     </div>
@@ -336,7 +340,7 @@
             <p style="color: var(--color-white);"><b>Reduced design-to-dev handoff friction</b> by establishing shared tokens and component specs that both designers and engineers reference</p>
           </div>
           <div class="card p-6" style="background: rgba(255,255,255,0.1);">
-            <p style="color: var(--color-white);"><b>Improved cross-platform consistency</b> with a unified component library serving both web and mobile product surfaces</p>
+            <p style="color: var(--color-white);"><b>Improved cross-product consistency</b> with a unified component library serving the teacher app, parent app, and marketing team</p>
           </div>
           <div class="card p-6" style="background: rgba(255,255,255,0.1);">
             <p style="color: var(--color-white);"><b>Increased system adoption</b> across product teams through better documentation, contribution guidelines, and onboarding resources</p>
