@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case Study: Redesigning Prodigy's Backpack Design System - Leading the redesign of a scalable design system to unify product experiences">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>A</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+
+  <title>Reimagining Prodigy's Backpack Design System - Alex Cooksey</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Alex<span>.</span></a>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="case-studies.html" class="nav-link active">Work</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="index.html#contact" class="btn btn-primary btn-sm nav-cta">Let's talk</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="nav-mobile">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="case-studies.html" class="nav-link active">Work</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="index.html#contact" class="btn btn-primary w-full mt-4">Let's talk</a>
+    </div>
+  </nav>
+
+  <!-- Case Study Hero -->
+  <section class="case-study-hero">
+    <div class="container">
+      <div class="fade-in">
+        <div class="tags mb-6">
+          <span class="tag tag-primary">Prodigy Education</span>
+          <span class="tag tag-accent">EdTech</span>
+          <span class="tag tag-neutral">Design System</span>
+          <span class="tag tag-neutral">Systems Thinking</span>
+        </div>
+
+        <h1 class="mb-6">Reimagining Prodigy's Backpack design system</h1>
+
+        <p class="text-xl text-secondary" style="max-width: 700px;">
+          Leading the reimagining of Prodigy's foundational design system to improve consistency, accelerate development, and scale across a growing product suite.
+        </p>
+
+        <div class="case-study-meta">
+          <div class="case-study-meta-item">
+            <span class="case-study-meta-label">Role</span>
+            <span class="case-study-meta-value">Lead Product Designer</span>
+          </div>
+          <div class="case-study-meta-item">
+            <span class="case-study-meta-label">Timeline</span>
+            <span class="case-study-meta-value">2024-2025</span>
+          </div>
+          <div class="case-study-meta-item">
+            <span class="case-study-meta-label">Team</span>
+            <span class="case-study-meta-value">5 Designers, 1 Engineer</span>
+          </div>
+          <div class="case-study-meta-item">
+            <span class="case-study-meta-label">Platform</span>
+            <span class="case-study-meta-value">Web Application</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Image -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-wide scale-in">
+        <div class="image-frame">
+          <img src="assets/images/hero-design-system.png" alt="Backpack design system overview" style="width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <p class="text-lg mb-6">
+          Prodigy Education is an EdTech company whose game-based learning platform reaches millions of students worldwide. As the product evolved and the team grew, the existing design system, Backpack, had become fragmented. Components were inconsistent across platforms, documentation was outdated, and designers and engineers were frequently rebuilding the same patterns from scratch.
+        </p>
+
+        <p class="text-lg mb-6">
+          When I joined the team, lack of buy in from senior stakeholders had completely stalled the redesign project. <b>Alongside one brave Developer, I took on the role of leading and championing the redesign</b>, shipping components strategically and transforming the system from a loose collection of broken components into a cohesive, well-documented system that could scale with the product and the team.
+        </p>
+
+        <p class="text-lg mb-6">
+          The redesign project faced a few fundamental challenges...
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem -->
+  <section class="section-sm" style="background: var(--color-bg-secondary);">
+    <div class="container">
+      <div class="case-study-section">
+        <span class="section-label">The Challenge</span>
+        <div class="grid grid-3 gap-8 fade-in">
+          <div class="card card-bordered p-6">
+            <div class="mb-4">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h4 class="mb-3 text-primary">No stakeholder buy in</h4>
+            <p>Feature work consistently won out over infrastructure investment, and <b>previous efforts to prioritize the redesign had stalled.</b></p>
+
+            <p>Without dedicated resources or executive sponsorship, the project had no path forward.</p>
+          </div>
+          <div class="card card-bordered p-6">
+            <div class="mb-4">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </div>
+            <h4 class="mb-3 text-primary">Outdated source of truth</h4>
+            <p>Components had diverged across web and mobile, with <b>no single source of truth</b> for design patterns.</p>
+
+            <p>Teams were creating one-off variations instead of reusing shared components and we had no reliable onboarding resource for design.</p>
+          </div>
+          <div class="card card-bordered p-6">
+            <div class="mb-4">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <h4 class="mb-3 text-primary">Slowed <br>velocity</h4>
+            <p>Without a reliable system, <b>design and development cycles were slower</b> than they needed to be.</p>
+
+            <p>Designers and Developers wasted valuable time digging for components and repeating the same work over and over again.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Audit -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Discovery</span>
+        <h2 class="mb-6">Starting with a comprehensive audit</h2>
+
+        <p class="text-lg mb-6">
+          Before redesigning anything, I needed to understand what we were working with. I conducted a thorough audit of the existing Backpack system, cataloging every component across Figma libraries, the codebase, and the live product.
+        </p>
+
+        <p class="text-lg mb-6">
+          This audit revealed the full scope of inconsistency — duplicate components with different behaviors, color tokens that didn't match across platforms, and spacing values that varied between design and code. It gave us a clear picture of where the gaps were and helped prioritize what to tackle first.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <div class="image-frame">
+          <div style="background: var(--gradient-hero); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
+            <p class="text-muted">Design system audit findings</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Foundations -->
+  <section class="section-sm" style="background: var(--color-bg-secondary);">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Foundations</span>
+        <h2 class="mb-6">Rebuilding from the ground up</h2>
+
+        <p class="text-lg mb-6">
+          With audit findings in hand, I focused on establishing strong foundations before tackling individual components. This meant reworking the core design tokens — color, typography, spacing, and elevation — to create a consistent visual language that worked across web and mobile.
+        </p>
+
+        <p class="text-lg mb-6">
+          I worked closely with engineering to ensure tokens were structured in a way that mapped cleanly to code variables, reducing the translation gap between design files and implementation.
+        </p>
+
+        <div class="card card-bordered p-6 mb-8">
+          <p class="text-lg" style="font-style: italic;">
+            By establishing a <b>shared token architecture between design and code</b>, we eliminated ambiguity and ensured that what designers built in Figma matched what engineers shipped in production.
+          </p>
+        </div>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <div class="image-frame">
+          <div style="background: var(--gradient-hero); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
+            <p class="text-muted">Design token architecture and color system</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Component Architecture -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Design</span>
+        <h2 class="mb-6">Designing a scalable component architecture</h2>
+
+        <p class="text-lg mb-6">
+          With the foundations in place, I moved on to redesigning the component library. Each component was evaluated against real product use cases to ensure it met the needs of the teams building features day to day.
+        </p>
+
+        <p class="text-lg mb-6">
+          I introduced a tiered component structure — primitives, composites, and patterns — that gave teams building blocks at different levels of abstraction. Primitives like buttons and inputs could be composed into more complex components like form groups, which in turn formed recognizable patterns like search bars and data tables.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <div class="image-frame">
+          <div style="background: var(--gradient-hero); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
+            <p class="text-muted">Component architecture — primitives, composites, and patterns</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaboration -->
+  <section class="section-sm" style="background: var(--color-bg-secondary);">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Process</span>
+        <h2 class="mb-6">Building with — not for — the team</h2>
+
+        <p class="text-lg mb-6">
+          A design system only works if people actually use it. From the start, I embedded collaboration into the process. I ran regular design critiques where product designers could pressure-test new components against their feature work, and held pairing sessions with engineers to validate that components were practical to implement.
+        </p>
+
+        <p class="text-lg mb-6">
+          I also established a contribution model so the system wasn't bottlenecked by a single team. Clear guidelines for proposing new components, requesting changes, and documenting decisions meant Backpack could evolve with the product rather than falling behind it.
+        </p>
+
+        <div class="card card-bordered p-6 mb-6">
+          <div class="process-step mb-6">
+            <div class="process-number">1</div>
+            <div class="process-content">
+              <h5 class="process-title">Component review sessions</h5>
+              <p class="process-description">Weekly sessions where designers and engineers reviewed proposed components against real feature requirements, catching gaps early.</p>
+            </div>
+          </div>
+
+          <div class="process-step mb-6">
+            <div class="process-number">2</div>
+            <div class="process-content">
+              <h5 class="process-title">Design-engineering pairing</h5>
+              <p class="process-description">Regular pairing sessions to align on implementation details, prop structures, and accessibility requirements before build.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="process-number">3</div>
+            <div class="process-content">
+              <h5 class="process-title">Contribution guidelines</h5>
+              <p class="process-description">A documented process for anyone on the team to propose additions or changes to Backpack, keeping the system alive and evolving.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documentation -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Documentation</span>
+        <h2 class="mb-6">Making the system self-serve</h2>
+
+        <p class="text-lg mb-6">
+          One of the biggest issues with the old Backpack was that knowledge lived in people's heads rather than in the system. I prioritized documentation as a first-class deliverable — not an afterthought.
+        </p>
+
+        <p class="text-lg mb-6">
+          Every component shipped with usage guidelines, dos and don'ts, accessibility notes, and live examples. I structured the documentation so that both designers and engineers could find what they needed without asking someone.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <div class="image-frame">
+          <div style="background: var(--gradient-hero); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
+            <p class="text-muted">Component documentation with usage guidelines and examples</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Outcomes -->
+  <section class="section-sm" style="background: var(--gradient-dark);">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label" style="color: var(--color-primary-light);">Results</span>
+        <h2 class="mb-6" style="color: var(--color-white);">Impact of the redesign</h2>
+
+        <p class="text-lg mb-8" style="color: rgba(255,255,255,0.8);">
+          The redesigned Backpack system has already made a measurable impact on how the team works and what we ship.
+        </p>
+
+        <div class="grid grid-3 gap-6 mb-8">
+          <div class="card p-6" style="background: rgba(255,255,255,0.1);">
+            <p style="color: var(--color-white);"><b>Reduced design-to-dev handoff friction</b> by establishing shared tokens and component specs that both designers and engineers reference</p>
+          </div>
+          <div class="card p-6" style="background: rgba(255,255,255,0.1);">
+            <p style="color: var(--color-white);"><b>Improved cross-platform consistency</b> with a unified component library serving both web and mobile product surfaces</p>
+          </div>
+          <div class="card p-6" style="background: rgba(255,255,255,0.1);">
+            <p style="color: var(--color-white);"><b>Increased system adoption</b> across product teams through better documentation, contribution guidelines, and onboarding resources</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reflection -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Reflection</span>
+        <h2 class="mb-6">Key learnings</h2>
+
+        <div class="two-col" style="gap: var(--space-12); margin-bottom: var(--space-8); align-items: start;">
+          <div>
+            <h4 class="mb-4">What worked well</h4>
+            <ul class="timeline-achievements">
+              <li>Conducting a thorough audit before proposing changes</li>
+              <li>Embedding collaboration with engineers from day one</li>
+              <li>Treating documentation as a core deliverable</li>
+              <li>Creating a contribution model that distributed ownership</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="mb-4">What I learned</h4>
+            <ul class="timeline-achievements">
+              <li>A design system is a product — it needs its own roadmap and advocacy</li>
+              <li>Adoption is driven by usefulness, not mandates</li>
+              <li>Aligning token structures between design and code early saves significant rework</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Navigation -->
+  <section class="section-sm" style="padding: 0;">
+    <div class="container">
+      <div class="case-study-nav" style="margin-top: 0;">
+        <a href="case-study-3.html" class="case-study-nav-item prev">
+          <div class="case-study-nav-label">Previous project</div>
+          <div class="case-study-nav-title">Launching an E-Commerce Platform</div>
+        </a>
+        <a href="case-study-1.html" class="case-study-nav-item next">
+          <div class="case-study-nav-label">Next project</div>
+          <div class="case-study-nav-title">Redesigning the Foundation of Questions</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">Alex<span>.</span></div>
+          <p class="footer-tagline">
+            Senior Product Designer crafting meaningful digital experiences in EdTech and beyond.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div>
+            <div class="footer-links-title">Navigation</div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="case-studies.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-links-title">Connect</div>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/alexandra-cooksey/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/alexandra-cooksey/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alex Cooksey. All rights reserved.</p>
+        <p>Designed with Claude Code</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
