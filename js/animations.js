@@ -12,12 +12,27 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ===== Text Rotation Animation ===== */
 
 function initTextRotation() {
-  const rotatingText = document.querySelector('.text-rotate');
+  const wrapper = document.querySelector('.text-rotate-wrapper');
+  if (!wrapper) return;
 
-  if (!rotatingText) return;
+  function checkMultiline() {
+    const spans = wrapper.querySelectorAll('.text-rotate span');
+    const wrapperWidth = wrapper.clientWidth;
+    let needsMultiline = false;
 
-  // Text rotation is handled by CSS animation
-  // This function can be extended for more complex interactions
+    spans.forEach(span => {
+      span.style.whiteSpace = 'nowrap';
+      if (span.scrollWidth > wrapperWidth) {
+        needsMultiline = true;
+      }
+      span.style.whiteSpace = '';
+    });
+
+    wrapper.classList.toggle('multiline', needsMultiline);
+  }
+
+  checkMultiline();
+  window.addEventListener('resize', checkMultiline);
 }
 
 /* ===== Parallax Effect ===== */

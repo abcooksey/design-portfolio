@@ -106,12 +106,12 @@
 
 .nav-mobile {
   display: none;
-  position: fixed;
-  top: 68px;
+  position: absolute;
+  top: 100%;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: var(--color-bg-primary);
+  min-height: 100vh;
+  background: #ffffff;
   padding: var(--space-8);
   flex-direction: column;
   gap: var(--space-4);
@@ -254,6 +254,27 @@
   display: block;
   height: 1.4em;
   line-height: 1.4;
+}
+
+.text-rotate-wrapper.multiline {
+  height: 2.8em;
+}
+
+.text-rotate-wrapper.multiline .text-rotate span {
+  height: 2.8em;
+}
+
+.text-rotate-wrapper.multiline .text-rotate {
+  animation-name: textRotateMultiline;
+}
+
+@keyframes textRotateMultiline {
+  0%, 16% { transform: translateY(0); }
+  20%, 36% { transform: translateY(-2.8em); }
+  40%, 56% { transform: translateY(-5.6em); }
+  60%, 76% { transform: translateY(-8.4em); }
+  80%, 96% { transform: translateY(-11.2em); }
+  100% { transform: translateY(-14em); }
 }
 
 /* ===== About Preview Section ===== */
