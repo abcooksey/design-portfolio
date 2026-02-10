@@ -15,7 +15,6 @@ design-portfolio/
 ├── case-studies.html       # All projects overview
 ├── case-study-1.html       # Question Experience (Top Hat)
 ├── case-study-2.html       # Mobile Search Adaptation
-├── case-study-3.html       # E-Commerce Platform
 ├── resume.html             # Resume/experience page
 ├── css/
 │   ├── variables.css       # Design tokens (colors, typography, spacing)
