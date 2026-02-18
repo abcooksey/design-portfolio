@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case Study: Quick Quiz - Designing a real-time classroom game mode to reclaim in-class math time">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>A</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+
+  <title>Reclaiming the classroom with Quick Quiz - Alex Cooksey</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Alex<span>.</span></a>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="case-studies.html" class="nav-link active">Work</a>
+        <a href="about.html" class="nav-link">About</a>
+
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="nav-mobile">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="case-studies.html" class="nav-link active">Work</a>
+      <a href="about.html" class="nav-link">About</a>
+
+    </div>
+  </nav>
+
+  <!-- Case Study Hero -->
+  <section class="case-study-hero">
+    <div class="container">
+      <div class="fade-in">
+        <div class="tags mb-6">
+          <span class="tag tag-primary">Prodigy Education</span>
+          <span class="tag tag-accent">EdTech</span>
+          <span class="tag tag-neutral">Product Strategy</span>
+          <span class="tag tag-neutral">Cross-team Collaboration</span>
+        </div>
+
+        <h1 class="mb-6">Reclaiming the classroom with Quick Quiz</h1>
+
+        <p class="text-xl text-secondary" style="max-width: 700px;">
+          Designing a real-time whole-class game mode to reclaim in-class math time. Quick Quiz drove a +6% lift in teacher activation and repositioned Prodigy from a "free time" game to an in-class review tool.
+        </p>
+
+        <div class="case-study-meta">
+          <div class="case-study-meta-item">
+            <span class="case-study-meta-label">Role</span>
+            <span class="case-study-meta-value">Senior Product Designer</span>
+          </div>
+          <div class="case-study-meta-item">
+            <span class="case-study-meta-label">Timeline</span>
+            <span class="case-study-meta-value">Q4 2024</span>
+          </div>
+          <div class="case-study-meta-item">
+            <span class="case-study-meta-label">Team</span>
+            <span class="case-study-meta-value">1 PM, 6 Engineers, 1 Designers</span>
+          </div>
+          <div class="case-study-meta-item">
+            <span class="case-study-meta-label">Platform</span>
+            <span class="case-study-meta-value">Web Application</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Image -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-wide scale-in">
+        <div class="image-frame">
+          <img src="assets/images/quick-quiz-hero.png" alt="Quick Quiz classroom gameplay interface showing real-time student participation" style="width: 100%; height: auto;">
+        </div>
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Define the Problem -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">The Problem</span>
+        <h2 class="mb-6">Prodigy was losing its place in the classroom</h2>
+
+        <p class="text-lg mb-6">
+          For many years, Prodigy was synonymous with "free time." Teachers often assigned it during station rotation, free choice time, or allowed students to play Prodigy once they were finished their main work. But post-COVID, classroom realities shifted dramatically. Behavioral regression, widening learning gaps, and tighter schedules meant free time was disappearing.
+        </p>
+
+        <p class="text-lg mb-6">
+          Meanwhile, competitors were moving fast. EdTech tools designed for structured, high time on task, whole-class use were gaining traction, and Prodigy's activation numbers were declining. In order to maintain our place in the classroom we needed to evolve.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Challenge Cards -->
+  <section class="section-sm" style="background: var(--color-bg-secondary);">
+    <div class="container">
+      <div class="case-study-section">
+        <span class="section-label">The Challenge</span>
+        <div class="grid grid-3 gap-8 fade-in">
+          <div class="card card-bordered p-6">
+            <div class="mb-4">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <h4 class="mb-3 text-primary">Disappearing free time</h4>
+            <p>Post-COVID classrooms had <b>less unstructured time</b> than ever before.</p>
+
+            <p>Teacher activation was trending downwards, <b>dropping by -17% YOY</b> in Q2 of 2024.</p>
+          </div>
+          <div class="card card-bordered p-6">
+            <div class="mb-4">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h4 class="mb-3 text-primary">Legacy tech constraints</h4>
+            <p>Prodigy's game codebase was <b>over a decade old.</b></p>
+
+            <p>New features had to work within significant technical constraints and existing data pipelines.</p>
+          </div>
+          <div class="card card-bordered p-6">
+            <div class="mb-4">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h4 class="mb-3 text-primary">Historically siloed teams</h4>
+            <p>The Game Team and "Grown-ups" Team <b>rarely shipped a feature together.</b></p>
+
+            <p>Competing priorities and processes made clear communication vital.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Challenge Framing -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <h2 class="mb-6">Framing the challenge</h2>
+
+        <p class="text-lg mb-6">
+          In order to regain footing in the classroom, Prodigy needed to support new use cases. Market research conducted by an outside firm pointed to whole-class review, specifically “entrance” and “exit” tickets, as our biggest opportunity. These tickets were essentially mini quizzes leveraged by teachers at the beginning and end of class to quickly gauge student understanding on a specific topic.
+        </p>
+
+        <p class="text-lg mb-6">
+          This left us to answer the question...
+        </p>
+
+        <div class="card card-bordered p-6 mb-8">
+          <h4 class="mb-4">How might we...</h4>
+          <p class="text-lg">Transform Prodigy from an independent reward activity into a synchronous, teacher-led classroom tool, using our existing game infrastructure?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research & Insight -->
+  <section class="section-sm" style="background: var(--color-bg-secondary);">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Research</span>
+        <h2 class="mb-6">Learning fast with limited resources</h2>
+
+        <p class="text-lg mb-6">
+          Before jumping into design work, I needed to understand the new market segment we were looking to step into. At the same, with the project starting in Q4, the team was under pressure to ship quickly in order to launch in time for teachers going back to school following winter break. Missing this deadline meant waiting until Fall 2025 for another chance to meaningfully address the decline in teacher activation.
+        </p>
+
+        <p class="text-lg mb-6">
+          Our tight timelines required scrappy thinking. I conducted a focused competitor analysis, interviewed in-house education specialists (all of whom were former teachers), and synthesized existing research on post-COVID classroom dynamics. The goal wasn't exhaustive research, it was rapidly gathering enough of a signal to move confidently..
+        </p>
+
+        <div class="card card-bordered p-6 mb-8">
+          <h4 class="mb-4">Key insights emerged:</h4>
+          <ul class="timeline-achievements">
+            <li><b>Existing products followed a very clear flow</b> — content seletion, optional game setup, student join lobby, sharable live reporting, final teacher report.</li>
+            <li><b>Balancing engagement and overstimulation is key</b> — teachers reported that students become overstimulated quickly when gameplay is too engaging, which becomes disruptive to learning. Conversely, they get bored easily if the game isn't fun. Striking the right balance is important.</li>
+            <li><b>Content needs to be specific</b> — teachers wanted to measure understanding of very specific skills being taught in class that day i.e. single digit addition to 9. Topics or concepts would be too broad.</li>
+            <li><b>Real-time feedback is critical</b> — teachers need to see who's struggling and who's ahead so they can troubleshoot in real time.</li>
+          </ul>
+        </div>
+
+        <p class="text-lg mb-6">
+          Based on these insights, I framed a hypothesis: <b>If we strip away Prodigy's game distractions and give teachers real-time control over a focused quiz experience, we can unlock a new in-class use case.</b>
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <div class="cs-image-grid">
+          <div>
+            <h5 class="mb-4">Competitive landscape</h5>
+            <div class="image-frame" style="aspect-ratio: 4/3; overflow: hidden;">
+              <img src="assets/images/competitive-analysis.png" alt="Competitive analysis showing market landscape" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+          <div>
+            <h5 class="mb-4">Insight synthesis</h5>
+            <div class="image-frame" style="aspect-ratio: 4/3; overflow: hidden;">
+              <img src="assets/images/insights.png" alt="Insight synthesis board showing research findings" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ideation & Concept Development -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Ideation</span>
+        <h2 class="mb-6">Translating research into concepts</h2>
+
+        <p class="text-lg mb-6">
+          With insights in hand, I began exploring what the teacher side of a synchronous classroom experience could look like. I partnered closely with our in-house Education Specialists to workshop early concepts, pressure-testing ideas against their experience with real classroom scenarios.
+        </p>
+
+        <p class="text-lg mb-6">
+          At the same time, the game team worked to design a new focused game mode that leveraged our existing battle mechanics and question interface, limiting distractions and increasing time on task.
+        </p>
+
+        <p class="text-lg mb-6">
+          Throughout this process, our teams met weekly to ensure we were designing puzzle pieces that fit together. Keeping expectations aligned and validating assumptions throughout the project was critical.
+        </p>
+
+        <h4 class="mb-4" style="margin-top: var(--space-8);">Initial concepts</h4>
+        <p class="text-lg mb-6">
+          Early ideas explored the possibility of generating premade Quick Quizes for users, either using our algorithm or AI, then allowing users to customize individual questions within the quiz. Teachers could add, remove, or replace questions quickly from the editing experience.
+        </p>
+
+        <p class="text-lg mb-6">
+          From my research, I knew teachers wanted more granular control over the content students encountered. These changes were descoped due to technical constraints, but the improvements we made to the assignmentflow through the launch of Quick Quiz laid the groundwork for us to come back to this at a later date.
+        </p>
+
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-6);">
+        <div class="image-frame">
+          <img src="assets/images/generate-assignment.png" alt="Generate assignment interface" style="width: 100%; height: auto;">
+        </div>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-6);">
+        <div class="image-frame">
+          <img src="assets/images/assignment-preview.png" alt="Assignment preview interface" style="width: 100%; height: auto;">
+        </div>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-6);">
+        <div class="image-frame">
+          <img src="assets/images/assignment-editing.png" alt="Assignment editing interface" style="width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Delivery & Cross-Team Collaboration -->
+  <section class="section-sm" style="background: var(--color-bg-secondary);">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Delivery</span>
+        <h2 class="mb-6">Navigating cross-team complexity</h2>
+
+        <p class="text-lg mb-6">
+          Quick Quiz required close collaboration between two teams that rarely worked together: the Game Team (focused on student experience) and the Grown-ups Team (focused on teacher tools). Different codebases. Different priorities. Different ways of working.
+        </p>
+
+        <p class="text-lg mb-8">
+          My role became as much about helping the team to navigate tradeoffs and prioritize requirements, as it was about design. In practice, this looked like...
+        </p>
+
+        <div class="card card-bordered p-6 mb-6">
+          <div class="process-step mb-6">
+            <div class="process-number">1</div>
+            <div class="process-content">
+              <h5 class="process-title">Leveraging existing assignment override logic</h5>
+              <p class="process-description">Rather than building a new system from scratch, I worked with engineering to repurpose existing assignment override logic. This allowed us to "force" students into Quick Quiz mode without creating new infrastructure. Keeping the behaviour consistent between the two assignment types also made maintenance easier, as we didn't have to support two separate systems.</p>
+            </div>
+          </div>
+
+          <div class="process-step mb-6">
+            <div class="process-number">2</div>
+            <div class="process-content">
+              <h5 class="process-title">Extending data pipelines, not replacing them</h5>
+              <p class="process-description">Teachers needed real-time visibility into whether students were actually ready to play. Because this synchronous model was new, we didn’t have a framework in place that communicated student state to the teacher app. I partnered with engineering to utilize existing student user tags to surface meaningful participation signals through our established data pipelines.
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="process-number">4</div>
+            <div class="process-content">
+              <h5 class="process-title">Identifying tradeoffs and prioritizing requirements</h5>
+              <p class="process-description">Many younger students didn’t have accounts or couldn’t remember their login details, which meant completing Prodigy’s 10+ minute onboarding before joining Quick Quiz. To prevent this from blocking participation, I worked with the Game team to negotiate a condensed onboarding focused solely on core mechanics. Students could jump into the quiz immediately and were returned to the full onboarding flow afterward.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scrappy Classroom Testing -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Validation</span>
+        <h2 class="mb-6">Taking it to real classrooms</h2>
+
+        <p class="text-lg mb-6">
+          Quick Quiz needed to survive the chaos of real +20 student classrooms with issues like varying internet connections, different reading levels, mixed comfort levels with technology, and behavioral challenges. Because of this, I knew we needed to see it live in action.
+        </p>
+
+        <p class="text-lg mb-6">
+          Through a teacher friend of mine I was able to organized scrappy in-class tests with local teachers and their students. 
+        </p>
+
+        <div class="card card-bordered p-6 mb-8">
+          <div class="grid grid-2 gap-6">
+            <div>
+              <h5 class="mb-4" style="color: var(--color-accent-dark);">What worked</h5>
+              <ul class="timeline-achievements">
+                <li>Students transitioned to Quick Quiz mode faster than expected</li>
+                <li>Teachers were able to quickly understand the flow and find what they needed to get the feature up and running</li>
+                <li>Teachers consistently used the real-time reporting to identify struggling students and give them hands on help</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="mb-4" style="color: var(--color-secondary-dark);">Friction points</h5>
+              <ul class="timeline-achievements">
+                <li>Teachers weren't sure when the quiz would end and wanted to end it themselves. Feature added as a fast follow.</li>
+                <li>After pressing "Start quiz", teachers still weren't sure if the quiz started. A "live" tag and student status were added to increase clarity.</li>
+                <li>The question preview was hard to read for certain questions. Fixed before launch.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-lg mb-6">
+          Being able to see real teachers and students using the feature was invaluable. It gave us the confidence to move forward with the feature and helped us to identify urgent issues and potential improvements. The <a href="https://drive.google.com/file/d/1BLmYgWMWb69kc_F-57kC9FfxxgEHDDPu/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: var(--color-primary);">research plan</a> for this study is available here, along with the <a href="https://drive.google.com/file/d/1qpefut1RthbJSCdFYYvIDIAcY__rzxUV/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: var(--color-primary);">test plan</a>, <a href="https://drive.google.com/file/d/13Tf2dQOYRJsxBuaBXULCR7FKy0FyQk9B/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: var(--color-primary);">test script</a>, <a href="https://drive.google.com/file/d/1loQ1R2eBzA7lfKXQDlPPEBn9VJdvAJA6/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: var(--color-primary);">task list</a>, and <a href="https://drive.google.com/file/d/1ooKa2jmVyx-JAOZO9z8OGHJo4Mbk6WCI/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: var(--color-primary);">note taker document</a>.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <div class="image-frame">
+          <img src="assets/images/quickquiz.gif" alt="Quick Quiz gameplay in action" style="width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Systems Thinking -->
+  <section class="section-sm" style="background: var(--color-bg-secondary);">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Systems Thinking</span>
+        <h2 class="mb-6">Expanding impact beyond the feature</h2>
+
+        <p class="text-lg mb-6">
+          The work required to build Quick Quiz exposed inefficiencies and poor user experiences in our assignment creation flow and assignment reports. I leveraged the momentum to drive changes that benefited the entire product.
+        </p>
+
+        <div class="card card-bordered p-6 mb-8">
+          <h4 class="mb-4">Strategic improvements unlocked:</h4>
+          <ul class="timeline-achievements">
+            <li><b>Introduced draft assignments</b> — Unlocking the ability to create assignments before class and assigning them to students later</li>
+            <li><b>Improved assignment creation flow</b> — Moved out of a modal into a dedicated page, reducing cognitive load</li>
+            <li><b>Enhanced skill search</b> — Made it easier for teachers to find specific math skills</li>
+            <li><b>Granular question control</b> — Teachers can now customize question distribution across skills</li>
+            <li><b>Universal reporting</b> — Quick Quiz allowed us to redesign our dated reports in a way that could be used for all assignment types</li>
+            <li><b>Migration to new design system</b> — Used Quick Quiz as an opportunity to move flows into our new codebase and design system</li>
+          </ul>
+        </div>
+
+        <p class="text-lg mb-6">
+          By approaching the Quick Quiz project holistically, I was able to design a feature that met user and business needs while making much needed improvements to core sections of the existing assignment experience.
+        </p>
+      </div>
+
+      <div class="case-study-wide" style="margin-top: var(--space-8);">
+        <div class="cs-image-grid">
+          <div>
+            <h5 class="mb-4">Old assignment flow</h5>
+            <div class="image-frame">
+              <img src="assets/images/legacy-assignment-flow.png" alt="Old assignment creation flow showing modal-based interface" style="width: 100%; height: auto;">
+            </div>
+          </div>
+          <div>
+            <h5 class="mb-4">New assignment flow</h5>
+            <div class="image-frame">
+              <img src="assets/images/new-assignment-flow.png" alt="New assignment creation flow with dedicated page" style="width: 100%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Impact & Outcomes -->
+  <section class="section-sm" style="background: var(--gradient-dark);">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label" style="color: var(--color-primary-light);">Impact</span>
+        <h2 class="mb-6" style="color: var(--color-white);">Measurable outcomes</h2>
+
+        <p class="text-lg mb-8" style="color: rgba(255,255,255,0.8);">
+          Quick Quiz delivered results across key metrics, <b>driving a +6% increase in teacher activations</b>, which had been consistantly declining for more than a year. This validated the hypothesis that providing teachers with a focused quiz experience could increase Prodigy usage in classrooms.
+        </p>
+
+        <div class="grid grid-2 gap-6 mb-8">
+          <div class="card p-6" style="background: rgba(255,255,255,0.1);">
+            <h3 style="color: var(--color-primary-light); font-size: var(--text-4xl); margin-bottom: var(--space-2);">+6%</h3>
+            <p style="color: var(--color-white);">Teacher activation in the first month</p>
+          </div>
+          <div class="card p-6" style="background: rgba(255,255,255,0.1);">
+            <h3 style="color: var(--color-primary-light); font-size: var(--text-4xl); margin-bottom: var(--space-2);">+12%</h3>
+            <p style="color: var(--color-white);">Increase in assignment creation</p>
+          </div>
+          <div class="card p-6" style="background: rgba(255,255,255,0.1);">
+            <h3 style="color: var(--color-primary-light); font-size: var(--text-4xl); margin-bottom: var(--space-2);">+30%</h3>
+            <p style="color: var(--color-white);">Increase in assignment completion</p>
+          </div>
+          <div class="card p-6" style="background: rgba(255,255,255,0.1);">
+            <h3 style="color: var(--color-primary-light); font-size: var(--text-4xl); margin-bottom: var(--space-2);">+15%</h3>
+            <p style="color: var(--color-white);">Lift in student play time</p>
+          </div>
+        </div>
+
+        <p style="color: rgba(255,255,255,0.8); margin-top: var(--space-8);">
+          Beyond metrics, Quick Quiz shifted how the market perceived Prodigy. We were no longer competing only for "free time", we were now a legitimate option for structured classroom use.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reflection -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="case-study-section fade-in">
+        <span class="section-label">Reflection</span>
+        <h2 class="mb-6">What this project taught me</h2>
+
+        <p class="text-lg mb-6">
+          Quick Quiz was one of the more complex projects I've led, not because of the design itself, but because of the organizational, technical, and strategic challenges it presented.
+        </p>
+
+        <div class="two-col" style="gap: var(--space-12); margin-bottom: var(--space-8); align-items: start;">
+          <div>
+            <h4 class="mb-4">What worked well</h4>
+            <ul class="timeline-achievements">
+              <li><b>Scrappy research is better than no research</b> — especially when entering a new use case with limited precedent</li>
+              <li><b>Work with technical constraints, not against them</b> — leveraging existing systems can save time and effort, especially during rapid experimentation</li>
+              <li><b>Go where your users are</b> — sometimes it's vital to see your product or feature in the environment it will be used in</li>
+              <li><b>Work smarter not harder</b> — identifying overlap between features can open up opportunities to drive broader platform improvements</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="mb-4">What I'd do differently</h4>
+            <ul class="timeline-achievements">
+              <li>Push for earlier classroom testing as some friction points could have been caught sooner</li>
+              <li>Document cross-team collaboration patterns for future projects</li>
+            </ul>
+          </div>
+    </div>
+  </section>
+
+  <!-- Case Study Navigation -->
+  <section class="section-sm" style="padding: 0;">
+    <div class="container">
+      <div class="case-study-nav" style="margin-top: 0;">
+        <a href="case-study-2.html" class="case-study-nav-item prev">
+          <div class="case-study-nav-label">Previous project</div>
+          <div class="case-study-nav-title">Adapting Desktop for Mobile</div>
+        </a>
+        <a href="case-study-4.html" class="case-study-nav-item next">
+          <div class="case-study-nav-label">Next project</div>
+          <div class="case-study-nav-title">Reimagining Prodigy's Backpack Design System</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">Alex<span>.</span></div>
+          <p class="footer-tagline">
+            Senior Product Designer crafting meaningful digital experiences in EdTech and beyond.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div>
+            <div class="footer-links-title">Navigation</div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="case-studies.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-links-title">Connect</div>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/alexandra-cooksey/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/alexandra-cooksey/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alex Cooksey. All rights reserved.</p>
+        <p>Designed with Claude Code</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
