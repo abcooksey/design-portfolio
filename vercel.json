@@ -2,6 +2,11 @@
     "cleanUrls": true,
     "redirects": [
       {
+        "source": "/case-study-1",
+        "destination": "/redesigning-the-foundation-of-questions",
+        "permanent": true
+      },
+      {
         "source": "/case-study-5",
         "destination": "/reclaiming-the-classroom-with-quick-quiz",
         "permanent": true
