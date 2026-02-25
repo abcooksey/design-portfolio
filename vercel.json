@@ -7,6 +7,11 @@
         "permanent": true
       },
       {
+        "source": "/case-study-4",
+        "destination": "/reimagining-prodigys-backpack-design-system",
+        "permanent": true
+      },
+      {
         "source": "/case-study-5",
         "destination": "/reclaiming-the-classroom-with-quick-quiz",
         "permanent": true
