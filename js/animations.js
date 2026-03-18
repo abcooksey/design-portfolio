@@ -72,6 +72,9 @@ function initCardHovers() {
   const cards = document.querySelectorAll('.card-elevated, .project-card');
 
   cards.forEach(card => {
+    // Skip project cards in work-grid (they have their own popover hover)
+    if (card.closest('.work-grid')) return;
+
     card.addEventListener('mouseenter', (e) => {
       // Add subtle tilt effect based on mouse position
       const rect = card.getBoundingClientRect();

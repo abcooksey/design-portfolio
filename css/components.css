@@ -138,6 +138,120 @@
   overflow: hidden;
 }
 
+/* Card Preview Popup */
+.project-card.card {
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+}
+
+.project-card.card:hover {
+  z-index: 50;
+}
+
+/* Subtle hover state for work-grid cards */
+.work-grid .project-card.card {
+  transition: none;
+}
+
+.work-grid .project-card.card:hover {
+  border-color: var(--color-primary-light);
+  box-shadow: 0 0 0 1px var(--color-primary-light);
+  transition: border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-grid .tag-primary {
+  background: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+}
+
+.card-preview {
+  position: absolute;
+  bottom: -40px;
+  width: 480px;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 10px 30px -5px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  will-change: opacity, transform;
+  transition: none;
+}
+
+/* Default: popover extends to the right (for left-side cards) */
+.card-preview {
+  left: 70%;
+  transform: translateY(4px);
+}
+
+.project-card:hover .card-preview {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Right-side cards: popover extends to the left */
+.work-grid .project-card:nth-child(3) .card-preview,
+.work-grid .project-card:nth-child(4) .card-preview {
+  left: auto;
+  right: 70%;
+}
+
+.work-grid .project-card:nth-child(3):hover .card-preview,
+.work-grid .project-card:nth-child(4):hover .card-preview {
+  transform: translateY(0);
+}
+
+.card-preview-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-secondary);
+}
+
+.card-preview-placeholder span {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-text-secondary);
+}
+
+/* When an actual image is added, it will fill the preview */
+.card-preview img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* Hide preview on mobile/touch devices */
+@media (max-width: 768px) {
+  .card-preview {
+    display: none;
+  }
+}
+
+/* 2-column layout: adjust which cards extend left vs right */
+@media (max-width: 1200px) and (min-width: 769px) {
+  /* In 2-column: odd cards (1, 3) extend right, even cards (2, 4) extend left */
+  .work-grid .project-card:nth-child(odd) .card-preview {
+    left: 70%;
+    right: auto;
+  }
+
+  .work-grid .project-card:nth-child(even) .card-preview {
+    left: auto;
+    right: 70%;
+  }
+}
+
 
 /* ===== Tags ===== */
 
