@@ -228,7 +228,7 @@
 .testimonial-quote {
   font-size: var(--text-lg);
   font-style: normal;
-  color: var(--color-text-primary);
+  color: var(--color-text-secondary);
   margin-bottom: var(--space-6);
   position: relative;
   z-index: 1;
