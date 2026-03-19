@@ -64,21 +64,21 @@
         <h1 class="mb-6">Reclaiming the classroom with Quick Quiz</h1>
 
         <p class="text-xl text-secondary" style="max-width: 700px;">
-          Designing a real-time whole-class game mode to reclaim in-class math time. Quick Quiz drove a +6% lift in teacher activation and repositioned Prodigy from a "free time" game to an in-class review tool.
+          End-to-end design of a whole-class game mode that increased Prodigy usage in classrooms, drove a +6% lift in teacher activation, and repositioned Prodigy from a "free time" game to an in-class review tool.
         </p>
 
         <div class="case-study-meta">
           <div class="case-study-meta-item">
             <span class="case-study-meta-label">Role</span>
-            <span class="case-study-meta-value">Senior Product Designer</span>
+            <span class="case-study-meta-value">Lead Product Designer</span>
           </div>
           <div class="case-study-meta-item">
             <span class="case-study-meta-label">Timeline</span>
-            <span class="case-study-meta-value">Q4 2024</span>
+            <span class="case-study-meta-value">3 months</span>
           </div>
           <div class="case-study-meta-item">
             <span class="case-study-meta-label">Team</span>
-            <span class="case-study-meta-value">1 PM, 6 Engineers, 1 Designers</span>
+            <span class="case-study-meta-value">1 PM, 6 Engineers, 1 Designer</span>
           </div>
           <div class="case-study-meta-item">
             <span class="case-study-meta-label">Platform</span>
@@ -101,19 +101,47 @@
     </div>
   </section>
 
+  <!-- Outcomes Summary -->
+  <section style="background: var(--color-primary-subtle); padding: var(--space-12) 0; margin-top: var(--space-10);">
+    <div class="container">
+      <div class="fade-in">
+        <div style="display: flex; align-items: center; justify-content: center; gap: var(--space-3); margin-bottom: var(--space-8);">
+          <div style="height: 1px; width: 40px; background: var(--color-primary); opacity: 0.3;"></div>
+          <span style="color: var(--color-primary); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Outcomes</span>
+          <div style="height: 1px; width: 40px; background: var(--color-primary); opacity: 0.3;"></div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); max-width: 800px; margin: 0 auto;">
+          <div style="background: var(--color-white); border-radius: 12px; padding: var(--space-6); text-align: center; box-shadow: var(--shadow-sm);">
+            <div style="font-size: var(--text-4xl); font-weight: 700; color: var(--color-primary); line-height: 1;">+6%</div>
+            <div style="color: var(--color-text-secondary); font-size: var(--text-sm); margin-top: var(--space-2);">Teacher activation</div>
+          </div>
+          <div style="background: var(--color-white); border-radius: 12px; padding: var(--space-6); text-align: center; box-shadow: var(--shadow-sm);">
+            <div style="font-size: var(--text-4xl); font-weight: 700; color: var(--color-primary); line-height: 1;">+12%</div>
+            <div style="color: var(--color-text-secondary); font-size: var(--text-sm); margin-top: var(--space-2);">Assignment creation</div>
+          </div>
+          <div style="background: var(--color-white); border-radius: 12px; padding: var(--space-6); text-align: center; box-shadow: var(--shadow-sm);">
+            <div style="font-size: var(--text-4xl); font-weight: 700; color: var(--color-primary); line-height: 1;">+30%</div>
+            <div style="color: var(--color-text-secondary); font-size: var(--text-sm); margin-top: var(--space-2);">Assignment completion</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Define the Problem -->
   <section class="section-sm">
     <div class="container">
       <div class="case-study-section fade-in">
         <span class="section-label">The Problem</span>
-        <h2 class="mb-6">Prodigy was losing its place in the classroom</h2>
+        <h2 class="mb-6">Prodigy usage in classrooms was declining</h2>
 
         <p class="text-lg mb-6">
-          For many years, Prodigy was synonymous with "free time." Teachers often assigned it during station rotation, free choice time, or allowed students to play Prodigy once they were finished their main work. But post-COVID, classroom realities shifted dramatically. Behavioral regression, widening learning gaps, and tighter schedules meant free time was disappearing.
+          For years, Prodigy was synonymous with “free time,” used during free choice periods or after students finished other work. But post-COVID, classrooms changed. Behavioral challenges increased, learning gaps widened, and in-class time became more tightly structured, leaving little room for tools like Prodigy.
         </p>
 
         <p class="text-lg mb-6">
-          Meanwhile, competitors were moving fast. EdTech tools designed for structured, high time on task, whole-class use were gaining traction, and Prodigy's activation numbers were declining. In order to maintain our place in the classroom we needed to evolve.
+          At the same time, competitors built for structured, whole-class engagement were gaining traction, while Prodigy’s teacher activation was declining. To stay relevant in the classroom, we needed to evolve.
         </p>
       </div>
     </div>
@@ -160,7 +188,7 @@
               </svg>
             </div>
             <h4 class="mb-3 text-primary">Historically siloed teams</h4>
-            <p>The Game Team and "Grown-ups" Team <b>rarely shipped a feature together.</b></p>
+            <p>The Game Team and "Grown-ups" Team <b>rarely shipped features together.</b></p>
 
             <p>Competing priorities and processes made clear communication vital.</p>
           </div>
@@ -176,16 +204,16 @@
         <h2 class="mb-6">Framing the challenge</h2>
 
         <p class="text-lg mb-6">
-          In order to regain footing in the classroom, Prodigy needed to support new use cases. Market research conducted by an outside firm pointed to whole-class review, specifically “entrance” and “exit” tickets, as our biggest opportunity. These tickets were essentially mini quizzes leveraged by teachers at the beginning and end of class to quickly gauge student understanding on a specific topic.
+          To regain footing in the classroom, Prodigy needed to support new use cases. Market research from an external firm identified whole-class review as the biggest opportunity. More specifically, it pointed to entrance and exit tickets, short quizzes used at the start or end of a lesson to quickly assess student understanding.
         </p>
 
         <p class="text-lg mb-6">
-          This left us to answer the question...
+          At the time, Prodigy was not built to support this kind of whole-class engagement. This left us with a key question…
         </p>
 
         <div class="card card-bordered p-6 mb-8">
           <h4 class="mb-4">How might we...</h4>
-          <p class="text-lg">Transform Prodigy from an independent reward activity into a synchronous, teacher-led classroom tool, using our existing game infrastructure?</p>
+          <p class="text-lg">Transform Prodigy from an independent reward activity into a synchronous, teacher-led assessment tool, using our existing game infrastructure?</p>
         </div>
       </div>
     </div>
@@ -199,44 +227,48 @@
         <h2 class="mb-6">Learning fast with limited resources</h2>
 
         <p class="text-lg mb-6">
-          Before jumping into design work, I needed to understand the new market segment we were looking to step into. At the same, with the project starting in Q4, the team was under pressure to ship quickly in order to launch in time for teachers going back to school following winter break. Missing this deadline meant waiting until Fall 2025 for another chance to meaningfully address the decline in teacher activation.
+          Before jumping into design, I needed to understand the new market we were entering. At the same time, with a Q4 start, we were under pressure to ship before teachers returned from winter break. Missing that peek window for feature adoption meant waiting until Fall 2025 to meaningfully address declining activation.
         </p>
 
         <p class="text-lg mb-6">
-          Our tight timelines required scrappy thinking. I conducted a focused competitor analysis, interviewed in-house education specialists (all of whom were former teachers), and synthesized existing research on post-COVID classroom dynamics. The goal wasn't exhaustive research, it was rapidly gathering enough of a signal to move confidently..
+          So I took a scrappy approach: a focused competitor analysis, interviews with Education Specialists and former teachers on our team, and synthesis of existing post-COVID research. The goal was to gather enough of a signal to move fast with confidence.
         </p>
 
-        <div class="card card-bordered p-6 mb-8">
-          <h4 class="mb-4">Key insights emerged:</h4>
-          <ul class="timeline-achievements">
-            <li><b>Existing products followed a very clear flow</b> — content seletion, optional game setup, student join lobby, sharable live reporting, final teacher report.</li>
-            <li><b>Balancing engagement and overstimulation is key</b> — teachers reported that students become overstimulated quickly when gameplay is too engaging, which becomes disruptive to learning. Conversely, they get bored easily if the game isn't fun. Striking the right balance is important.</li>
-            <li><b>Content needs to be specific</b> — teachers wanted to measure understanding of very specific skills being taught in class that day i.e. single digit addition to 9. Topics or concepts would be too broad.</li>
-            <li><b>Real-time feedback is critical</b> — teachers need to see who's struggling and who's ahead so they can troubleshoot in real time.</li>
-          </ul>
+        <div class="card card-bordered p-8 mb-8">
+          <h4 class="mb-6">Key insights emerged:</h4>
+          <div style="display: flex; flex-direction: column; gap: var(--space-6);">
+            <div style="display: flex; align-items: baseline; gap: var(--space-4);">
+              <span style="color: var(--color-primary); font-weight: 600; flex-shrink: 0;">01</span>
+              <p style="margin: 0;"><b>Successful existing products had an almost identical set of key features</b> — content selection, live student lobby, sharable live reporting, and a final teacher report.</p>
+            </div>
+            <div style="height: 1px; background: var(--color-border); margin-left: 36px;"></div>
+            <div style="display: flex; align-items: baseline; gap: var(--space-4);">
+              <span style="color: var(--color-primary); font-weight: 600; flex-shrink: 0;">02</span>
+              <p style="margin: 0;"><b>Balancing engagement is key</b> — teachers reported that overly stimulating gameplay becomes disruptive in classrooms, while low engagement leads to boredom.</p>
+            </div>
+            <div style="height: 1px; background: var(--color-border); margin-left: 36px;"></div>
+            <div style="display: flex; align-items: baseline; gap: var(--space-4);">
+              <span style="color: var(--color-primary); font-weight: 600; flex-shrink: 0;">03</span>
+              <p style="margin: 0;"><b>Content needs to be specific</b> — teachers wanted to measure understanding of specific skills taught in a single lesson and needed granular control over what students would see.</p>
+            </div>
+            <div style="height: 1px; background: var(--color-border); margin-left: 36px;"></div>
+            <div style="display: flex; align-items: baseline; gap: var(--space-4);">
+              <span style="color: var(--color-primary); font-weight: 600; flex-shrink: 0;">04</span>
+              <p style="margin: 0;"><b>Live feedback is critical</b> — teachers need real-time insight into student progress to intervene effectively in class.</p>
+            </div>
+          </div>
         </div>
+        <p class="text-lg mb-6">
+          We knew students loved playing Prodigy, but its open-ended gameplay led to unpredictable time on task answering math questions. Teachers also lacked visibility into student progress and control over the adaptive content, making whole-class use impractical.
+        </p>
 
         <p class="text-lg mb-6">
-          Based on these insights, I framed a hypothesis: <b>If we strip away Prodigy's game distractions and give teachers real-time control over a focused quiz experience, we can unlock a new in-class use case.</b>
+          Based on these insights, I formed a hypothesis to guide our design direction:
         </p>
-      </div>
 
-      <div class="case-study-wide" style="margin-top: var(--space-8);">
-        <div class="cs-image-grid">
-          <div>
-            <h5 class="mb-4">Competitive landscape</h5>
-            <div class="image-frame" style="aspect-ratio: 4/3; overflow: hidden;">
-              <img src="assets/images/competitive-analysis.png" alt="Competitive analysis showing market landscape" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-          </div>
-          <div>
-            <h5 class="mb-4">Insight synthesis</h5>
-            <div class="image-frame" style="aspect-ratio: 4/3; overflow: hidden;">
-              <img src="assets/images/insights.png" alt="Insight synthesis board showing research findings" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-          </div>
+        <div style="background: var(--color-primary-subtle); border-left: 4px solid var(--color-primary); padding: var(--space-6); border-radius: 0 8px 8px 0;">
+          <p class="text-lg" style="margin: 0;">"If we give teachers granular control over content and time on task and provide real-time student feedback, then we can support the whole-class engagement use case."</p>
         </div>
-        <p class="text-sm text-muted" style="margin-top: var(--space-3); text-align: center;">Click to expand</p>
       </div>
     </div>
   </section>
@@ -249,15 +281,7 @@
         <h2 class="mb-6">Translating research into concepts</h2>
 
         <p class="text-lg mb-6">
-          With insights in hand, I began exploring what the teacher side of a synchronous classroom experience could look like. I partnered closely with our in-house Education Specialists to workshop early concepts, pressure-testing ideas against their experience with real classroom scenarios.
-        </p>
-
-        <p class="text-lg mb-6">
-          At the same time, the game team worked to design a new focused game mode that leveraged our existing battle mechanics and question interface, limiting distractions and increasing time on task.
-        </p>
-
-        <p class="text-lg mb-6">
-          Throughout this process, our teams met weekly to ensure we were designing puzzle pieces that fit together. Keeping expectations aligned and validating assumptions throughout the project was critical.
+          Using the gathered insights as a starting point, I partnered with our Education Specialists to workshop and validate early concepts for the teacher experience. At the same time, the game team built a focused mode that removed in-game distractions and significantly increased time on task. Our teams aligned weekly to ensure both sides fit together and stayed on track.
         </p>
 
         <h4 class="mb-4" style="margin-top: var(--space-8);">Initial concepts</h4>
@@ -505,11 +529,11 @@
   <section class="section-sm" style="padding: 0;">
     <div class="container">
       <div class="case-study-nav" style="margin-top: 0;">
-        <a href="/adapting-a-desktop-search-feature-for-mobile" class="case-study-nav-item prev">
+        <a href="adapting-a-desktop-search-feature-for-mobile.html" class="case-study-nav-item prev">
           <div class="case-study-nav-label">Previous project</div>
           <div class="case-study-nav-title">Adapting Desktop for Mobile</div>
         </a>
-        <a href="/reimagining-prodigys-backpack-design-system" class="case-study-nav-item next">
+        <a href="reimagining-prodigys-backpack-design-system.html" class="case-study-nav-item next">
           <div class="case-study-nav-label">Next project</div>
           <div class="case-study-nav-title">Reimagining Prodigy's Backpack Design System</div>
         </a>
