@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Colors | Design Library</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="css/design-library.css">
+</head>
+<body>
+  <div class="dl-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="dl-sidebar">
+      <a href="index.html" class="dl-logo">
+        <div class="dl-logo-icon">DL</div>
+        <div class="dl-logo-text">
+          <span class="dl-logo-title">Design Library</span>
+          <span class="dl-logo-subtitle">Alex Hicks Portfolio</span>
+        </div>
+      </a>
+
+      <nav>
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Overview</div>
+          <div class="dl-nav-list">
+            <a href="index.html" class="dl-nav-link">Overview</a>
+            <a href="changelog.html" class="dl-nav-link">Changelog</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Foundations</div>
+          <div class="dl-nav-list">
+            <a href="colors.html" class="dl-nav-link active">Colors</a>
+            <a href="typography.html" class="dl-nav-link">Typography</a>
+            <a href="spacing.html" class="dl-nav-link">Spacing</a>
+            <a href="foundations.html" class="dl-nav-link">Elevation & Borders</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Components</div>
+          <div class="dl-nav-list">
+            <a href="buttons.html" class="dl-nav-link">Buttons</a>
+            <a href="cards.html" class="dl-nav-link">Cards</a>
+            <a href="navigation.html" class="dl-nav-link">Navigation</a>
+            <a href="forms.html" class="dl-nav-link">Forms</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Patterns</div>
+          <div class="dl-nav-list">
+            <a href="content-patterns.html" class="dl-nav-link">Content Patterns</a>
+            <a href="interactions.html" class="dl-nav-link">Interactions</a>
+          </div>
+        </div>
+      </nav>
+
+      <a href="../index.html" class="dl-back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+        Back to Portfolio
+      </a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dl-main">
+      <header class="dl-header">
+        <span class="dl-page-label">Foundations</span>
+        <h1 class="dl-page-title">Colors</h1>
+        <p class="dl-page-description">
+          The color palette establishes visual hierarchy and brand identity. Colors are defined
+          as CSS custom properties for consistent use across the site.
+        </p>
+      </header>
+
+      <!-- Primary Colors -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Primary - Electric Violet</h2>
+        <p class="dl-section-description">
+          The main brand color used for CTAs, links, and primary actions. Creates energy and draws attention to key elements.
+        </p>
+
+        <div class="dl-color-grid">
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-primary);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-primary</div>
+              <div class="dl-color-value">#7C3AED</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-primary-light);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-primary-light</div>
+              <div class="dl-color-value">#A78BFA</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-primary-dark);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-primary-dark</div>
+              <div class="dl-color-value">#5B21B6</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-primary-subtle);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-primary-subtle</div>
+              <div class="dl-color-value">#EDE9FE</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secondary Colors -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Secondary - Coral Pink</h2>
+        <p class="dl-section-description">
+          Complementary accent color for visual variety and warmth. Used sparingly for highlights.
+        </p>
+
+        <div class="dl-color-grid">
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-secondary);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-secondary</div>
+              <div class="dl-color-value">#F472B6</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-secondary-light);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-secondary-light</div>
+              <div class="dl-color-value">#F9A8D4</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-secondary-dark);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-secondary-dark</div>
+              <div class="dl-color-value">#BE185D</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accent Colors -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Accent - Teal</h2>
+        <p class="dl-section-description">
+          Used for success states, highlights, and tertiary visual interest. Provides balance to the warm primary palette.
+        </p>
+
+        <div class="dl-color-grid">
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-accent);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-accent</div>
+              <div class="dl-color-value">#14B8A6</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-accent-light);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-accent-light</div>
+              <div class="dl-color-value">#5EEAD4</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-accent-dark);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-accent-dark</div>
+              <div class="dl-color-value">#047857</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-success);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-success</div>
+              <div class="dl-color-value">#34D399</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Neutrals -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Neutrals</h2>
+        <p class="dl-section-description">
+          Core neutral colors for backgrounds, borders, and foundational elements.
+        </p>
+
+        <div class="dl-color-grid">
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-dark);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-dark</div>
+              <div class="dl-color-value">#1E1B4B</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-light); border: 1px solid var(--color-border);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-light</div>
+              <div class="dl-color-value">#FAFAF9</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-white); border: 1px solid var(--color-border);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-white</div>
+              <div class="dl-color-value">#FFFFFF</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Text Colors -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Text Colors</h2>
+        <p class="dl-section-description">
+          Typography color scale for establishing visual hierarchy in text content.
+        </p>
+
+        <div class="dl-color-grid">
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-text-primary);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-text-primary</div>
+              <div class="dl-color-value">#334155</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-text-secondary);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-text-secondary</div>
+              <div class="dl-color-value">#64748B</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-text-muted);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-text-muted</div>
+              <div class="dl-color-value">#5C6B7D</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-dark);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-text-inverse</div>
+              <div class="dl-color-value">#FFFFFF</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dl-info dl-info-note mt-6">
+          <span class="dl-info-icon">💡</span>
+          <div class="dl-info-content">
+            Text colors have been adjusted for WCAG AA compliance. <code>--color-text-muted</code> was
+            darkened from #94A3B8 to #5C6B7D to achieve a 5.38:1 contrast ratio.
+          </div>
+        </div>
+      </section>
+
+      <!-- Background Colors -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Backgrounds</h2>
+        <p class="dl-section-description">
+          Surface colors for cards, sections, and page backgrounds.
+        </p>
+
+        <div class="dl-color-grid">
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-bg-primary); border: 1px solid var(--color-border);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-bg-primary</div>
+              <div class="dl-color-value">#FAFAF9</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-bg-secondary); border: 1px solid var(--color-border);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-bg-secondary</div>
+              <div class="dl-color-value">#F1F5F9</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-bg-card); border: 1px solid var(--color-border);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-bg-card</div>
+              <div class="dl-color-value">#FFFFFF</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-bg-dark);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-bg-dark</div>
+              <div class="dl-color-value">#1E1B4B</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Border Colors -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Borders</h2>
+        <p class="dl-section-description">
+          Border and divider colors for visual separation.
+        </p>
+
+        <div class="dl-color-grid">
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-border);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-border</div>
+              <div class="dl-color-value">#E2E8F0</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview" style="background: var(--color-border-light);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--color-border-light</div>
+              <div class="dl-color-value">#F1F5F9</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gradients -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Gradients</h2>
+        <p class="dl-section-description">
+          Linear gradients used for visual interest and depth. Applied to hero sections, buttons, and decorative elements.
+        </p>
+
+        <div class="dl-color-grid">
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview gradient" style="background: var(--gradient-primary);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--gradient-primary</div>
+              <div class="dl-color-value">135deg, #7C3AED → #F472B6</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview gradient" style="background: var(--gradient-hero);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--gradient-hero</div>
+              <div class="dl-color-value">135deg, #EDE9FE → #FCE7F3 → #F0FDFA</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview gradient" style="background: var(--gradient-dark);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--gradient-dark</div>
+              <div class="dl-color-value">135deg, #1E1B4B → #312E81</div>
+            </div>
+          </div>
+          <div class="dl-color-swatch">
+            <div class="dl-color-preview gradient" style="background: var(--gradient-card-hover);"></div>
+            <div class="dl-color-info">
+              <div class="dl-color-token">--gradient-card-hover</div>
+              <div class="dl-color-value">180deg, rgba purple → pink 5%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Usage Guidelines -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Usage Guidelines</h2>
+
+        <div class="dl-guidelines">
+          <div class="dl-guideline dl-guideline-do">
+            <div class="dl-guideline-title">
+              <span>✓</span> Do
+            </div>
+            <ul>
+              <li>Use primary color for main CTAs and interactive elements</li>
+              <li>Apply text-secondary for supporting content</li>
+              <li>Use subtle backgrounds to create visual hierarchy</li>
+              <li>Maintain WCAG AA contrast ratios (4.5:1 for text)</li>
+            </ul>
+          </div>
+          <div class="dl-guideline dl-guideline-dont">
+            <div class="dl-guideline-title">
+              <span>✗</span> Don't
+            </div>
+            <ul>
+              <li>Place light text on light backgrounds</li>
+              <li>Overuse the primary color - it should guide attention</li>
+              <li>Mix competing gradients in close proximity</li>
+              <li>Use color as the only indicator of state</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/design-library.js"></script>
+</body>
+</html>

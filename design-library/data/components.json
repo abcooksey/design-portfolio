@@ -1,0 +1,1743 @@
+{
+  "buttons": [
+    {
+      "name": "btn",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "buttons"
+    },
+    {
+      "name": "btn-primary",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "buttons"
+    },
+    {
+      "name": "btn-secondary",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "buttons"
+    },
+    {
+      "name": "btn-ghost",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "buttons"
+    },
+    {
+      "name": "btn-lg",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "buttons"
+    },
+    {
+      "name": "btn-sm",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "buttons"
+    },
+    {
+      "name": "btn-icon",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "buttons"
+    }
+  ],
+  "cards": [
+    {
+      "name": "card",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "cards"
+    },
+    {
+      "name": "card-elevated",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "cards"
+    },
+    {
+      "name": "card-bordered",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "cards"
+    },
+    {
+      "name": "card-image",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "cards"
+    },
+    {
+      "name": "card-content",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "cards"
+    },
+    {
+      "name": "card-title",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "cards"
+    },
+    {
+      "name": "card-description",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "cards"
+    },
+    {
+      "name": "project-card",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "cards"
+    },
+    {
+      "name": "card-preview",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "cards"
+    },
+    {
+      "name": "card-preview-placeholder",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "cards"
+    }
+  ],
+  "tags": [
+    {
+      "name": "tag-primary",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "tags"
+    },
+    {
+      "name": "tag",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "tags"
+    },
+    {
+      "name": "tag-secondary",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "tags"
+    },
+    {
+      "name": "tag-accent",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "tags"
+    },
+    {
+      "name": "tag-neutral",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "tags"
+    },
+    {
+      "name": "tags",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "tags"
+    },
+    {
+      "name": "badge",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "tags"
+    },
+    {
+      "name": "badge-success",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "tags"
+    },
+    {
+      "name": "badge-primary",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "tags"
+    }
+  ],
+  "navigation": [
+    {
+      "name": "nav",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "nav-container",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "nav-logo",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "nav-links",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "nav-link",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "nav-cta",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "nav-toggle",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "nav-mobile",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "footer",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "footer-top",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "footer-logo",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "footer-tagline",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "footer-links",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "footer-links-title",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "footer-social",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "footer-bottom",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    }
+  ],
+  "forms": [],
+  "layout": [
+    {
+      "name": "container",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "container-sm",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "container-md",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "container-lg",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "container-xl",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "container-2xl",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "section",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "section-sm",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "section-lg",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "grid",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "grid-2",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "grid-3",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "grid-4",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "grid-auto",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "flex",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "flex-wrap",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "flex-col",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "two-col",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "two-col-reverse",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "section-header",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "section-label",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "section-title",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    },
+    {
+      "name": "section-description",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "layout"
+    }
+  ],
+  "typography": [
+    {
+      "name": "link",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "link-underline",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-primary",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-secondary",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-muted",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-accent",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-inverse",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-center",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-left",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-right",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-uppercase",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-gradient",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-xs",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-sm",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-base",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-lg",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-xl",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-2xl",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-3xl",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-4xl",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-5xl",
+      "source": "css/base.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-rotate-wrapper",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    },
+    {
+      "name": "text-rotate",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "typography"
+    }
+  ],
+  "media": [
+    {
+      "name": "avatar",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "media"
+    },
+    {
+      "name": "avatar-sm",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "media"
+    },
+    {
+      "name": "avatar-md",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "media"
+    },
+    {
+      "name": "avatar-lg",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "media"
+    },
+    {
+      "name": "avatar-xl",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "media"
+    },
+    {
+      "name": "avatar-2xl",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "media"
+    },
+    {
+      "name": "image-frame",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "media"
+    },
+    {
+      "name": "image-frame-bordered",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "media"
+    },
+    {
+      "name": "lightbox",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "media"
+    },
+    {
+      "name": "lightbox-content",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "media"
+    },
+    {
+      "name": "lightbox-image",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "media"
+    },
+    {
+      "name": "lightbox-close",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "media"
+    },
+    {
+      "name": "image-caption",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "media"
+    }
+  ],
+  "feedback": [
+    {
+      "name": "stat",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "stat-value",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "stat-label",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "testimonial",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "testimonial-quote",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "testimonial-author",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "testimonial-avatar",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "testimonial-info",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "testimonial-name",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "testimonial-role",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "skill-item",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "skill-icon",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "skill-name",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "process-step",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "process-number",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "process-content",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "process-title",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "process-description",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "metric-callout",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "metric-icon",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "metric-content",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "metric-value",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "metric-label",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "skills-grid",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "skills-category",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "skills-category-icon",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "skills-category-title",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "skills-list",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    },
+    {
+      "name": "testimonials-grid",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "feedback"
+    }
+  ],
+  "other": [
+    {
+      "name": "items-start",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "items-center",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "items-end",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "justify-start",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "justify-center",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "justify-end",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "justify-between",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "gap-1",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "gap-2",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "gap-3",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "gap-4",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "gap-6",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "gap-8",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "gap-10",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "gap-12",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "m-auto",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "mx-auto",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "mt-4",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "mt-6",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "mt-8",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "mt-12",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "mt-16",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "mb-4",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "mb-6",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "mb-8",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "mb-12",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "mb-16",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "p-4",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "p-6",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "p-8",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "p-12",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "py-4",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "py-8",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "py-12",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "py-16",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "px-4",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "px-6",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "px-8",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "w-full",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "h-full",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "min-h-screen",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "block",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "inline-block",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "hidden",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "hidden-mobile",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "hidden-desktop",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "relative",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "absolute",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "fixed",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "sticky",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "overflow-hidden",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "overflow-auto",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "hero",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "hero-content",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "hero-bg",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "case-study-hero",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "case-study-meta",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "case-study-meta-item",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "case-study-meta-label",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "case-study-meta-value",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "case-study-section",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "case-study-wide",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "case-study-full",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "case-study-nav",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "case-study-nav-item",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "case-study-nav-label",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "case-study-nav-title",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "next",
+      "source": "css/layout.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "divider",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "divider-gradient",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "before-after",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "before-after-item",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "before-after-label",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "active",
+      "source": "css/components.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "scrolled",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "open",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "hero-home",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "hero-shapes",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "hero-shape",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "hero-shape-1",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "hero-shape-2",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "hero-shape-3",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "hero-title",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "hero-subtitle",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "hero-cta",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "multiline",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "about-preview",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "about-image",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "about-image-main",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "about-image-decoration",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "about-stats",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "work-section",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "work-grid",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "tools-grid",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "tool-item",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "tool-icon",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "cta-section",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "case-studies-header",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "filter-tags",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "filter-tag",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "projects-grid",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "filter-hidden",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "cs-image-grid",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "cs-image-grid-weighted",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "cs-absolute-img-container",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "timeline-achievements",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "about-hero",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "about-headshot",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "values-grid",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "value-card",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "value-icon",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "value-title",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "value-description",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "fade-in",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "visible",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    },
+    {
+      "name": "scale-in",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "other"
+    }
+  ]
+}

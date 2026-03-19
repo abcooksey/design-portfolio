@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Cards | Design Library</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="css/design-library.css">
+</head>
+<body>
+  <div class="dl-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="dl-sidebar">
+      <a href="index.html" class="dl-logo">
+        <div class="dl-logo-icon">DL</div>
+        <div class="dl-logo-text">
+          <span class="dl-logo-title">Design Library</span>
+          <span class="dl-logo-subtitle">Alex Hicks Portfolio</span>
+        </div>
+      </a>
+
+      <nav>
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Overview</div>
+          <div class="dl-nav-list">
+            <a href="index.html" class="dl-nav-link">Overview</a>
+            <a href="changelog.html" class="dl-nav-link">Changelog</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Foundations</div>
+          <div class="dl-nav-list">
+            <a href="colors.html" class="dl-nav-link">Colors</a>
+            <a href="typography.html" class="dl-nav-link">Typography</a>
+            <a href="spacing.html" class="dl-nav-link">Spacing</a>
+            <a href="foundations.html" class="dl-nav-link">Elevation & Borders</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Components</div>
+          <div class="dl-nav-list">
+            <a href="buttons.html" class="dl-nav-link">Buttons</a>
+            <a href="cards.html" class="dl-nav-link active">Cards</a>
+            <a href="navigation.html" class="dl-nav-link">Navigation</a>
+            <a href="forms.html" class="dl-nav-link">Forms</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Patterns</div>
+          <div class="dl-nav-list">
+            <a href="content-patterns.html" class="dl-nav-link">Content Patterns</a>
+            <a href="interactions.html" class="dl-nav-link">Interactions</a>
+          </div>
+        </div>
+      </nav>
+
+      <a href="../index.html" class="dl-back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+        Back to Portfolio
+      </a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dl-main">
+      <header class="dl-header">
+        <span class="dl-page-label">Components</span>
+        <h1 class="dl-page-title">Cards</h1>
+        <p class="dl-page-description">
+          Cards group related content and actions. They serve as entry points to more detailed
+          information and provide consistent containers for various content types.
+        </p>
+      </header>
+
+      <!-- Anatomy -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Anatomy</h2>
+        <p class="dl-section-description">
+          Cards have a flexible structure that can include images, content areas, tags, and actions.
+        </p>
+
+        <div class="dl-anatomy">
+          <div class="flex justify-center p-6">
+            <div class="card card-bordered" style="width: 300px;">
+              <div class="card-image" style="background: var(--color-bg-secondary); height: 120px; display: flex; align-items: center; justify-content: center;">
+                <span class="text-sm text-muted">1. Image Area (optional)</span>
+              </div>
+              <div class="card-content">
+                <div class="tags mb-3">
+                  <span class="tag tag-primary">2. Tags</span>
+                </div>
+                <div class="card-title">3. Title</div>
+                <p class="card-description">4. Description text that explains the card content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="dl-anatomy-list">
+            <div class="dl-anatomy-item">
+              <span class="dl-anatomy-number">1</span>
+              <span class="dl-anatomy-text"><strong>Image Area:</strong> Visual preview, optional depending on card type</span>
+            </div>
+            <div class="dl-anatomy-item">
+              <span class="dl-anatomy-number">2</span>
+              <span class="dl-anatomy-text"><strong>Tags:</strong> Category labels using the tag component</span>
+            </div>
+            <div class="dl-anatomy-item">
+              <span class="dl-anatomy-number">3</span>
+              <span class="dl-anatomy-text"><strong>Title:</strong> Card heading in semibold, 18px</span>
+            </div>
+            <div class="dl-anatomy-item">
+              <span class="dl-anatomy-number">4</span>
+              <span class="dl-anatomy-text"><strong>Description:</strong> Supporting text in secondary color</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Variants -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Variants</h2>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Bordered Card</h3>
+          <p class="text-secondary text-sm mb-4">
+            Default card style with a subtle border. Used for most content containers.
+          </p>
+          <div class="dl-preview dl-preview-light">
+            <div class="card card-bordered" style="max-width: 320px;">
+              <div class="card-content">
+                <div class="card-title">Bordered Card</div>
+                <p class="card-description">A standard card with border and no shadow.</p>
+              </div>
+            </div>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Background</td><td>--color-bg-card (#FFFFFF)</td></tr>
+            <tr><td>Border</td><td>1px solid --color-border (#E2E8F0)</td></tr>
+            <tr><td>Border Radius</td><td>--radius-xl (16px)</td></tr>
+            <tr><td>Shadow</td><td>none</td></tr>
+          </table>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Elevated Card</h3>
+          <p class="text-secondary text-sm mb-4">
+            Card with shadow elevation for more visual prominence.
+          </p>
+          <div class="dl-preview dl-preview-light">
+            <div class="card card-elevated" style="max-width: 320px;">
+              <div class="card-content">
+                <div class="card-title">Elevated Card</div>
+                <p class="card-description">Uses shadow-card for subtle elevation.</p>
+              </div>
+            </div>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Background</td><td>--color-bg-card (#FFFFFF)</td></tr>
+            <tr><td>Border</td><td>none</td></tr>
+            <tr><td>Border Radius</td><td>--radius-xl (16px)</td></tr>
+            <tr><td>Shadow</td><td>--shadow-card (purple-tinted)</td></tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- Project Card -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Project Card</h2>
+        <p class="dl-section-description">
+          Specialized card for displaying project thumbnails in the work grid.
+          Content appears above the image with a unique layout.
+        </p>
+
+        <div class="dl-preview dl-preview-light">
+          <div class="project-card card card-bordered" style="max-width: 280px; border-radius: var(--radius-xl);">
+            <div class="card-content" style="order: 1; padding: var(--space-5);">
+              <div class="tags mb-2">
+                <span class="tag tag-primary">EdTech</span>
+                <span class="tag tag-secondary">Design System</span>
+              </div>
+              <div class="card-title">Reimagining Prodigy's Design System</div>
+            </div>
+            <div class="card-image" style="order: 2; background: var(--color-bg-secondary); height: 160px; display: flex; align-items: center; justify-content: center; border-radius: 0 0 15px 15px;">
+              <span class="text-sm text-muted">Project Thumbnail</span>
+            </div>
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-4">
+          <tr><td>Content Padding</td><td>--space-5 (20px)</td></tr>
+          <tr><td>Content Order</td><td>1 (appears first)</td></tr>
+          <tr><td>Image Order</td><td>2 (appears second)</td></tr>
+          <tr><td>Image Border Radius</td><td>Bottom corners only (15px)</td></tr>
+        </table>
+
+        <div class="dl-info dl-info-note mt-6">
+          <span class="dl-info-icon">💡</span>
+          <div class="dl-info-content">
+            Project cards use CSS <code>order</code> property to show content above the image
+            while maintaining semantic HTML structure (image first).
+          </div>
+        </div>
+      </section>
+
+      <!-- States -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">States</h2>
+        <p class="dl-section-description">
+          Interactive cards provide hover feedback to indicate clickability.
+        </p>
+
+        <div class="dl-state-grid" style="grid-template-columns: repeat(2, 1fr);">
+          <div class="dl-state-item" style="padding: var(--space-6);">
+            <div class="card card-bordered p-4" style="width: 200px;">
+              <div class="card-title text-sm">Default</div>
+            </div>
+            <span class="dl-state-label">Default</span>
+          </div>
+          <div class="dl-state-item" style="padding: var(--space-6);">
+            <div class="card card-bordered p-4" style="width: 200px; border-color: var(--color-primary-light); box-shadow: 0 0 0 1px var(--color-primary-light);">
+              <div class="card-title text-sm">Hover</div>
+            </div>
+            <span class="dl-state-label">Hover</span>
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-4">
+          <thead>
+            <tr>
+              <th>State</th>
+              <th>Changes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hover (bordered)</td>
+              <td>Border color → primary-light, adds 1px glow</td>
+            </tr>
+            <tr>
+              <td>Hover (elevated)</td>
+              <td>Shadow → shadow-card-hover, translateY(-2px)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Card Preview Popup -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Card Preview Popup</h2>
+        <p class="dl-section-description">
+          Work grid cards display a larger preview image on hover. The popup appears
+          adjacent to the card without overlapping it.
+        </p>
+
+        <div class="dl-preview dl-preview-light" style="min-height: 200px;">
+          <div style="display: flex; gap: var(--space-4); align-items: flex-start;">
+            <div class="project-card card card-bordered" style="width: 200px; border-radius: var(--radius-xl); position: relative;">
+              <div class="card-content" style="padding: var(--space-4);">
+                <div class="tags mb-2">
+                  <span class="tag tag-primary">EdTech</span>
+                </div>
+                <div class="card-title text-sm">Project Title</div>
+              </div>
+            </div>
+            <div style="width: 300px; background: var(--color-bg-card); border-radius: var(--radius-xl); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 10px 30px -5px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05); overflow: hidden;">
+              <div style="aspect-ratio: 16/9; background: var(--gradient-hero); display: flex; align-items: center; justify-content: center;">
+                <span class="text-sm text-muted">Preview Image (480px wide)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-4">
+          <tr><td>Preview Width</td><td>480px</td></tr>
+          <tr><td>Aspect Ratio</td><td>16:9</td></tr>
+          <tr><td>Position</td><td>Left 70% (extends right) or Right 70% (extends left)</td></tr>
+          <tr><td>Transition</td><td>opacity 0.15s, transform 0.2s</td></tr>
+          <tr><td>Mobile</td><td>Hidden below 768px</td></tr>
+        </table>
+      </section>
+
+      <!-- Tags & Badges -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Tags & Badges</h2>
+        <p class="dl-section-description">
+          Small labels used within cards to categorize content.
+        </p>
+
+        <div class="dl-preview dl-preview-light">
+          <div class="flex gap-3 flex-wrap">
+            <span class="tag tag-primary">Primary</span>
+            <span class="tag tag-secondary">Secondary</span>
+            <span class="tag tag-accent">Accent</span>
+            <span class="tag tag-neutral">Neutral</span>
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-4">
+          <thead>
+            <tr>
+              <th>Variant</th>
+              <th>Background</th>
+              <th>Text Color</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.tag-primary</code></td>
+              <td>--color-primary-subtle (#EDE9FE)</td>
+              <td>--color-primary (#7C3AED)</td>
+            </tr>
+            <tr>
+              <td><code>.tag-secondary</code></td>
+              <td>rgba(244, 114, 182, 0.15)</td>
+              <td>--color-secondary-dark (#BE185D)</td>
+            </tr>
+            <tr>
+              <td><code>.tag-accent</code></td>
+              <td>rgba(20, 184, 166, 0.15)</td>
+              <td>--color-accent-dark (#047857)</td>
+            </tr>
+            <tr>
+              <td><code>.tag-neutral</code></td>
+              <td>--color-bg-secondary (#F1F5F9)</td>
+              <td>--color-text-secondary (#64748B)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="dl-spec-table mt-4">
+          <tr><td>Font Size</td><td>10px</td></tr>
+          <tr><td>Font Weight</td><td>600 (semibold)</td></tr>
+          <tr><td>Padding</td><td>2px 8px</td></tr>
+          <tr><td>Border Radius</td><td>--radius-sm (6px)</td></tr>
+          <tr><td>Text Transform</td><td>uppercase</td></tr>
+          <tr><td>Letter Spacing</td><td>--tracking-wide (0.025em)</td></tr>
+        </table>
+      </section>
+
+      <!-- Usage Examples -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Usage Examples</h2>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Skills Category Card</h3>
+          <div class="dl-preview dl-preview-light">
+            <div class="skills-category" style="max-width: 320px;">
+              <div class="skills-category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+              </div>
+              <h3 class="skills-category-title">Design Tools</h3>
+              <ul class="skills-list">
+                <li>Figma</li>
+                <li>Sketch</li>
+                <li>Adobe Creative Suite</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Value Card</h3>
+          <div class="dl-preview dl-preview-light">
+            <div class="value-card" style="max-width: 320px;">
+              <div class="value-icon">✨</div>
+              <h3 class="value-title">Clarity First</h3>
+              <p class="value-description">
+                Every element serves a purpose. Clean layouts help visitors focus on the work.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Code Reference -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Code Reference</h2>
+
+        <table class="dl-spec-table">
+          <thead>
+            <tr>
+              <th>Source File</th>
+              <th>Lines</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>css/components.css</code></td>
+              <td>Lines 70-253 (Card styles)</td>
+            </tr>
+            <tr>
+              <td><code>css/components.css</code></td>
+              <td>Lines 256-293 (Tags)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/design-library.js"></script>
+</body>
+</html>

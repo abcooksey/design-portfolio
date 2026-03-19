@@ -149,6 +149,120 @@ Tested and working in:
 - Safari (latest)
 - Edge (latest)
 
+## Design Library (Internal)
+
+This repository includes an internal design library that documents the visual language and component patterns used across the portfolio. Changes to design tokens automatically sync to the website CSS.
+
+### Accessing the Design Library
+
+```bash
+# Using npx serve
+npx serve
+
+# Then navigate to: http://localhost:3000/design-library/
+```
+
+**Or simply open `design-library/index.html` in your browser.**
+
+### What's Documented
+
+| Category | Page | Contents |
+|----------|------|----------|
+| Overview | `index.html` | Component inventory, design principles, tech stack |
+| Colors | `colors.html` | Full color palette with tokens and gradients |
+| Typography | `typography.html` | Font families, type scale, text styles |
+| Spacing | `spacing.html` | 8px-based spacing system, utilities |
+| Foundations | `foundations.html` | Shadows, border radii, z-index, transitions |
+| Buttons | `buttons.html` | Button variants, sizes, states |
+| Cards | `cards.html` | Card types, project cards, tags |
+| Navigation | `navigation.html` | Header, footer, mobile nav |
+| Forms | `forms.html` | Filter tags, recommended input styles |
+| Content Patterns | `content-patterns.html` | Heroes, stats, testimonials, process steps |
+| Interactions | `interactions.html` | Animations, hover effects, focus states |
+| Changelog | `changelog.html` | Version history, update process |
+
+### Token Sync Workflow
+
+Design tokens flow from `design-tokens.json` to `css/variables.css`:
+
+1. **Source of Truth:** `design-tokens.json` contains all design tokens
+2. **CSS Generation:** `scripts/generate-css.js` generates `css/variables.css` from tokens
+3. **Website Uses CSS:** All pages reference the CSS variables
+
+**To update tokens:**
+```bash
+# 1. Edit design-tokens.json in your editor
+# 2. Regenerate CSS
+node scripts/generate-css.js
+```
+
+### How Updates Work
+
+The design library includes automated sync via GitHub Actions:
+
+| Trigger | Action |
+|---------|--------|
+| Change `design-tokens.json` | Regenerates CSS, updates documentation |
+| Change `css/**` files | Extracts tokens, updates documentation |
+| Change generation scripts | Re-runs both generation and extraction |
+
+**Manual commands:**
+```bash
+# Generate CSS from tokens
+node scripts/generate-css.js
+
+# Extract tokens for documentation
+node scripts/extract-tokens.js
+```
+
+### Structure
+
+```
+design-portfolio/
+├── design-tokens.json        # Source of truth for all tokens
+├── scripts/
+│   ├── generate-css.js       # Generates CSS from design-tokens.json
+│   └── extract-tokens.js     # Extracts tokens for documentation
+└── design-library/
+    ├── index.html            # Overview and component inventory
+    ├── colors.html           # Color documentation
+    ├── typography.html       # Typography documentation
+    ├── spacing.html          # Spacing documentation
+    ├── foundations.html      # Elevation, borders, transitions
+    ├── buttons.html          # Button component
+    ├── cards.html            # Card component
+    ├── navigation.html       # Navigation patterns
+    ├── forms.html            # Form elements
+    ├── content-patterns.html # Content layout patterns
+    ├── interactions.html     # Animation and motion
+    ├── changelog.html        # Version history
+    ├── css/
+    │   └── design-library.css
+    ├── js/
+    │   └── design-library.js
+    └── data/
+        ├── tokens.json       # Extracted design tokens
+        ├── components.json   # Component inventory
+        ├── animations.json   # Animation patterns
+        └── meta.json         # Generation metadata
+```
+
+### Auto-generated vs. Manual
+
+| Auto-generated | Manual |
+|----------------|--------|
+| Token values from CSS | Usage guidelines |
+| Component class lists | Anatomy descriptions |
+| Generation timestamps | Code examples |
+| Statistics | Best practices |
+
+### Not Publicly Linked
+
+The design library is for development use only:
+- Not linked from main navigation or footer
+- `<meta name="robots" content="noindex, nofollow">` on all pages
+- Can be exposed publicly by adding links if desired
+
 ## Credits
 
 - Fonts: Google Fonts (Plus Jakarta Sans, Inter)

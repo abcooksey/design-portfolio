@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Forms | Design Library</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="css/design-library.css">
+
+  <style>
+    /* Form styles for documentation (not in main site) */
+    .dl-input {
+      width: 100%;
+      padding: var(--space-3) var(--space-4);
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      color: var(--color-text-primary);
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      transition: all var(--transition-fast);
+    }
+    .dl-input:hover {
+      border-color: var(--color-text-muted);
+    }
+    .dl-input:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px var(--color-primary-subtle);
+    }
+    .dl-input::placeholder {
+      color: var(--color-text-muted);
+    }
+    .dl-label {
+      display: block;
+      font-size: var(--text-sm);
+      font-weight: var(--font-medium);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-2);
+    }
+    .dl-textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+  </style>
+</head>
+<body>
+  <div class="dl-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="dl-sidebar">
+      <a href="index.html" class="dl-logo">
+        <div class="dl-logo-icon">DL</div>
+        <div class="dl-logo-text">
+          <span class="dl-logo-title">Design Library</span>
+          <span class="dl-logo-subtitle">Alex Hicks Portfolio</span>
+        </div>
+      </a>
+
+      <nav>
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Overview</div>
+          <div class="dl-nav-list">
+            <a href="index.html" class="dl-nav-link">Overview</a>
+            <a href="changelog.html" class="dl-nav-link">Changelog</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Foundations</div>
+          <div class="dl-nav-list">
+            <a href="colors.html" class="dl-nav-link">Colors</a>
+            <a href="typography.html" class="dl-nav-link">Typography</a>
+            <a href="spacing.html" class="dl-nav-link">Spacing</a>
+            <a href="foundations.html" class="dl-nav-link">Elevation & Borders</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Components</div>
+          <div class="dl-nav-list">
+            <a href="buttons.html" class="dl-nav-link">Buttons</a>
+            <a href="cards.html" class="dl-nav-link">Cards</a>
+            <a href="navigation.html" class="dl-nav-link">Navigation</a>
+            <a href="forms.html" class="dl-nav-link active">Forms</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Patterns</div>
+          <div class="dl-nav-list">
+            <a href="content-patterns.html" class="dl-nav-link">Content Patterns</a>
+            <a href="interactions.html" class="dl-nav-link">Interactions</a>
+          </div>
+        </div>
+      </nav>
+
+      <a href="../index.html" class="dl-back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+        Back to Portfolio
+      </a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dl-main">
+      <header class="dl-header">
+        <span class="dl-page-label">Components</span>
+        <h1 class="dl-page-title">Forms</h1>
+        <p class="dl-page-description">
+          Form elements for user input. While the portfolio is primarily read-only, these
+          patterns establish conventions for any future interactive elements or contact forms.
+        </p>
+      </header>
+
+      <div class="dl-info dl-info-warning mb-8">
+        <span class="dl-info-icon">⚠️</span>
+        <div class="dl-info-content">
+          <strong>Limited Usage:</strong> The current portfolio does not include extensive form
+          elements. The styles documented here are inferred patterns or recommendations based
+          on the existing design system tokens. Filter tags on the case studies page are the
+          primary interactive input pattern currently in use.
+        </div>
+      </div>
+
+      <!-- Filter Tags -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Filter Tags</h2>
+        <p class="dl-section-description">
+          Interactive filter buttons used on the case studies overview page to filter projects by category.
+        </p>
+
+        <div class="dl-preview dl-preview-light">
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-3);">
+            <button class="filter-tag active" style="padding: var(--space-2) var(--space-4); font-size: var(--text-sm); font-weight: var(--font-medium); background: var(--color-primary); color: var(--color-white); border: 1px solid var(--color-primary); border-radius: var(--radius-full); cursor: pointer;">All</button>
+            <button class="filter-tag" style="padding: var(--space-2) var(--space-4); font-size: var(--text-sm); font-weight: var(--font-medium); color: var(--color-text-secondary); background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-full); cursor: pointer;">EdTech</button>
+            <button class="filter-tag" style="padding: var(--space-2) var(--space-4); font-size: var(--text-sm); font-weight: var(--font-medium); color: var(--color-text-secondary); background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-full); cursor: pointer;">Design Systems</button>
+            <button class="filter-tag" style="padding: var(--space-2) var(--space-4); font-size: var(--text-sm); font-weight: var(--font-medium); color: var(--color-text-secondary); background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-full); cursor: pointer;">Mobile</button>
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-4">
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Default</th>
+              <th>Active</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Background</td>
+              <td>--color-bg-card</td>
+              <td>--color-primary</td>
+            </tr>
+            <tr>
+              <td>Text Color</td>
+              <td>--color-text-secondary</td>
+              <td>--color-white</td>
+            </tr>
+            <tr>
+              <td>Border</td>
+              <td>1px solid --color-border</td>
+              <td>1px solid --color-primary</td>
+            </tr>
+            <tr>
+              <td>Border Radius</td>
+              <td colspan="2">--radius-full (pill shape)</td>
+            </tr>
+            <tr>
+              <td>Padding</td>
+              <td colspan="2">8px 16px</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Recommended Input Styles -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Recommended Input Styles</h2>
+        <p class="dl-section-description">
+          Inferred patterns for text inputs based on existing design tokens.
+        </p>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Text Input</h3>
+          <div class="dl-preview dl-preview-light">
+            <div style="max-width: 400px;">
+              <label class="dl-label">Email Address</label>
+              <input type="email" class="dl-input" placeholder="you@example.com">
+            </div>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Padding</td><td>12px 16px</td></tr>
+            <tr><td>Font</td><td>--font-body (Inter)</td></tr>
+            <tr><td>Font Size</td><td>--text-base (16px)</td></tr>
+            <tr><td>Border</td><td>1px solid --color-border</td></tr>
+            <tr><td>Border Radius</td><td>--radius-lg (12px)</td></tr>
+            <tr><td>Focus Ring</td><td>3px --color-primary-subtle</td></tr>
+          </table>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Input States</h3>
+          <div class="dl-state-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="dl-state-item" style="padding: var(--space-4);">
+              <input type="text" class="dl-input" placeholder="Default" style="width: 150px;">
+              <span class="dl-state-label">Default</span>
+            </div>
+            <div class="dl-state-item" style="padding: var(--space-4);">
+              <input type="text" class="dl-input" placeholder="Hover" style="width: 150px; border-color: var(--color-text-muted);">
+              <span class="dl-state-label">Hover</span>
+            </div>
+            <div class="dl-state-item" style="padding: var(--space-4);">
+              <input type="text" class="dl-input" placeholder="Focus" style="width: 150px; border-color: var(--color-primary); box-shadow: 0 0 0 3px var(--color-primary-subtle);">
+              <span class="dl-state-label">Focus</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Textarea</h3>
+          <div class="dl-preview dl-preview-light">
+            <div style="max-width: 400px;">
+              <label class="dl-label">Message</label>
+              <textarea class="dl-input dl-textarea" placeholder="Tell me about your project..."></textarea>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form Labels -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Labels</h2>
+        <p class="dl-section-description">
+          Form labels should be clear, concise, and positioned above inputs.
+        </p>
+
+        <div class="dl-preview dl-preview-light">
+          <div style="max-width: 400px;">
+            <label class="dl-label">Full Name</label>
+            <input type="text" class="dl-input" placeholder="Jane Smith">
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-4">
+          <tr><td>Font Size</td><td>--text-sm (14px)</td></tr>
+          <tr><td>Font Weight</td><td>--font-medium (500)</td></tr>
+          <tr><td>Color</td><td>--color-text-primary</td></tr>
+          <tr><td>Margin Bottom</td><td>--space-2 (8px)</td></tr>
+        </table>
+      </section>
+
+      <!-- Contact Form Pattern -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Contact Form Pattern</h2>
+        <p class="dl-section-description">
+          A recommended pattern for a contact form using the established design tokens.
+        </p>
+
+        <div class="dl-preview dl-preview-light">
+          <div class="card card-bordered p-8" style="max-width: 500px;">
+            <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-6);">Get in Touch</h3>
+            <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+              <div>
+                <label class="dl-label">Name</label>
+                <input type="text" class="dl-input" placeholder="Your name">
+              </div>
+              <div>
+                <label class="dl-label">Email</label>
+                <input type="email" class="dl-input" placeholder="you@example.com">
+              </div>
+              <div>
+                <label class="dl-label">Message</label>
+                <textarea class="dl-input dl-textarea" placeholder="How can I help?"></textarea>
+              </div>
+              <button class="btn btn-primary" style="margin-top: var(--space-2);">Send Message</button>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-sm text-secondary mt-4">
+          This is a recommended pattern. The current portfolio uses email links rather than
+          embedded forms.
+        </p>
+      </section>
+
+      <!-- Accessibility -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Accessibility Guidelines</h2>
+
+        <div class="dl-guidelines">
+          <div class="dl-guideline dl-guideline-do">
+            <div class="dl-guideline-title">
+              <span>✓</span> Do
+            </div>
+            <ul>
+              <li>Always pair inputs with visible labels</li>
+              <li>Use placeholder text to show format, not as a label replacement</li>
+              <li>Ensure focus states are clearly visible</li>
+              <li>Provide clear error messages near the relevant field</li>
+            </ul>
+          </div>
+          <div class="dl-guideline dl-guideline-dont">
+            <div class="dl-guideline-title">
+              <span>✗</span> Don't
+            </div>
+            <ul>
+              <li>Rely on placeholder text as the only label</li>
+              <li>Disable the browser's default focus outline without a replacement</li>
+              <li>Use color alone to indicate errors</li>
+              <li>Make touch targets smaller than 44x44px</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Code Reference -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Code Reference</h2>
+
+        <table class="dl-spec-table">
+          <thead>
+            <tr>
+              <th>Source File</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>css/pages.css</code></td>
+              <td>Lines 638-663 (Filter tags)</td>
+            </tr>
+            <tr>
+              <td><code>css/base.css</code></td>
+              <td>Lines 42-47 (Form reset, font inheritance)</td>
+            </tr>
+            <tr>
+              <td><code>css/base.css</code></td>
+              <td>Lines 187-192 (Focus visible styles)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/design-library.js"></script>
+</body>
+</html>

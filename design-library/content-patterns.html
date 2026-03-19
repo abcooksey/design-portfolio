@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Content Patterns | Design Library</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="css/design-library.css">
+</head>
+<body>
+  <div class="dl-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="dl-sidebar">
+      <a href="index.html" class="dl-logo">
+        <div class="dl-logo-icon">DL</div>
+        <div class="dl-logo-text">
+          <span class="dl-logo-title">Design Library</span>
+          <span class="dl-logo-subtitle">Alex Hicks Portfolio</span>
+        </div>
+      </a>
+
+      <nav>
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Overview</div>
+          <div class="dl-nav-list">
+            <a href="index.html" class="dl-nav-link">Overview</a>
+            <a href="changelog.html" class="dl-nav-link">Changelog</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Foundations</div>
+          <div class="dl-nav-list">
+            <a href="colors.html" class="dl-nav-link">Colors</a>
+            <a href="typography.html" class="dl-nav-link">Typography</a>
+            <a href="spacing.html" class="dl-nav-link">Spacing</a>
+            <a href="foundations.html" class="dl-nav-link">Elevation & Borders</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Components</div>
+          <div class="dl-nav-list">
+            <a href="buttons.html" class="dl-nav-link">Buttons</a>
+            <a href="cards.html" class="dl-nav-link">Cards</a>
+            <a href="navigation.html" class="dl-nav-link">Navigation</a>
+            <a href="forms.html" class="dl-nav-link">Forms</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Patterns</div>
+          <div class="dl-nav-list">
+            <a href="content-patterns.html" class="dl-nav-link active">Content Patterns</a>
+            <a href="interactions.html" class="dl-nav-link">Interactions</a>
+          </div>
+        </div>
+      </nav>
+
+      <a href="../index.html" class="dl-back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+        Back to Portfolio
+      </a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dl-main">
+      <header class="dl-header">
+        <span class="dl-page-label">Patterns</span>
+        <h1 class="dl-page-title">Content Patterns</h1>
+        <p class="dl-page-description">
+          Reusable content layouts and structures used throughout the portfolio, especially
+          in case study pages. These patterns establish consistent visual rhythm and hierarchy.
+        </p>
+      </header>
+
+      <!-- Section Headers -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Section Headers</h2>
+        <p class="dl-section-description">
+          Centered section introductions with label, title, and description.
+        </p>
+
+        <div class="dl-preview dl-preview-light">
+          <div class="section-header" style="max-width: 600px;">
+            <span class="section-label">Featured Work</span>
+            <h2 class="section-title">Projects I'm Proud Of</h2>
+            <p class="section-description">A selection of recent work showcasing my approach to product design.</p>
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-4">
+          <tr><td>Alignment</td><td>Center</td></tr>
+          <tr><td>Max Width</td><td>700px</td></tr>
+          <tr><td>Margin Bottom</td><td>--space-8 (32px)</td></tr>
+          <tr><td>Label</td><td>Uppercase, primary color, wide tracking</td></tr>
+          <tr><td>Title</td><td>H2 default styles</td></tr>
+          <tr><td>Description</td><td>--text-lg, --color-text-secondary</td></tr>
+        </table>
+      </section>
+
+      <!-- Hero Section -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Hero Sections</h2>
+        <p class="dl-section-description">
+          Large introductory sections at the top of pages.
+        </p>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Home Hero</h3>
+          <div class="dl-preview" style="background: var(--gradient-hero); padding: var(--space-12);">
+            <div style="max-width: 500px;">
+              <h1 style="font-size: clamp(24px, 3.5vw, 36px); margin-bottom: var(--space-4); line-height: var(--leading-tight);">
+                Hi, I'm Alex — a product designer who creates
+                <span style="color: var(--color-primary);">intuitive experiences</span>
+              </h1>
+              <p style="color: #4B5563; margin-bottom: var(--space-4);">
+                Currently designing at <strong style="color: var(--color-dark);">Prodigy Education</strong>, helping kids fall in love with learning.
+              </p>
+              <div style="display: flex; gap: var(--space-3);">
+                <a href="#" class="btn btn-primary">View My Work</a>
+                <a href="#" class="btn btn-secondary">About Me</a>
+              </div>
+            </div>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Background</td><td>--gradient-hero</td></tr>
+            <tr><td>Padding</td><td>calc(--space-16 + 60px) top, --space-16 bottom</td></tr>
+            <tr><td>Title Size</td><td>clamp(24px, 3.5vw, 36px)</td></tr>
+            <tr><td>Animated Text</td><td>Rotating words in primary color</td></tr>
+          </table>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Case Study Hero</h3>
+          <div class="dl-preview" style="background: var(--gradient-hero); padding: var(--space-8);">
+            <div style="max-width: 700px;">
+              <div style="display: flex; gap: var(--space-2); margin-bottom: var(--space-4);">
+                <span class="tag tag-primary">EdTech</span>
+                <span class="tag tag-secondary">Design System</span>
+              </div>
+              <h1 style="font-size: var(--text-4xl); margin-bottom: var(--space-4);">Reimagining Prodigy's Design System</h1>
+              <p style="font-size: var(--text-lg); color: var(--color-text-secondary); margin-bottom: var(--space-8);">
+                Building a scalable foundation for consistent, accessible design across the Prodigy platform.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: var(--space-8);">
+                <div>
+                  <div style="font-size: var(--text-xs); font-weight: var(--font-semibold); text-transform: uppercase; letter-spacing: 0.025em; color: var(--color-text-muted); margin-bottom: var(--space-1);">Role</div>
+                  <div style="font-weight: var(--font-medium);">Lead Designer</div>
+                </div>
+                <div>
+                  <div style="font-size: var(--text-xs); font-weight: var(--font-semibold); text-transform: uppercase; letter-spacing: 0.025em; color: var(--color-text-muted); margin-bottom: var(--space-1);">Timeline</div>
+                  <div style="font-weight: var(--font-medium);">6 months</div>
+                </div>
+                <div>
+                  <div style="font-size: var(--text-xs); font-weight: var(--font-semibold); text-transform: uppercase; letter-spacing: 0.025em; color: var(--color-text-muted); margin-bottom: var(--space-1);">Team</div>
+                  <div style="font-weight: var(--font-medium);">3 designers, 5 engineers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Stats & Metrics</h2>
+        <p class="dl-section-description">
+          Numerical highlights and key metrics.
+        </p>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Basic Stats</h3>
+          <div class="dl-preview dl-preview-light">
+            <div class="grid grid-3 gap-6">
+              <div class="stat">
+                <div class="stat-value">8+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">50+</div>
+                <div class="stat-label">Projects</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">3</div>
+                <div class="stat-label">Awards</div>
+              </div>
+            </div>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Value Font</td><td>--font-heading, --text-4xl (36px), bold</td></tr>
+            <tr><td>Value Color</td><td>--color-primary</td></tr>
+            <tr><td>Label</td><td>--text-sm, uppercase, wide tracking</td></tr>
+            <tr><td>Label Color</td><td>--color-text-secondary</td></tr>
+          </table>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Metric Callout</h3>
+          <div class="dl-preview dl-preview-light">
+            <div class="metric-callout" style="max-width: 500px;">
+              <div class="metric-icon">📈</div>
+              <div class="metric-content">
+                <div class="metric-value">40%</div>
+                <div class="metric-label">Increase in task completion rate</div>
+              </div>
+            </div>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Background</td><td>--gradient-hero</td></tr>
+            <tr><td>Border Left</td><td>4px solid --color-primary</td></tr>
+            <tr><td>Icon Box</td><td>56x56px, white bg, --radius-lg</td></tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Testimonials</h2>
+        <p class="dl-section-description">
+          Quote cards with author information.
+        </p>
+
+        <div class="dl-preview dl-preview-light">
+          <div class="testimonial" style="max-width: 400px;">
+            <p class="testimonial-quote">
+              "Alex brings both creativity and strategic thinking to every project. Their attention to detail is exceptional."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"></div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">Sarah Johnson</span>
+                <span class="testimonial-role">Product Lead, Company</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-4">
+          <tr><td>Padding</td><td>--space-8 (32px)</td></tr>
+          <tr><td>Quote Mark</td><td>Decorative ", 72px, primary-light at 30% opacity</td></tr>
+          <tr><td>Quote Text</td><td>--text-lg, --color-text-secondary</td></tr>
+          <tr><td>Avatar</td><td>48x48px circle, gradient background</td></tr>
+          <tr><td>Name</td><td>Semibold, primary text color</td></tr>
+          <tr><td>Role</td><td>--text-sm, secondary text color</td></tr>
+        </table>
+      </section>
+
+      <!-- Process Steps -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Process Steps</h2>
+        <p class="dl-section-description">
+          Numbered steps for documenting design processes.
+        </p>
+
+        <div class="dl-preview dl-preview-light">
+          <div style="display: flex; flex-direction: column; gap: var(--space-6); max-width: 500px;">
+            <div class="process-step">
+              <div class="process-number">1</div>
+              <div class="process-content">
+                <h4 class="process-title">Discovery</h4>
+                <p class="process-description">Research and understand the problem space through user interviews and data analysis.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="process-number">2</div>
+              <div class="process-content">
+                <h4 class="process-title">Define</h4>
+                <p class="process-description">Synthesize findings and establish clear goals and success metrics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-4">
+          <tr><td>Number Circle</td><td>48x48px, gradient background, white text</td></tr>
+          <tr><td>Title</td><td>--text-xl, bold</td></tr>
+          <tr><td>Description</td><td>--color-text-secondary</td></tr>
+          <tr><td>Gap</td><td>--space-6 (24px)</td></tr>
+        </table>
+      </section>
+
+      <!-- Before/After -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Before/After Comparisons</h2>
+        <p class="dl-section-description">
+          Side-by-side comparison layouts for showing design changes.
+        </p>
+
+        <div class="dl-preview dl-preview-light">
+          <div class="before-after">
+            <div class="before-after-item before">
+              <span class="before-after-label">Before</span>
+              <div class="image-frame" style="background: var(--color-bg-secondary); height: 150px; display: flex; align-items: center; justify-content: center;">
+                <span class="text-sm text-muted">Original Design</span>
+              </div>
+            </div>
+            <div class="before-after-item after">
+              <span class="before-after-label">After</span>
+              <div class="image-frame" style="background: var(--color-bg-secondary); height: 150px; display: flex; align-items: center; justify-content: center;">
+                <span class="text-sm text-muted">New Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-4">
+          <tr><td>Layout</td><td>2-column grid, equal width</td></tr>
+          <tr><td>Gap</td><td>--space-6 (24px)</td></tr>
+          <tr><td>Before Label</td><td>Secondary bg, secondary text</td></tr>
+          <tr><td>After Label</td><td>Green bg (success), green text</td></tr>
+          <tr><td>Mobile</td><td>Stack vertically below 768px</td></tr>
+        </table>
+      </section>
+
+      <!-- Image Grids -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Image Grids</h2>
+        <p class="dl-section-description">
+          Layouts for displaying multiple images in case studies.
+        </p>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Equal Grid</h3>
+          <div class="dl-preview dl-preview-light">
+            <div class="cs-image-grid">
+              <div class="image-frame" style="background: var(--color-bg-secondary); height: 120px; display: flex; align-items: center; justify-content: center;">
+                <span class="text-sm text-muted">Image 1</span>
+              </div>
+              <div class="image-frame" style="background: var(--color-bg-secondary); height: 120px; display: flex; align-items: center; justify-content: center;">
+                <span class="text-sm text-muted">Image 2</span>
+              </div>
+            </div>
+          </div>
+          <p class="text-sm text-secondary mt-2"><code>.cs-image-grid</code> — Two equal columns</p>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Weighted Grid</h3>
+          <div class="dl-preview dl-preview-light">
+            <div class="cs-image-grid-weighted">
+              <div class="image-frame" style="background: var(--color-bg-secondary); height: 120px; display: flex; align-items: center; justify-content: center;">
+                <span class="text-sm text-muted">2fr</span>
+              </div>
+              <div class="image-frame" style="background: var(--color-bg-secondary); height: 120px; display: flex; align-items: center; justify-content: center;">
+                <span class="text-sm text-muted">3fr</span>
+              </div>
+            </div>
+          </div>
+          <p class="text-sm text-secondary mt-2"><code>.cs-image-grid-weighted</code> — 2:3 ratio columns</p>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Skills Sections</h2>
+        <p class="dl-section-description">
+          Displaying skills and tools in organized categories.
+        </p>
+
+        <div class="dl-preview dl-preview-light">
+          <div class="skills-category" style="max-width: 320px;">
+            <div class="skills-category-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+            </div>
+            <h3 class="skills-category-title">Design Skills</h3>
+            <ul class="skills-list">
+              <li>User Research</li>
+              <li>Interaction Design</li>
+              <li>Visual Design</li>
+              <li>Design Systems</li>
+            </ul>
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-4">
+          <tr><td>Icon Box</td><td>56x56px, primary-subtle bg, --radius-lg</td></tr>
+          <tr><td>Title</td><td>--text-xl</td></tr>
+          <tr><td>List Bullets</td><td>6x6px circles, primary-light</td></tr>
+          <tr><td>List Item Padding</td><td>Left --space-4</td></tr>
+        </table>
+      </section>
+
+      <!-- Code Reference -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Code Reference</h2>
+
+        <table class="dl-spec-table">
+          <thead>
+            <tr>
+              <th>Pattern</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Section Headers</td>
+              <td><code>css/components.css</code> lines 380-405</td>
+            </tr>
+            <tr>
+              <td>Stats</td>
+              <td><code>css/components.css</code> lines 295-315</td>
+            </tr>
+            <tr>
+              <td>Testimonials</td>
+              <td><code>css/components.css</code> lines 317-378</td>
+            </tr>
+            <tr>
+              <td>Process Steps</td>
+              <td><code>css/components.css</code> lines 490-524</td>
+            </tr>
+            <tr>
+              <td>Before/After</td>
+              <td><code>css/components.css</code> lines 583-620</td>
+            </tr>
+            <tr>
+              <td>Image Grids</td>
+              <td><code>css/pages.css</code> lines 685-731</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/design-library.js"></script>
+</body>
+</html>
