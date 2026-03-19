@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Elevation & Borders | Design Library</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="css/design-library.css">
+</head>
+<body>
+  <div class="dl-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="dl-sidebar">
+      <a href="index.html" class="dl-logo">
+        <div class="dl-logo-icon">DL</div>
+        <div class="dl-logo-text">
+          <span class="dl-logo-title">Design Library</span>
+          <span class="dl-logo-subtitle">Alex Hicks Portfolio</span>
+        </div>
+      </a>
+
+      <nav>
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Overview</div>
+          <div class="dl-nav-list">
+            <a href="index.html" class="dl-nav-link">Overview</a>
+            <a href="changelog.html" class="dl-nav-link">Changelog</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Foundations</div>
+          <div class="dl-nav-list">
+            <a href="colors.html" class="dl-nav-link">Colors</a>
+            <a href="typography.html" class="dl-nav-link">Typography</a>
+            <a href="spacing.html" class="dl-nav-link">Spacing</a>
+            <a href="foundations.html" class="dl-nav-link active">Elevation & Borders</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Components</div>
+          <div class="dl-nav-list">
+            <a href="buttons.html" class="dl-nav-link">Buttons</a>
+            <a href="cards.html" class="dl-nav-link">Cards</a>
+            <a href="navigation.html" class="dl-nav-link">Navigation</a>
+            <a href="forms.html" class="dl-nav-link">Forms</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Patterns</div>
+          <div class="dl-nav-list">
+            <a href="content-patterns.html" class="dl-nav-link">Content Patterns</a>
+            <a href="interactions.html" class="dl-nav-link">Interactions</a>
+          </div>
+        </div>
+      </nav>
+
+      <a href="../index.html" class="dl-back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+        Back to Portfolio
+      </a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dl-main">
+      <header class="dl-header">
+        <span class="dl-page-label">Foundations</span>
+        <h1 class="dl-page-title">Elevation & Borders</h1>
+        <p class="dl-page-description">
+          Shadows, border radii, and visual depth create hierarchy and help users understand
+          interactive surfaces. These foundations establish the visual language for cards,
+          buttons, and other elevated elements.
+        </p>
+      </header>
+
+      <!-- Shadows -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Shadows</h2>
+        <p class="dl-section-description">
+          A progression of shadow depths for different elevation levels. Shadows use subtle
+          opacity to feel natural and not overpowering.
+        </p>
+
+        <div class="dl-shadow-grid mt-6">
+          <div class="dl-shadow-item">
+            <div class="dl-shadow-preview" style="box-shadow: var(--shadow-sm);"></div>
+            <div class="dl-shadow-info">
+              <div class="dl-color-token">--shadow-sm</div>
+              <div class="dl-color-value text-sm text-secondary mt-1">Subtle lift, hover states</div>
+            </div>
+          </div>
+
+          <div class="dl-shadow-item">
+            <div class="dl-shadow-preview" style="box-shadow: var(--shadow-md);"></div>
+            <div class="dl-shadow-info">
+              <div class="dl-color-token">--shadow-md</div>
+              <div class="dl-color-value text-sm text-secondary mt-1">Medium elevation</div>
+            </div>
+          </div>
+
+          <div class="dl-shadow-item">
+            <div class="dl-shadow-preview" style="box-shadow: var(--shadow-lg);"></div>
+            <div class="dl-shadow-info">
+              <div class="dl-color-token">--shadow-lg</div>
+              <div class="dl-color-value text-sm text-secondary mt-1">Popovers, dropdowns</div>
+            </div>
+          </div>
+
+          <div class="dl-shadow-item">
+            <div class="dl-shadow-preview" style="box-shadow: var(--shadow-xl);"></div>
+            <div class="dl-shadow-info">
+              <div class="dl-color-token">--shadow-xl</div>
+              <div class="dl-color-value text-sm text-secondary mt-1">Modals, prominent cards</div>
+            </div>
+          </div>
+
+          <div class="dl-shadow-item">
+            <div class="dl-shadow-preview" style="box-shadow: var(--shadow-card);"></div>
+            <div class="dl-shadow-info">
+              <div class="dl-color-token">--shadow-card</div>
+              <div class="dl-color-value text-sm text-secondary mt-1">Default card shadow (tinted)</div>
+            </div>
+          </div>
+
+          <div class="dl-shadow-item">
+            <div class="dl-shadow-preview" style="box-shadow: var(--shadow-card-hover);"></div>
+            <div class="dl-shadow-info">
+              <div class="dl-color-token">--shadow-card-hover</div>
+              <div class="dl-color-value text-sm text-secondary mt-1">Card hover state</div>
+            </div>
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-8">
+          <thead>
+            <tr>
+              <th>Token</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>--shadow-sm</code></td>
+              <td>0 1px 2px 0 rgba(0, 0, 0, 0.05)</td>
+            </tr>
+            <tr>
+              <td><code>--shadow-md</code></td>
+              <td>0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)</td>
+            </tr>
+            <tr>
+              <td><code>--shadow-lg</code></td>
+              <td>0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1)</td>
+            </tr>
+            <tr>
+              <td><code>--shadow-xl</code></td>
+              <td>0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)</td>
+            </tr>
+            <tr>
+              <td><code>--shadow-card</code></td>
+              <td>0 4px 20px rgba(124, 58, 237, 0.08)</td>
+            </tr>
+            <tr>
+              <td><code>--shadow-card-hover</code></td>
+              <td>0 12px 40px rgba(124, 58, 237, 0.15)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="dl-info dl-info-note mt-6">
+          <span class="dl-info-icon">💡</span>
+          <div class="dl-info-content">
+            Card shadows use the primary purple color (7C3AED) at low opacity to create a subtle
+            branded tint. This adds warmth compared to neutral gray shadows.
+          </div>
+        </div>
+      </section>
+
+      <!-- Border Radius -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Border Radius</h2>
+        <p class="dl-section-description">
+          A scale of corner radii from subtle to fully rounded. Larger radii create
+          a friendlier, more approachable aesthetic.
+        </p>
+
+        <div class="dl-radius-grid mt-6">
+          <div class="dl-radius-item">
+            <div class="dl-radius-preview" style="border-radius: var(--radius-sm);"></div>
+            <div class="dl-color-token">--radius-sm</div>
+            <div class="text-sm text-secondary">6px</div>
+          </div>
+
+          <div class="dl-radius-item">
+            <div class="dl-radius-preview" style="border-radius: var(--radius-md);"></div>
+            <div class="dl-color-token">--radius-md</div>
+            <div class="text-sm text-secondary">8px</div>
+          </div>
+
+          <div class="dl-radius-item">
+            <div class="dl-radius-preview" style="border-radius: var(--radius-lg);"></div>
+            <div class="dl-color-token">--radius-lg</div>
+            <div class="text-sm text-secondary">12px</div>
+          </div>
+
+          <div class="dl-radius-item">
+            <div class="dl-radius-preview" style="border-radius: var(--radius-xl);"></div>
+            <div class="dl-color-token">--radius-xl</div>
+            <div class="text-sm text-secondary">16px</div>
+          </div>
+
+          <div class="dl-radius-item">
+            <div class="dl-radius-preview" style="border-radius: var(--radius-2xl);"></div>
+            <div class="dl-color-token">--radius-2xl</div>
+            <div class="text-sm text-secondary">24px</div>
+          </div>
+
+          <div class="dl-radius-item">
+            <div class="dl-radius-preview" style="border-radius: var(--radius-full);"></div>
+            <div class="dl-color-token">--radius-full</div>
+            <div class="text-sm text-secondary">9999px</div>
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-8">
+          <thead>
+            <tr>
+              <th>Token</th>
+              <th>Value</th>
+              <th>Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>--radius-sm</code></td>
+              <td>6px</td>
+              <td>Tags, small badges, code blocks</td>
+            </tr>
+            <tr>
+              <td><code>--radius-md</code></td>
+              <td>8px</td>
+              <td>Skill icons, tool items</td>
+            </tr>
+            <tr>
+              <td><code>--radius-lg</code></td>
+              <td>12px</td>
+              <td>Buttons, skill items, small cards</td>
+            </tr>
+            <tr>
+              <td><code>--radius-xl</code></td>
+              <td>16px</td>
+              <td>Cards, testimonials, sections</td>
+            </tr>
+            <tr>
+              <td><code>--radius-2xl</code></td>
+              <td>24px</td>
+              <td>Large images, about photo, decorative</td>
+            </tr>
+            <tr>
+              <td><code>--radius-full</code></td>
+              <td>9999px</td>
+              <td>Pills, avatars, circular elements</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Borders -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Borders</h2>
+        <p class="dl-section-description">
+          Border styles for visual separation and containment.
+        </p>
+
+        <div class="grid grid-3 gap-6 mt-6">
+          <div class="card card-bordered p-6">
+            <div class="text-sm mb-2" style="font-weight: var(--font-semibold);">Standard Border</div>
+            <div class="dl-color-token">1px solid --color-border</div>
+            <div class="text-sm text-secondary mt-2">#E2E8F0</div>
+          </div>
+
+          <div class="card p-6" style="border: 1px solid var(--color-border-light);">
+            <div class="text-sm mb-2" style="font-weight: var(--font-semibold);">Light Border</div>
+            <div class="dl-color-token">1px solid --color-border-light</div>
+            <div class="text-sm text-secondary mt-2">#F1F5F9</div>
+          </div>
+
+          <div class="card p-6" style="border: 2px solid var(--color-primary);">
+            <div class="text-sm mb-2" style="font-weight: var(--font-semibold);">Primary Border</div>
+            <div class="dl-color-token">2px solid --color-primary</div>
+            <div class="text-sm text-secondary mt-2">Secondary buttons, focus states</div>
+          </div>
+        </div>
+
+        <div class="dl-subsection mt-8">
+          <h3 class="dl-subsection-title">Hover Border States</h3>
+          <p class="text-secondary text-sm mb-4">
+            Interactive elements use border color transitions to indicate hover state.
+          </p>
+          <div class="dl-preview dl-preview-light">
+            <div class="grid grid-2 gap-6">
+              <div class="card card-bordered p-4" style="transition: border-color 0.15s;">
+                <div class="text-sm">Default state</div>
+                <div class="text-xs text-secondary mt-1">border-color: #E2E8F0</div>
+              </div>
+              <div class="card p-4" style="border: 1px solid var(--color-primary-light); box-shadow: 0 0 0 1px var(--color-primary-light);">
+                <div class="text-sm">Hover state</div>
+                <div class="text-xs text-secondary mt-1">border-color: --color-primary-light + glow</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dividers -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Dividers</h2>
+        <p class="dl-section-description">
+          Horizontal rules for visual separation between content sections.
+        </p>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Standard Divider</h3>
+          <div class="dl-preview dl-preview-light">
+            <div class="p-4">Content above</div>
+            <div class="divider"></div>
+            <div class="p-4">Content below</div>
+          </div>
+          <table class="dl-spec-table mt-2">
+            <tr><td>Height</td><td>1px</td></tr>
+            <tr><td>Color</td><td>--color-border (#E2E8F0)</td></tr>
+            <tr><td>Margin</td><td>64px (--space-16) top/bottom</td></tr>
+          </table>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Gradient Divider</h3>
+          <div class="dl-preview dl-preview-light">
+            <div class="p-4">Content above</div>
+            <div class="divider-gradient" style="margin: var(--space-8) 0;"></div>
+            <div class="p-4">Content below</div>
+          </div>
+          <table class="dl-spec-table mt-2">
+            <tr><td>Height</td><td>2px</td></tr>
+            <tr><td>Background</td><td>--gradient-primary</td></tr>
+            <tr><td>Border Radius</td><td>--radius-full</td></tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- Z-Index Scale -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Z-Index Scale</h2>
+        <p class="dl-section-description">
+          A structured z-index scale prevents stacking conflicts and ensures
+          proper layering of overlapping elements.
+        </p>
+
+        <table class="dl-spec-table mt-6">
+          <thead>
+            <tr>
+              <th>Token</th>
+              <th>Value</th>
+              <th>Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>--z-dropdown</code></td>
+              <td>100</td>
+              <td>Dropdown menus, select options</td>
+            </tr>
+            <tr>
+              <td><code>--z-sticky</code></td>
+              <td>200</td>
+              <td>Sticky headers, pinned elements</td>
+            </tr>
+            <tr>
+              <td><code>--z-fixed</code></td>
+              <td>300</td>
+              <td>Fixed navigation bar</td>
+            </tr>
+            <tr>
+              <td><code>--z-modal-backdrop</code></td>
+              <td>400</td>
+              <td>Dark overlay behind modals</td>
+            </tr>
+            <tr>
+              <td><code>--z-modal</code></td>
+              <td>500</td>
+              <td>Modal dialogs, lightbox</td>
+            </tr>
+            <tr>
+              <td><code>--z-tooltip</code></td>
+              <td>600</td>
+              <td>Tooltips (above all other content)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="dl-info dl-info-note mt-6">
+          <span class="dl-info-icon">💡</span>
+          <div class="dl-info-content">
+            The lightbox component uses <code>z-index: 9999</code> to ensure it appears
+            above all other content including the navigation.
+          </div>
+        </div>
+      </section>
+
+      <!-- Transitions -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Transitions</h2>
+        <p class="dl-section-description">
+          Consistent transition timing creates smooth, predictable interactions.
+        </p>
+
+        <table class="dl-spec-table mt-6">
+          <thead>
+            <tr>
+              <th>Token</th>
+              <th>Value</th>
+              <th>Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>--transition-fast</code></td>
+              <td>150ms ease</td>
+              <td>Color changes, small interactions</td>
+            </tr>
+            <tr>
+              <td><code>--transition-base</code></td>
+              <td>250ms ease</td>
+              <td>Default for most components</td>
+            </tr>
+            <tr>
+              <td><code>--transition-slow</code></td>
+              <td>350ms ease</td>
+              <td>Larger state changes, reveals</td>
+            </tr>
+            <tr>
+              <td><code>--transition-bounce</code></td>
+              <td>500ms cubic-bezier(0.34, 1.56, 0.64, 1)</td>
+              <td>Playful bouncy animations</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="dl-preview dl-preview-light mt-6">
+          <div class="flex gap-6 items-center">
+            <div class="btn btn-primary" style="transition: all var(--transition-fast);">Fast (150ms)</div>
+            <div class="btn btn-secondary" style="transition: all var(--transition-base);">Base (250ms)</div>
+            <div class="btn btn-ghost" style="transition: all var(--transition-slow);">Slow (350ms)</div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/design-library.js"></script>
+</body>
+</html>

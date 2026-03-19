@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Spacing | Design Library</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="css/design-library.css">
+</head>
+<body>
+  <div class="dl-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="dl-sidebar">
+      <a href="index.html" class="dl-logo">
+        <div class="dl-logo-icon">DL</div>
+        <div class="dl-logo-text">
+          <span class="dl-logo-title">Design Library</span>
+          <span class="dl-logo-subtitle">Alex Hicks Portfolio</span>
+        </div>
+      </a>
+
+      <nav>
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Overview</div>
+          <div class="dl-nav-list">
+            <a href="index.html" class="dl-nav-link">Overview</a>
+            <a href="changelog.html" class="dl-nav-link">Changelog</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Foundations</div>
+          <div class="dl-nav-list">
+            <a href="colors.html" class="dl-nav-link">Colors</a>
+            <a href="typography.html" class="dl-nav-link">Typography</a>
+            <a href="spacing.html" class="dl-nav-link active">Spacing</a>
+            <a href="foundations.html" class="dl-nav-link">Elevation & Borders</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Components</div>
+          <div class="dl-nav-list">
+            <a href="buttons.html" class="dl-nav-link">Buttons</a>
+            <a href="cards.html" class="dl-nav-link">Cards</a>
+            <a href="navigation.html" class="dl-nav-link">Navigation</a>
+            <a href="forms.html" class="dl-nav-link">Forms</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Patterns</div>
+          <div class="dl-nav-list">
+            <a href="content-patterns.html" class="dl-nav-link">Content Patterns</a>
+            <a href="interactions.html" class="dl-nav-link">Interactions</a>
+          </div>
+        </div>
+      </nav>
+
+      <a href="../index.html" class="dl-back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+        Back to Portfolio
+      </a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dl-main">
+      <header class="dl-header">
+        <span class="dl-page-label">Foundations</span>
+        <h1 class="dl-page-title">Spacing</h1>
+        <p class="dl-page-description">
+          A consistent 8px-based spacing scale creates visual rhythm and hierarchy.
+          Spacing tokens are used for margins, padding, gaps, and layout dimensions.
+        </p>
+      </header>
+
+      <!-- Spacing Scale -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Spacing Scale</h2>
+        <p class="dl-section-description">
+          The spacing system uses a base unit of 4px, with most common values being multiples
+          of 8px for optimal alignment with the pixel grid.
+        </p>
+
+        <div class="dl-spacing-grid mt-6">
+          <div class="dl-spacing-item">
+            <div class="dl-spacing-info">
+              <span class="dl-spacing-token">--space-1</span>
+              <span class="dl-spacing-value">0.25rem / 4px</span>
+            </div>
+            <div class="dl-spacing-visual" style="width: 4px;"></div>
+            <span class="text-sm text-secondary">Tight spacing, icon gaps</span>
+          </div>
+
+          <div class="dl-spacing-item">
+            <div class="dl-spacing-info">
+              <span class="dl-spacing-token">--space-2</span>
+              <span class="dl-spacing-value">0.5rem / 8px</span>
+            </div>
+            <div class="dl-spacing-visual" style="width: 8px;"></div>
+            <span class="text-sm text-secondary">Small gaps, inline spacing</span>
+          </div>
+
+          <div class="dl-spacing-item">
+            <div class="dl-spacing-info">
+              <span class="dl-spacing-token">--space-3</span>
+              <span class="dl-spacing-value">0.75rem / 12px</span>
+            </div>
+            <div class="dl-spacing-visual" style="width: 12px;"></div>
+            <span class="text-sm text-secondary">Button padding (vertical)</span>
+          </div>
+
+          <div class="dl-spacing-item">
+            <div class="dl-spacing-info">
+              <span class="dl-spacing-token">--space-4</span>
+              <span class="dl-spacing-value">1rem / 16px</span>
+            </div>
+            <div class="dl-spacing-visual" style="width: 16px;"></div>
+            <span class="text-sm text-secondary">Card content padding, standard gap</span>
+          </div>
+
+          <div class="dl-spacing-item">
+            <div class="dl-spacing-info">
+              <span class="dl-spacing-token">--space-5</span>
+              <span class="dl-spacing-value">1.25rem / 20px</span>
+            </div>
+            <div class="dl-spacing-visual" style="width: 20px;"></div>
+            <span class="text-sm text-secondary">Project card content padding</span>
+          </div>
+
+          <div class="dl-spacing-item">
+            <div class="dl-spacing-info">
+              <span class="dl-spacing-token">--space-6</span>
+              <span class="dl-spacing-value">1.5rem / 24px</span>
+            </div>
+            <div class="dl-spacing-visual" style="width: 24px;"></div>
+            <span class="text-sm text-secondary">Default grid gap, container padding</span>
+          </div>
+
+          <div class="dl-spacing-item">
+            <div class="dl-spacing-info">
+              <span class="dl-spacing-token">--space-8</span>
+              <span class="dl-spacing-value">2rem / 32px</span>
+            </div>
+            <div class="dl-spacing-visual" style="width: 32px;"></div>
+            <span class="text-sm text-secondary">Section header margin, testimonial padding</span>
+          </div>
+
+          <div class="dl-spacing-item">
+            <div class="dl-spacing-info">
+              <span class="dl-spacing-token">--space-10</span>
+              <span class="dl-spacing-value">2.5rem / 40px</span>
+            </div>
+            <div class="dl-spacing-visual" style="width: 40px;"></div>
+            <span class="text-sm text-secondary">Large gaps</span>
+          </div>
+
+          <div class="dl-spacing-item">
+            <div class="dl-spacing-info">
+              <span class="dl-spacing-token">--space-12</span>
+              <span class="dl-spacing-value">3rem / 48px</span>
+            </div>
+            <div class="dl-spacing-visual" style="width: 48px;"></div>
+            <span class="text-sm text-secondary">Section padding (default), two-col gap</span>
+          </div>
+
+          <div class="dl-spacing-item">
+            <div class="dl-spacing-info">
+              <span class="dl-spacing-token">--space-16</span>
+              <span class="dl-spacing-value">4rem / 64px</span>
+            </div>
+            <div class="dl-spacing-visual" style="width: 64px;"></div>
+            <span class="text-sm text-secondary">Large section padding, hero padding</span>
+          </div>
+
+          <div class="dl-spacing-item">
+            <div class="dl-spacing-info">
+              <span class="dl-spacing-token">--space-20</span>
+              <span class="dl-spacing-value">5rem / 80px</span>
+            </div>
+            <div class="dl-spacing-visual" style="width: 80px;"></div>
+            <span class="text-sm text-secondary">Extra large spacing</span>
+          </div>
+
+          <div class="dl-spacing-item">
+            <div class="dl-spacing-info">
+              <span class="dl-spacing-token">--space-24</span>
+              <span class="dl-spacing-value">6rem / 96px</span>
+            </div>
+            <div class="dl-spacing-visual" style="width: 96px;"></div>
+            <span class="text-sm text-secondary">Major section breaks</span>
+          </div>
+
+          <div class="dl-spacing-item">
+            <div class="dl-spacing-info">
+              <span class="dl-spacing-token">--space-32</span>
+              <span class="dl-spacing-value">8rem / 128px</span>
+            </div>
+            <div class="dl-spacing-visual" style="width: 128px;"></div>
+            <span class="text-sm text-secondary">Hero/case study top padding</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Container Widths -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Container Widths</h2>
+        <p class="dl-section-description">
+          Maximum width constraints for content containers at different breakpoints.
+        </p>
+
+        <table class="dl-spec-table mt-6">
+          <thead>
+            <tr>
+              <th>Token</th>
+              <th>Width</th>
+              <th>Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>--container-sm</code></td>
+              <td>640px</td>
+              <td>Narrow content, forms</td>
+            </tr>
+            <tr>
+              <td><code>--container-md</code></td>
+              <td>768px</td>
+              <td>Medium content blocks</td>
+            </tr>
+            <tr>
+              <td><code>--container-lg</code></td>
+              <td>1024px</td>
+              <td>Standard content width</td>
+            </tr>
+            <tr>
+              <td><code>--container-xl</code></td>
+              <td>1200px</td>
+              <td>Default container (main content)</td>
+            </tr>
+            <tr>
+              <td><code>--container-2xl</code></td>
+              <td>1400px</td>
+              <td>Wide layouts, full-width sections</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Spacing Utilities -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Spacing Utilities</h2>
+        <p class="dl-section-description">
+          Utility classes for applying spacing consistently across components.
+        </p>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Gap Utilities</h3>
+          <table class="dl-spec-table">
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Property</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><code>.gap-1</code></td><td>gap</td><td>4px</td></tr>
+              <tr><td><code>.gap-2</code></td><td>gap</td><td>8px</td></tr>
+              <tr><td><code>.gap-3</code></td><td>gap</td><td>12px</td></tr>
+              <tr><td><code>.gap-4</code></td><td>gap</td><td>16px</td></tr>
+              <tr><td><code>.gap-6</code></td><td>gap</td><td>24px</td></tr>
+              <tr><td><code>.gap-8</code></td><td>gap</td><td>32px</td></tr>
+              <tr><td><code>.gap-10</code></td><td>gap</td><td>40px</td></tr>
+              <tr><td><code>.gap-12</code></td><td>gap</td><td>48px</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Margin Utilities</h3>
+          <table class="dl-spec-table">
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Property</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><code>.mt-4</code></td><td>margin-top</td><td>16px</td></tr>
+              <tr><td><code>.mt-6</code></td><td>margin-top</td><td>24px</td></tr>
+              <tr><td><code>.mt-8</code></td><td>margin-top</td><td>32px</td></tr>
+              <tr><td><code>.mt-12</code></td><td>margin-top</td><td>48px</td></tr>
+              <tr><td><code>.mt-16</code></td><td>margin-top</td><td>64px</td></tr>
+              <tr><td><code>.mb-4</code></td><td>margin-bottom</td><td>16px</td></tr>
+              <tr><td><code>.mb-6</code></td><td>margin-bottom</td><td>24px</td></tr>
+              <tr><td><code>.mb-8</code></td><td>margin-bottom</td><td>32px</td></tr>
+              <tr><td><code>.mx-auto</code></td><td>margin-left/right</td><td>auto</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Padding Utilities</h3>
+          <table class="dl-spec-table">
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Property</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><code>.p-4</code></td><td>padding</td><td>16px</td></tr>
+              <tr><td><code>.p-6</code></td><td>padding</td><td>24px</td></tr>
+              <tr><td><code>.p-8</code></td><td>padding</td><td>32px</td></tr>
+              <tr><td><code>.p-12</code></td><td>padding</td><td>48px</td></tr>
+              <tr><td><code>.py-4</code></td><td>padding-top/bottom</td><td>16px</td></tr>
+              <tr><td><code>.py-8</code></td><td>padding-top/bottom</td><td>32px</td></tr>
+              <tr><td><code>.px-4</code></td><td>padding-left/right</td><td>16px</td></tr>
+              <tr><td><code>.px-6</code></td><td>padding-left/right</td><td>24px</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section Spacing -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Section Spacing</h2>
+        <p class="dl-section-description">
+          Predefined section classes for consistent vertical rhythm between major content blocks.
+        </p>
+
+        <table class="dl-spec-table mt-6">
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Padding</th>
+              <th>Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.section-sm</code></td>
+              <td>32px top/bottom</td>
+              <td>Compact sections, case study content</td>
+            </tr>
+            <tr>
+              <td><code>.section</code></td>
+              <td>48px top/bottom</td>
+              <td>Default section spacing</td>
+            </tr>
+            <tr>
+              <td><code>.section-lg</code></td>
+              <td>64px top/bottom</td>
+              <td>Large sections, hero areas</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="dl-preview mt-6" style="background: var(--color-primary-subtle); padding: 0;">
+          <div style="background: var(--color-bg-card); padding: var(--space-12) var(--space-6); text-align: center; border-bottom: 2px dashed var(--color-primary-light);">
+            .section (48px padding)
+          </div>
+          <div style="background: var(--color-bg-secondary); padding: var(--space-8) var(--space-6); text-align: center; border-bottom: 2px dashed var(--color-primary-light);">
+            .section-sm (32px padding)
+          </div>
+          <div style="background: var(--color-bg-card); padding: var(--space-16) var(--space-6); text-align: center;">
+            .section-lg (64px padding)
+          </div>
+        </div>
+      </section>
+
+      <!-- Grid Gaps -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Grid Gaps</h2>
+        <p class="dl-section-description">
+          Standard gap values used in grid and flex layouts.
+        </p>
+
+        <div class="dl-info dl-info-note">
+          <span class="dl-info-icon">💡</span>
+          <div class="dl-info-content">
+            The default <code>.grid</code> class uses <code>--space-6</code> (24px) for gaps.
+            Use <code>.gap-*</code> utilities to override when needed.
+          </div>
+        </div>
+
+        <div class="grid grid-3 gap-6 mt-6">
+          <div class="card card-bordered p-4 text-center">
+            <div class="text-xl mb-2" style="font-weight: var(--font-semibold);">4px</div>
+            <div class="text-sm text-secondary">Work grid (--space-4)</div>
+          </div>
+          <div class="card card-bordered p-4 text-center">
+            <div class="text-xl mb-2" style="font-weight: var(--font-semibold);">24px</div>
+            <div class="text-sm text-secondary">Default grid (--space-6)</div>
+          </div>
+          <div class="card card-bordered p-4 text-center">
+            <div class="text-xl mb-2" style="font-weight: var(--font-semibold);">32px</div>
+            <div class="text-sm text-secondary">Skills grid (--space-8)</div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/design-library.js"></script>
+</body>
+</html>

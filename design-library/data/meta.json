@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-03-18T23:16:35.163Z",
+  "version": "1.0.0",
+  "sourceFiles": [
+    "css/variables.css",
+    "css/base.css",
+    "css/layout.css",
+    "css/components.css",
+    "css/pages.css"
+  ],
+  "stats": {
+    "totalColors": 28,
+    "totalTypography": 17,
+    "totalSpacing": 13,
+    "totalComponents": 246,
+    "totalAnimations": 6
+  }
+}

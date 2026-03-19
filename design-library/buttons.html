@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Buttons | Design Library</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="css/design-library.css">
+</head>
+<body>
+  <div class="dl-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="dl-sidebar">
+      <a href="index.html" class="dl-logo">
+        <div class="dl-logo-icon">DL</div>
+        <div class="dl-logo-text">
+          <span class="dl-logo-title">Design Library</span>
+          <span class="dl-logo-subtitle">Alex Hicks Portfolio</span>
+        </div>
+      </a>
+
+      <nav>
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Overview</div>
+          <div class="dl-nav-list">
+            <a href="index.html" class="dl-nav-link">Overview</a>
+            <a href="changelog.html" class="dl-nav-link">Changelog</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Foundations</div>
+          <div class="dl-nav-list">
+            <a href="colors.html" class="dl-nav-link">Colors</a>
+            <a href="typography.html" class="dl-nav-link">Typography</a>
+            <a href="spacing.html" class="dl-nav-link">Spacing</a>
+            <a href="foundations.html" class="dl-nav-link">Elevation & Borders</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Components</div>
+          <div class="dl-nav-list">
+            <a href="buttons.html" class="dl-nav-link active">Buttons</a>
+            <a href="cards.html" class="dl-nav-link">Cards</a>
+            <a href="navigation.html" class="dl-nav-link">Navigation</a>
+            <a href="forms.html" class="dl-nav-link">Forms</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Patterns</div>
+          <div class="dl-nav-list">
+            <a href="content-patterns.html" class="dl-nav-link">Content Patterns</a>
+            <a href="interactions.html" class="dl-nav-link">Interactions</a>
+          </div>
+        </div>
+      </nav>
+
+      <a href="../index.html" class="dl-back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+        Back to Portfolio
+      </a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dl-main">
+      <header class="dl-header">
+        <span class="dl-page-label">Components</span>
+        <h1 class="dl-page-title">Buttons</h1>
+        <p class="dl-page-description">
+          Buttons communicate actions users can take. They have multiple variants for
+          different levels of visual prominence and use cases.
+        </p>
+      </header>
+
+      <!-- Anatomy -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Anatomy</h2>
+        <p class="dl-section-description">
+          A button consists of a text label and container with interactive states.
+        </p>
+
+        <div class="dl-anatomy">
+          <div class="flex items-center justify-center p-8">
+            <div class="btn btn-primary" style="position: relative;">
+              <span style="position: absolute; top: -24px; left: 50%; transform: translateX(-50%); font-size: 10px; color: var(--color-text-muted);">Container</span>
+              Button Label
+              <span style="position: absolute; bottom: -24px; left: 50%; transform: translateX(-50%); font-size: 10px; color: var(--color-text-muted);">Text Label</span>
+            </div>
+          </div>
+          <div class="dl-anatomy-list">
+            <div class="dl-anatomy-item">
+              <span class="dl-anatomy-number">1</span>
+              <span class="dl-anatomy-text"><strong>Container:</strong> Background fill or border that defines the button bounds</span>
+            </div>
+            <div class="dl-anatomy-item">
+              <span class="dl-anatomy-number">2</span>
+              <span class="dl-anatomy-text"><strong>Text Label:</strong> Describes the action; uses heading font at semibold weight</span>
+            </div>
+            <div class="dl-anatomy-item">
+              <span class="dl-anatomy-number">3</span>
+              <span class="dl-anatomy-text"><strong>Icon (optional):</strong> Can appear before or after text for additional context</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Variants -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Variants</h2>
+        <p class="dl-section-description">
+          Three button variants provide different levels of visual emphasis.
+        </p>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Primary Button</h3>
+          <p class="text-secondary text-sm mb-4">
+            High emphasis. Use for the most important action on a page, like "View Work" or "Get in Touch".
+          </p>
+          <div class="dl-preview dl-preview-light">
+            <a href="#" class="btn btn-primary">Primary Button</a>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Background</td><td>--color-primary (#7C3AED)</td></tr>
+            <tr><td>Text Color</td><td>--color-white (#FFFFFF)</td></tr>
+            <tr><td>Shadow</td><td>0 4px 14px rgba(124, 58, 237, 0.3)</td></tr>
+            <tr><td>Border Radius</td><td>--radius-lg (12px)</td></tr>
+          </table>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Secondary Button</h3>
+          <p class="text-secondary text-sm mb-4">
+            Medium emphasis. Use alongside primary buttons for secondary actions.
+          </p>
+          <div class="dl-preview dl-preview-light">
+            <a href="#" class="btn btn-secondary">Secondary Button</a>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Background</td><td>--color-white (#FFFFFF)</td></tr>
+            <tr><td>Text Color</td><td>--color-primary (#7C3AED)</td></tr>
+            <tr><td>Border</td><td>2px solid --color-primary</td></tr>
+            <tr><td>Border Radius</td><td>--radius-lg (12px)</td></tr>
+          </table>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Ghost Button</h3>
+          <p class="text-secondary text-sm mb-4">
+            Low emphasis. Use for tertiary actions or in dense UIs where other variants would be too heavy.
+          </p>
+          <div class="dl-preview dl-preview-light">
+            <a href="#" class="btn btn-ghost">Ghost Button</a>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Background</td><td>transparent</td></tr>
+            <tr><td>Text Color</td><td>--color-text-primary (#334155)</td></tr>
+            <tr><td>Border</td><td>none</td></tr>
+            <tr><td>Border Radius</td><td>--radius-lg (12px)</td></tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- Sizes -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Sizes</h2>
+        <p class="dl-section-description">
+          Three sizes accommodate different contexts and importance levels.
+        </p>
+
+        <div class="dl-preview dl-preview-light">
+          <div class="flex gap-4 items-center flex-wrap">
+            <a href="#" class="btn btn-primary btn-sm">Small</a>
+            <a href="#" class="btn btn-primary">Default</a>
+            <a href="#" class="btn btn-primary btn-lg">Large</a>
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-4">
+          <thead>
+            <tr>
+              <th>Size</th>
+              <th>Class</th>
+              <th>Padding</th>
+              <th>Font Size</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Small</td>
+              <td><code>.btn-sm</code></td>
+              <td>8px 16px</td>
+              <td>14px (--text-sm)</td>
+            </tr>
+            <tr>
+              <td>Default</td>
+              <td><code>.btn</code></td>
+              <td>12px 24px</td>
+              <td>16px (--text-base)</td>
+            </tr>
+            <tr>
+              <td>Large</td>
+              <td><code>.btn-lg</code></td>
+              <td>16px 32px</td>
+              <td>18px (--text-lg)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- States -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">States</h2>
+        <p class="dl-section-description">
+          Interactive states provide visual feedback during user interaction.
+        </p>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Primary Button States</h3>
+          <div class="dl-state-grid">
+            <div class="dl-state-item">
+              <a href="#" class="btn btn-primary">Default</a>
+              <span class="dl-state-label">Default</span>
+            </div>
+            <div class="dl-state-item">
+              <a href="#" class="btn btn-primary" style="background: var(--color-primary-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(124, 58, 237, 0.4);">Hover</a>
+              <span class="dl-state-label">Hover</span>
+            </div>
+            <div class="dl-state-item">
+              <a href="#" class="btn btn-primary" style="outline: 2px solid var(--color-primary); outline-offset: 2px;">Focus</a>
+              <span class="dl-state-label">Focus</span>
+            </div>
+            <div class="dl-state-item">
+              <a href="#" class="btn btn-primary" style="transform: translateY(0); opacity: 0.9;">Active</a>
+              <span class="dl-state-label">Active</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Secondary Button States</h3>
+          <div class="dl-state-grid">
+            <div class="dl-state-item">
+              <a href="#" class="btn btn-secondary">Default</a>
+              <span class="dl-state-label">Default</span>
+            </div>
+            <div class="dl-state-item">
+              <a href="#" class="btn btn-secondary" style="background: var(--color-primary-subtle); transform: translateY(-2px);">Hover</a>
+              <span class="dl-state-label">Hover</span>
+            </div>
+            <div class="dl-state-item">
+              <a href="#" class="btn btn-secondary" style="outline: 2px solid var(--color-primary); outline-offset: 2px;">Focus</a>
+              <span class="dl-state-label">Focus</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Ghost Button States</h3>
+          <div class="dl-state-grid">
+            <div class="dl-state-item">
+              <a href="#" class="btn btn-ghost">Default</a>
+              <span class="dl-state-label">Default</span>
+            </div>
+            <div class="dl-state-item">
+              <a href="#" class="btn btn-ghost" style="background: var(--color-bg-secondary); color: var(--color-primary);">Hover</a>
+              <span class="dl-state-label">Hover</span>
+            </div>
+            <div class="dl-state-item">
+              <a href="#" class="btn btn-ghost" style="outline: 2px solid var(--color-primary); outline-offset: 2px;">Focus</a>
+              <span class="dl-state-label">Focus</span>
+            </div>
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-6">
+          <thead>
+            <tr>
+              <th>State</th>
+              <th>Primary Changes</th>
+              <th>Secondary Changes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hover</td>
+              <td>Darken bg, lift 2px, increase shadow</td>
+              <td>Fill with subtle bg, lift 2px</td>
+            </tr>
+            <tr>
+              <td>Focus</td>
+              <td>2px primary outline, 2px offset</td>
+              <td>2px primary outline, 2px offset</td>
+            </tr>
+            <tr>
+              <td>Active</td>
+              <td>Remove lift, reduce opacity</td>
+              <td>Remove lift</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Usage Examples -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Usage Examples</h2>
+        <p class="dl-section-description">
+          Common button patterns found throughout the portfolio.
+        </p>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Hero CTA Pair</h3>
+          <div class="dl-preview" style="background: var(--gradient-hero);">
+            <div class="flex gap-3 flex-wrap">
+              <a href="#" class="btn btn-primary btn-lg">View My Work</a>
+              <a href="#" class="btn btn-secondary btn-lg">About Me</a>
+            </div>
+          </div>
+          <p class="text-sm text-secondary mt-2">
+            Primary action paired with secondary alternative on the hero section.
+          </p>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">CTA Section (Dark Background)</h3>
+          <div class="dl-preview dl-preview-dark">
+            <div class="flex gap-3 justify-center">
+              <a href="#" class="btn btn-primary" style="background: var(--color-white); color: var(--color-primary);">Get in Touch</a>
+            </div>
+          </div>
+          <p class="text-sm text-secondary mt-2">
+            On dark backgrounds, primary buttons invert to white with purple text.
+          </p>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Card Action</h3>
+          <div class="dl-preview dl-preview-light">
+            <div class="card card-bordered p-6" style="max-width: 300px;">
+              <h4 class="text-lg mb-2" style="font-weight: var(--font-semibold);">Project Title</h4>
+              <p class="text-secondary text-sm mb-4">Brief description of the project and outcomes.</p>
+              <a href="#" class="btn btn-ghost btn-sm">View Case Study →</a>
+            </div>
+          </div>
+          <p class="text-sm text-secondary mt-2">
+            Ghost buttons work well for low-emphasis actions within cards.
+          </p>
+        </div>
+      </section>
+
+      <!-- Guidelines -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Guidelines</h2>
+
+        <div class="dl-guidelines">
+          <div class="dl-guideline dl-guideline-do">
+            <div class="dl-guideline-title">
+              <span>✓</span> Do
+            </div>
+            <ul>
+              <li>Use action verbs: "View Work", "Get in Touch", "Read Case Study"</li>
+              <li>Limit to one primary button per section</li>
+              <li>Place primary actions on the left in button groups</li>
+              <li>Ensure sufficient contrast on all backgrounds</li>
+            </ul>
+          </div>
+          <div class="dl-guideline dl-guideline-dont">
+            <div class="dl-guideline-title">
+              <span>✗</span> Don't
+            </div>
+            <ul>
+              <li>Use vague labels like "Click Here" or "Submit"</li>
+              <li>Stack more than 2-3 buttons together</li>
+              <li>Use primary buttons for every action</li>
+              <li>Nest buttons inside other buttons</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Code Reference -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Code Reference</h2>
+
+        <table class="dl-spec-table">
+          <thead>
+            <tr>
+              <th>Source File</th>
+              <th>Lines</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>css/components.css</code></td>
+              <td>Lines 6-68 (Button styles)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="dl-code mt-4">
+          <code>&lt;a href="#" class="btn btn-primary"&gt;Primary&lt;/a&gt;<br>
+&lt;a href="#" class="btn btn-secondary"&gt;Secondary&lt;/a&gt;<br>
+&lt;a href="#" class="btn btn-ghost"&gt;Ghost&lt;/a&gt;<br>
+&lt;a href="#" class="btn btn-primary btn-lg"&gt;Large&lt;/a&gt;<br>
+&lt;a href="#" class="btn btn-primary btn-sm"&gt;Small&lt;/a&gt;</code>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/design-library.js"></script>
+</body>
+</html>

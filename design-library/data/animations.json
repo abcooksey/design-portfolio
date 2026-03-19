@@ -1,0 +1,45 @@
+{
+  "keyframes": [
+    {
+      "name": "float",
+      "source": "css/pages.css"
+    },
+    {
+      "name": "textRotate",
+      "source": "css/pages.css"
+    },
+    {
+      "name": "textRotateMultiline",
+      "source": "css/pages.css"
+    }
+  ],
+  "transitions": [
+    {
+      "name": "fade-in",
+      "description": "Fade in on scroll with Y translation",
+      "source": "css/pages.css"
+    },
+    {
+      "name": "scale-in",
+      "description": "Scale in from 0.95 to 1",
+      "source": "css/pages.css"
+    },
+    {
+      "name": "stagger-children",
+      "description": "Staggered animation for child elements",
+      "source": "css/pages.css"
+    }
+  ],
+  "scrollEffects": [
+    {
+      "name": "Intersection Observer",
+      "description": "Triggers .visible class when elements enter viewport",
+      "source": "js/main.js"
+    },
+    {
+      "name": "Parallax",
+      "description": "Elements with data-parallax attribute move at different speeds",
+      "source": "js/animations.js"
+    }
+  ]
+}

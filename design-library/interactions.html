@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Interactions | Design Library</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="css/design-library.css">
+</head>
+<body>
+  <div class="dl-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="dl-sidebar">
+      <a href="index.html" class="dl-logo">
+        <div class="dl-logo-icon">DL</div>
+        <div class="dl-logo-text">
+          <span class="dl-logo-title">Design Library</span>
+          <span class="dl-logo-subtitle">Alex Hicks Portfolio</span>
+        </div>
+      </a>
+
+      <nav>
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Overview</div>
+          <div class="dl-nav-list">
+            <a href="index.html" class="dl-nav-link">Overview</a>
+            <a href="changelog.html" class="dl-nav-link">Changelog</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Foundations</div>
+          <div class="dl-nav-list">
+            <a href="colors.html" class="dl-nav-link">Colors</a>
+            <a href="typography.html" class="dl-nav-link">Typography</a>
+            <a href="spacing.html" class="dl-nav-link">Spacing</a>
+            <a href="foundations.html" class="dl-nav-link">Elevation & Borders</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Components</div>
+          <div class="dl-nav-list">
+            <a href="buttons.html" class="dl-nav-link">Buttons</a>
+            <a href="cards.html" class="dl-nav-link">Cards</a>
+            <a href="navigation.html" class="dl-nav-link">Navigation</a>
+            <a href="forms.html" class="dl-nav-link">Forms</a>
+          </div>
+        </div>
+
+        <div class="dl-nav-section">
+          <div class="dl-nav-label">Patterns</div>
+          <div class="dl-nav-list">
+            <a href="content-patterns.html" class="dl-nav-link">Content Patterns</a>
+            <a href="interactions.html" class="dl-nav-link active">Interactions</a>
+          </div>
+        </div>
+      </nav>
+
+      <a href="../index.html" class="dl-back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+        Back to Portfolio
+      </a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dl-main">
+      <header class="dl-header">
+        <span class="dl-page-label">Patterns</span>
+        <h1 class="dl-page-title">Interactions & Motion</h1>
+        <p class="dl-page-description">
+          Animation and interaction patterns add polish and delight without overwhelming
+          the content. All animations are performant and respect user preferences for reduced motion.
+        </p>
+      </header>
+
+      <!-- Transition Timing -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Transition Timing</h2>
+        <p class="dl-section-description">
+          Consistent timing creates predictable, polished interactions.
+        </p>
+
+        <table class="dl-spec-table">
+          <thead>
+            <tr>
+              <th>Token</th>
+              <th>Duration</th>
+              <th>Easing</th>
+              <th>Use Case</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>--transition-fast</code></td>
+              <td>150ms</td>
+              <td>ease</td>
+              <td>Color changes, small states</td>
+            </tr>
+            <tr>
+              <td><code>--transition-base</code></td>
+              <td>250ms</td>
+              <td>ease</td>
+              <td>Most component transitions</td>
+            </tr>
+            <tr>
+              <td><code>--transition-slow</code></td>
+              <td>350ms</td>
+              <td>ease</td>
+              <td>Large reveals, page transitions</td>
+            </tr>
+            <tr>
+              <td><code>--transition-bounce</code></td>
+              <td>500ms</td>
+              <td>cubic-bezier(0.34, 1.56, 0.64, 1)</td>
+              <td>Playful, bouncy effects</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="dl-info dl-info-note mt-6">
+          <span class="dl-info-icon">💡</span>
+          <div class="dl-info-content">
+            The bounce easing creates an overshoot effect — the element briefly moves past its
+            destination before settling. Use sparingly for delightful moments.
+          </div>
+        </div>
+      </section>
+
+      <!-- Scroll Animations -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Scroll Animations</h2>
+        <p class="dl-section-description">
+          Elements animate into view as the user scrolls, using Intersection Observer for performance.
+        </p>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Fade In</h3>
+          <p class="text-secondary text-sm mb-4">
+            Elements fade from transparent and translate up 30px into their final position.
+          </p>
+          <div class="dl-preview dl-preview-light">
+            <div class="grid grid-2 gap-6">
+              <div>
+                <div class="text-xs text-muted mb-2 text-uppercase" style="letter-spacing: 0.025em;">Initial State</div>
+                <div class="card card-bordered p-4" style="opacity: 0.3; transform: translateY(30px);">
+                  <div class="card-title text-sm">Card Content</div>
+                </div>
+              </div>
+              <div>
+                <div class="text-xs text-muted mb-2 text-uppercase" style="letter-spacing: 0.025em;">Visible State</div>
+                <div class="card card-bordered p-4">
+                  <div class="card-title text-sm">Card Content</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Class</td><td><code>.fade-in</code></td></tr>
+            <tr><td>Initial Opacity</td><td>0</td></tr>
+            <tr><td>Initial Transform</td><td>translateY(30px)</td></tr>
+            <tr><td>Duration</td><td>600ms</td></tr>
+            <tr><td>Easing</td><td>ease</td></tr>
+            <tr><td>Trigger</td><td>Intersection Observer adds <code>.visible</code> class</td></tr>
+          </table>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Scale In</h3>
+          <p class="text-secondary text-sm mb-4">
+            Elements scale from 95% to 100% while fading in.
+          </p>
+          <div class="dl-preview dl-preview-light">
+            <div class="grid grid-2 gap-6">
+              <div>
+                <div class="text-xs text-muted mb-2 text-uppercase" style="letter-spacing: 0.025em;">Initial State</div>
+                <div class="card card-bordered p-4" style="opacity: 0.3; transform: scale(0.95);">
+                  <div class="card-title text-sm">Scaled Content</div>
+                </div>
+              </div>
+              <div>
+                <div class="text-xs text-muted mb-2 text-uppercase" style="letter-spacing: 0.025em;">Visible State</div>
+                <div class="card card-bordered p-4">
+                  <div class="card-title text-sm">Scaled Content</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Class</td><td><code>.scale-in</code></td></tr>
+            <tr><td>Initial Scale</td><td>0.95</td></tr>
+            <tr><td>Duration</td><td>500ms</td></tr>
+          </table>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Stagger Children</h3>
+          <p class="text-secondary text-sm mb-4">
+            Child elements animate in sequence with 100ms delays between each.
+          </p>
+          <div class="dl-preview dl-preview-light">
+            <div style="display: flex; gap: var(--space-4);">
+              <div class="card card-bordered p-4" style="opacity: 1;">
+                <div class="text-xs text-center">+0ms</div>
+              </div>
+              <div class="card card-bordered p-4" style="opacity: 0.8;">
+                <div class="text-xs text-center">+100ms</div>
+              </div>
+              <div class="card card-bordered p-4" style="opacity: 0.6;">
+                <div class="text-xs text-center">+200ms</div>
+              </div>
+              <div class="card card-bordered p-4" style="opacity: 0.4;">
+                <div class="text-xs text-center">+300ms</div>
+              </div>
+              <div class="card card-bordered p-4" style="opacity: 0.2;">
+                <div class="text-xs text-center">+400ms</div>
+              </div>
+            </div>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Class</td><td><code>.stagger-children</code></td></tr>
+            <tr><td>Child Delay</td><td>nth-child(n) × 100ms</td></tr>
+            <tr><td>Max Children</td><td>5 (with explicit CSS rules)</td></tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- Hover Effects -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Hover Effects</h2>
+        <p class="dl-section-description">
+          Hover states provide immediate feedback for interactive elements.
+        </p>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Lift Effect</h3>
+          <p class="text-secondary text-sm mb-4">
+            Elements rise slightly and increase shadow depth on hover.
+          </p>
+          <div class="dl-preview dl-preview-light">
+            <div style="display: flex; gap: var(--space-6); align-items: flex-end;">
+              <div>
+                <div class="text-xs text-muted mb-2 text-center">Default</div>
+                <a href="#" class="btn btn-primary">Button</a>
+              </div>
+              <div>
+                <div class="text-xs text-muted mb-2 text-center">Hover</div>
+                <a href="#" class="btn btn-primary" style="transform: translateY(-2px); box-shadow: 0 6px 20px rgba(124, 58, 237, 0.4);">Button</a>
+              </div>
+            </div>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Transform</td><td>translateY(-2px)</td></tr>
+            <tr><td>Shadow</td><td>Increase blur and spread</td></tr>
+            <tr><td>Transition</td><td>--transition-base (250ms)</td></tr>
+          </table>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Border Glow</h3>
+          <p class="text-secondary text-sm mb-4">
+            Cards highlight their border on hover.
+          </p>
+          <div class="dl-preview dl-preview-light">
+            <div style="display: flex; gap: var(--space-6);">
+              <div>
+                <div class="text-xs text-muted mb-2 text-center">Default</div>
+                <div class="card card-bordered p-4" style="width: 150px;">
+                  <div class="text-sm">Card</div>
+                </div>
+              </div>
+              <div>
+                <div class="text-xs text-muted mb-2 text-center">Hover</div>
+                <div class="card p-4" style="width: 150px; border: 1px solid var(--color-primary-light); box-shadow: 0 0 0 1px var(--color-primary-light);">
+                  <div class="text-sm">Card</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Border Color</td><td>--color-primary-light</td></tr>
+            <tr><td>Box Shadow</td><td>0 0 0 1px --color-primary-light</td></tr>
+            <tr><td>Transition</td><td>150ms cubic-bezier(0.4, 0, 0.2, 1)</td></tr>
+          </table>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Image Scale</h3>
+          <p class="text-secondary text-sm mb-4">
+            Clickable images subtly scale up on hover to indicate interactivity.
+          </p>
+          <div class="dl-preview dl-preview-light">
+            <div style="display: flex; gap: var(--space-6);">
+              <div>
+                <div class="text-xs text-muted mb-2 text-center">Default</div>
+                <div class="image-frame" style="width: 150px; height: 100px; background: var(--color-bg-secondary); display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                  <span class="text-sm text-muted">Image</span>
+                </div>
+              </div>
+              <div>
+                <div class="text-xs text-muted mb-2 text-center">Hover</div>
+                <div class="image-frame" style="width: 150px; height: 100px; background: var(--color-bg-secondary); display: flex; align-items: center; justify-content: center; cursor: pointer; transform: scale(1.02); box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+                  <span class="text-sm text-muted">Image</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Transform</td><td>scale(1.02)</td></tr>
+            <tr><td>Box Shadow</td><td>0 10px 40px rgba(0, 0, 0, 0.15)</td></tr>
+            <tr><td>Duration</td><td>200ms ease</td></tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- Keyframe Animations -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Keyframe Animations</h2>
+        <p class="dl-section-description">
+          CSS keyframe animations for continuous or complex motion.
+        </p>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Float Animation</h3>
+          <p class="text-secondary text-sm mb-4">
+            Decorative background shapes float gently in a random-feeling pattern.
+          </p>
+          <table class="dl-spec-table">
+            <tr><td>Name</td><td><code>@keyframes float</code></td></tr>
+            <tr><td>Duration</td><td>20s</td></tr>
+            <tr><td>Timing</td><td>ease-in-out infinite</td></tr>
+            <tr><td>Motion</td><td>Translation + subtle scale (0.95-1.05)</td></tr>
+            <tr><td>Stagger</td><td>Different animation-delay per shape</td></tr>
+          </table>
+        </div>
+
+        <div class="dl-subsection">
+          <h3 class="dl-subsection-title">Text Rotation</h3>
+          <p class="text-secondary text-sm mb-4">
+            Rotating text in the hero section cycles through different phrases.
+          </p>
+          <div class="dl-preview" style="background: var(--gradient-hero); padding: var(--space-8);">
+            <div style="display: inline-block; overflow: hidden; height: 1.2em; vertical-align: text-top;">
+              <div style="color: var(--color-primary); animation: none;">
+                <span style="display: block; height: 1.2em; line-height: 1.2;">intuitive experiences</span>
+                <span style="display: block; height: 1.2em; line-height: 1.2; opacity: 0.6;">scalable design systems</span>
+                <span style="display: block; height: 1.2em; line-height: 1.2; opacity: 0.3;">delightful interfaces</span>
+              </div>
+            </div>
+          </div>
+          <table class="dl-spec-table mt-4">
+            <tr><td>Name</td><td><code>@keyframes textRotate</code></td></tr>
+            <tr><td>Duration</td><td>10s</td></tr>
+            <tr><td>Timing</td><td>ease-in-out infinite</td></tr>
+            <tr><td>Steps</td><td>6 phrases, each visible for ~16% of cycle</td></tr>
+            <tr><td>Transform</td><td>translateY in 1.2em increments</td></tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- Lightbox -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Lightbox</h2>
+        <p class="dl-section-description">
+          Full-screen image viewer for case study images.
+        </p>
+
+        <div class="dl-preview dl-preview-dark" style="position: relative; min-height: 200px;">
+          <div style="display: flex; align-items: center; justify-content: center; height: 150px;">
+            <div style="background: var(--color-bg-secondary); border-radius: var(--radius-lg); padding: var(--space-8); text-align: center; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);">
+              <span class="text-sm">Image Preview</span>
+            </div>
+          </div>
+          <button style="position: absolute; top: var(--space-4); right: var(--space-4); width: 40px; height: 40px; background: rgba(255,255,255,0.1); border: none; border-radius: var(--radius-full); color: white; cursor: pointer; display: flex; align-items: center; justify-content: center;">✕</button>
+        </div>
+
+        <table class="dl-spec-table mt-4">
+          <tr><td>Background</td><td>rgba(0, 0, 0, 0.9)</td></tr>
+          <tr><td>Z-Index</td><td>9999</td></tr>
+          <tr><td>Image Max</td><td>90vw × 90vh</td></tr>
+          <tr><td>Open Animation</td><td>opacity 0→1, scale 0.9→1 (300ms)</td></tr>
+          <tr><td>Close Button</td><td>48px circle, top-right</td></tr>
+          <tr><td>Keyboard</td><td>ESC to close</td></tr>
+        </table>
+      </section>
+
+      <!-- Focus States -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Focus States</h2>
+        <p class="dl-section-description">
+          Visible focus indicators for keyboard navigation and accessibility.
+        </p>
+
+        <div class="dl-preview dl-preview-light">
+          <div style="display: flex; gap: var(--space-6); align-items: center;">
+            <a href="#" class="btn btn-primary" style="outline: 2px solid var(--color-primary); outline-offset: 2px;">Focused Button</a>
+            <a href="#" style="color: var(--color-primary); text-decoration: none; outline: 2px solid var(--color-primary); outline-offset: 2px; padding: 2px;">Focused Link</a>
+          </div>
+        </div>
+
+        <table class="dl-spec-table mt-4">
+          <tr><td>Outline</td><td>2px solid --color-primary</td></tr>
+          <tr><td>Outline Offset</td><td>2px</td></tr>
+          <tr><td>Selector</td><td><code>:focus-visible</code></td></tr>
+        </table>
+
+        <div class="dl-info dl-info-note mt-6">
+          <span class="dl-info-icon">💡</span>
+          <div class="dl-info-content">
+            Using <code>:focus-visible</code> instead of <code>:focus</code> ensures focus rings
+            only appear for keyboard navigation, not mouse clicks.
+          </div>
+        </div>
+      </section>
+
+      <!-- Performance -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Performance Considerations</h2>
+
+        <div class="dl-guidelines">
+          <div class="dl-guideline dl-guideline-do">
+            <div class="dl-guideline-title">
+              <span>✓</span> Best Practices
+            </div>
+            <ul>
+              <li>Use <code>transform</code> and <code>opacity</code> for animations (GPU accelerated)</li>
+              <li>Use <code>will-change</code> sparingly on frequently animated elements</li>
+              <li>Use Intersection Observer instead of scroll event listeners</li>
+              <li>Use <code>requestAnimationFrame</code> for JavaScript animations</li>
+              <li>Respect <code>prefers-reduced-motion</code> media query</li>
+            </ul>
+          </div>
+          <div class="dl-guideline dl-guideline-dont">
+            <div class="dl-guideline-title">
+              <span>✗</span> Avoid
+            </div>
+            <ul>
+              <li>Animating <code>width</code>, <code>height</code>, or <code>top/left</code></li>
+              <li>Long animations (>500ms) for UI transitions</li>
+              <li>Animations that block user interaction</li>
+              <li>Excessive motion that could cause discomfort</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Code Reference -->
+      <section class="dl-section">
+        <h2 class="dl-section-title">Code Reference</h2>
+
+        <table class="dl-spec-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scroll animations</td>
+              <td><code>css/pages.css</code> lines 820-862</td>
+            </tr>
+            <tr>
+              <td>Keyframes</td>
+              <td><code>css/pages.css</code> lines 189-202, 257-291</td>
+            </tr>
+            <tr>
+              <td>Focus styles</td>
+              <td><code>css/base.css</code> lines 187-192</td>
+            </tr>
+            <tr>
+              <td>Intersection Observer</td>
+              <td><code>js/main.js</code></td>
+            </tr>
+            <tr>
+              <td>Animations utility</td>
+              <td><code>js/animations.js</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/design-library.js"></script>
+</body>
+</html>
