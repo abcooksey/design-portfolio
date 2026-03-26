@@ -210,6 +210,20 @@
       "category": "navigation"
     },
     {
+      "name": "nav-logo-text",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
+      "name": "nav-logo-dot",
+      "source": "css/pages.css",
+      "variants": [],
+      "states": [],
+      "category": "navigation"
+    },
+    {
       "name": "nav-links",
       "source": "css/pages.css",
       "variants": [],

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-19T23:39:26.979Z",
+  "generatedAt": "2026-03-26T16:29:54.449Z",
   "version": "1.0.0",
   "sourceFiles": [
     "css/variables.css",
@@ -12,7 +12,7 @@
     "totalColors": 28,
     "totalTypography": 17,
     "totalSpacing": 13,
-    "totalComponents": 246,
+    "totalComponents": 248,
     "totalAnimations": 6
   }
 }
